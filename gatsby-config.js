@@ -1,13 +1,11 @@
-// This import is for my personal deployment convenience.
-// Remove and replace the values before using it in your environment.
-var config = require('../configurations/arvind.io.config');
+var config = require('./config');
 
 module.exports = {
     siteMetadata: {
-        title: config.title,
-        author: config.author,
-        description: config.description,
-        siteUrl: config.url,
+        title: config.TITLE,
+        author: config.AUTHOR,
+        description: config.DESCRIPTION,
+        siteUrl: config.URL,
     },
     plugins: [
         {
@@ -44,7 +42,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: config.GATrackingID,
+                trackingId: config.GATRACKINGID,
             },
         },
         `gatsby-plugin-feed`,
