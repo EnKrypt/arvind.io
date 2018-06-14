@@ -1,0 +1,62 @@
+@import '../styles/fontfaces';
+@import '../styles/theme';
+
+html, body, #___gatsby {
+    height: 100%;
+    margin: 0;
+    font-family: $fontname;
+}
+
+#top-container {
+    min-height: 100%;
+}
+
+#content {
+    padding-top: 3.5em;
+    width: 50em;
+    margin: 0 auto;
+}
+
+// Global styling for some common classes in this project
+
+.heading {
+    font-size: 2.25em;
+}
+
+.bigtext {
+    font-size: 1.25em;
+}
+
+.naturalLink {
+    text-decoration: none;
+}
+
+.dark {
+    background: $darkbg;
+    color: $darktext;
+
+    a {
+        color: $darklinktext;
+    }
+}
+
+.light {
+    background: $lightbg;
+    color:$lighttext;
+
+    a {
+        color: $lightlinktext;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #content {
+        width: 100%;
+        padding: 2.5em;
+        box-sizing: border-box;
+    }
+}

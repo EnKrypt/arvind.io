@@ -47,7 +47,7 @@ module.exports = {
         },
         `gatsby-plugin-feed`,
         `gatsby-plugin-offline`,
-        `gatsby-plugin-preact`,
+        `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
     ],
 };

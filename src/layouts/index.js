@@ -1,38 +1,76 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
+import 'font-awesome/css/font-awesome.min.css';
+import Navbar from '../components/Navbar';
+import './styles.scss';
 class Template extends React.Component {
-    render() {
-        const { location, children } = this.props;
-        if (location && children) {
-            let header;
-            if (location.pathname === '/') {
-                header = (
-                    <h1>
-                        <Link to={'/'}>arvind.io</Link>
-                    </h1>
-                );
-            } else {
-                header = (
-                    <h3>
-                        <Link to={'/'}>arvind.io</Link>
-                    </h3>
-                );
+    constructor() {
+        super();
+        // default state values
+        this.state = {
+            firstLoad: true,
+            theme: 'dark',
+        };
+    }
+
+    componentWillMount() {
+        try {
+            const storedState = JSON.parse(localStorage.getItem('state'));
+            if (storedState) {
+                this.unsetFirstLoadHandler();
+                if (storedState.hasOwnProperty('theme')) {
+                    this.setState({
+                        theme: storedState.theme,
+                    });
+                }
             }
-            return (
-                <div>
-                    {header}
-                    {children()}
-                </div>
-            );
+        } catch (e) {
+            if (e instanceof SyntaxError) {
+                // Something went wrong
+                console.warn(
+                    'Values in localStorage is not valid JSON. Clearing for next use, using defaults for now'
+                );
+                localStorage.removeItem('state');
+            }
         }
     }
-}
 
-Template.propTypes = {
-    children: React.PropTypes.func,
-    location: React.PropTypes.object,
-    route: React.PropTypes.object,
-};
+    componentDidMount() {
+        this.pushState();
+    }
+
+    componentDidUpdate() {
+        this.pushState();
+    }
+
+    render() {
+        return (
+            <div id="top-container" className={this.state.theme}>
+                <Navbar
+                    firstLoad={this.state.firstLoad}
+                    theme={this.state.theme}
+                    toggleTheme={this.toggleThemeHandler}
+                    unsetFirstLoad={this.unsetFirstLoadHandler}
+                />
+                <div id="content">{this.props.children()}</div>
+            </div>
+        );
+    }
+
+    pushState() {
+        localStorage.setItem('state', JSON.stringify(this.state));
+    }
+
+    toggleThemeHandler = newtheme => {
+        this.setState({
+            theme: newtheme,
+        });
+    };
+
+    unsetFirstLoadHandler = () => {
+        this.setState({
+            firstLoad: false,
+        });
+    };
+}
 
 export default Template;

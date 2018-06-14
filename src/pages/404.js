@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
+import '../styles/404.scss';
 
 class NotFound extends React.Component {
     constructor(props) {

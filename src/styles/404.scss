@@ -1,0 +1,61 @@
+@import './theme';
+@import './glitch';
+
+#notfound {
+    text-align: center;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 1em;
+    padding-top: 3.47em;
+    box-sizing: border-box;
+
+    @include glitcheffect(250);
+}
+
+.dark #notfound {
+    background: $staticdarkbg;
+}
+
+.light #notfound {
+    background: $staticlightbg;
+}
+
+.dark .glitch,
+.dark .glitchafter,
+.dark .glitchbefore {
+    color: $darktext;
+    background: $staticdarkbg;
+}
+
+.light .glitch,
+.light .glitchafter,
+.light .glitchbefore {
+    color: $lighttext;
+    background: $staticlightbg;
+}
+
+.theme {
+    color: $theme;
+}
+
+#notfound .effects {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3080a0;
+    font-size: 0.75em;
+}
+
+@media (max-width: 768px) {
+    #notfound {
+        padding-top: 2.6em;
+
+        .glitch,
+        #notfoundtext {
+            font-size: 200px;
+        }
+    }
+
+    #notfoundimage {
+        width: 25em;
+    }
+}

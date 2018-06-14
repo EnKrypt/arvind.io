@@ -1,0 +1,47 @@
+@mixin glitcheffect($fontsize) {
+    .glitch {
+        font-size: $fontsize * 1px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    @keyframes noise-anim {
+        $steps: 10;
+        @for $i from 0 through $steps {
+            #{percentage($i*(1/$steps))} {
+                clip: rect(random($fontsize * 1px)+px, 9999px, random($fontsize * 1px)+px, 0);
+            }
+        }
+    }
+
+    .glitchafter {
+        content: attr(data-text);
+        position: absolute;
+        width: 100%;
+        left: 3px;
+        text-shadow: -1px 0 red;
+        top: 0;
+        overflow: hidden;
+        animation: noise-anim 2s infinite linear alternate-reverse;
+    }
+
+    @keyframes noise-anim-2 {
+        $steps: 20;
+        @for $i from 0 through $steps {
+            #{percentage($i*(1/$steps))} {
+                clip: rect(random($fontsize * 1px)+px, 9999px, random($fontsize * 1px)+px, 0);
+            }
+        }
+    }
+
+    .glitchbefore {
+        content: attr(data-text);
+        position: absolute;
+        width: 100%;
+        left: -3px;
+        text-shadow: 1px 0 blue;
+        top: 0;
+        overflow: hidden;
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+    }
+}

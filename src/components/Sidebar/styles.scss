@@ -1,0 +1,114 @@
+@import '../../styles/theme';
+
+#sidebarcontainer {
+    #sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 1em 0em;
+        height: calc(100% - 1.725em);
+        width: 9em;
+        text-align: center;
+        box-sizing: border-box;
+        transition: 0.3s ease;
+        z-index: 1;
+
+        #sidebardp {
+            width: 4em;
+            margin: 0 auto;
+        }
+
+        .sidebarlink {
+            font-size: 0.8em;
+            padding: 0.25em;
+        }
+    }
+
+    .togglesidebar {
+        cursor: pointer;
+        position: absolute;
+        font-size: 0.75em;
+        left: 1.25em;
+        color: $theme;
+        top: 0.35em;
+        padding: 0.25em 0.5em 0.3em 0.5em;
+        border-radius: 0.3em;
+    }
+
+    #sidebar.hidesidebar {
+        left: -9em;
+        transition: 0.3s ease;
+    }
+}
+
+.dark {
+    .togglesidebar:hover {
+        background: $staticdarkbg;
+    }
+
+    #sidebar {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 1);
+        background: $staticdarkbg;
+
+        #sidebardp {
+            color: $fulllight;
+        }
+    }
+
+    .sidebarlink.alt {
+        background: $lightertext;
+    }
+
+    .sidebarlink:hover,
+    .sidebarlink.alt:hover {
+        background: $fulldark;
+    }
+}
+
+.light {
+    .togglesidebar:hover {
+        background: $staticlightbg;
+    }
+
+    #sidebar {
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+        background: $staticlightbg;
+
+        #sidebardp {
+            color: $fulldark;
+        }
+    }
+
+    .sidebarlink.alt {
+        background: $darkertext;
+    }
+
+    .sidebarlink:hover,
+    .sidebarlink.alt:hover {
+        background: $fulllight;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebarcontainer {
+        #sidebar {
+            height: calc(100% - 1.75em);
+            width: 100%;
+            border-right: none;
+
+            .sidebarlink {
+                font-size: 1em;
+            }
+        }
+
+        #sidebar.hidesidebar {
+            left: -100vw;
+        }
+
+        .togglesidebar {
+            padding: 0.35em 0.5em 0.3em 0.5em;
+            left: 0.75em;
+            top: 0.4em;
+        }
+    }
+}
