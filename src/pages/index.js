@@ -9,7 +9,7 @@ class BlogIndex extends React.Component {
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
         return (
-            <div>
+            <div id="content">
                 <Helmet title={`Arvind Kumar | ${siteTitle}`} />
                 {posts.map(({ node }) => {
                     const title =
