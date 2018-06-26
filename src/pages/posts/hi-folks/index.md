@@ -1,5 +1,6 @@
 ---
 title: New Beginnings
+tags: ["descriptive", "link", "template"]
 date: "2015-05-28T22:40:32.169Z"
 ---
 

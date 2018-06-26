@@ -3,24 +3,30 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import PostPreview from '../components/PostPreview';
 
-class BlogIndex extends React.Component {
+class Tags extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+        const tag = get(this, 'props.pathContext.tag');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
+        const totalCount = get(this, 'props.data.allMarkdownRemark.totalCount');
+        const tagHeader = `${totalCount} post${
+            totalCount === 1 ? '' : 's'
+        } tagged with "${tag}"`;
 
         return (
             <div id="content">
-                <Helmet title={`Arvind Kumar | ${siteTitle}`} />
+                <Helmet title={`Posts with tag: '${tag}' | ${siteTitle}`} />
+                <h1>{tagHeader}</h1>
                 <PostPreview posts={posts} />
             </div>
         );
     }
 }
 
-export default BlogIndex;
+export default Tags;
 
 export const pageQuery = graphql`
-    query IndexQuery {
+    query TagPage($tag: String) {
         site {
             siteMetadata {
                 title
@@ -29,7 +35,9 @@ export const pageQuery = graphql`
         allMarkdownRemark(
             limit: 10
             sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { tags: { in: [$tag] } } }
         ) {
+            totalCount
             edges {
                 node {
                     excerpt
@@ -39,7 +47,6 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         tags
-                        date(formatString: "DD MMMM, YYYY")
                     }
                 }
             }

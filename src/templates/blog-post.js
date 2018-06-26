@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import get from 'lodash/get';
+import { get, kebabCase } from 'lodash';
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -14,6 +14,13 @@ class BlogPostTemplate extends React.Component {
                 <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
                 <h1>{post.frontmatter.title}</h1>
                 <p>{post.frontmatter.date}</p>
+                <div id="tags">
+                    {post.frontmatter.tags.map(tag => (
+                        <div key={tag} id="tag">
+                            <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
+                        </div>
+                    ))}
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 <hr />
 
@@ -54,6 +61,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
+                tags
                 date(formatString: "MMMM DD, YYYY")
             }
         }

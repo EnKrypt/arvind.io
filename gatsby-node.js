@@ -8,6 +8,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
     return new Promise((resolve, reject) => {
         const blogPost = path.resolve('./src/templates/blog-post.js');
+        const blogTag = path.resolve('./src/templates/tags.js');
         resolve(
             graphql(
                 `
@@ -23,6 +24,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                                     }
                                     frontmatter {
                                         title
+                                        tags
                                     }
                                 }
                             }
@@ -35,9 +37,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     reject(result.errors);
                 }
 
-                // Create blog posts pages.
                 const posts = result.data.allMarkdownRemark.edges;
-
                 _.each(posts, (post, index) => {
                     const previous =
                         index === posts.length - 1
@@ -52,6 +52,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                             slug: post.node.fields.slug,
                             previous,
                             next,
+                        },
+                    });
+                });
+                let tags = [];
+                _.each(posts, edge => {
+                    if (_.get(edge, 'node.frontmatter.tags')) {
+                        tags = tags.concat(edge.node.frontmatter.tags);
+                    }
+                });
+                tags = _.uniq(tags);
+                tags.forEach(tag => {
+                    createPage({
+                        path: `/tags/${_.kebabCase(tag)}/`,
+                        component: blogTag,
+                        context: {
+                            tag,
                         },
                     });
                 });
