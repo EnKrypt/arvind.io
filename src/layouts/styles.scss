@@ -38,6 +38,10 @@ html, body, #___gatsby {
     a {
         color: $darklinktext;
     }
+
+    .post-tag a {
+        color: $fulldark;
+    }
 }
 
 .light {
@@ -47,10 +51,53 @@ html, body, #___gatsby {
     a {
         color: $lightlinktext;
     }
+
+    .post-tag a {
+        color: $fulllight;
+    }
 }
 
 .hide {
     display: none;
+}
+
+// Blog Post common styling
+
+.post {
+    padding: 2em 0em;
+}
+
+.post-title {
+    padding: 0.3em 0em;
+    color: $theme;
+
+    a {
+        text-decoration: none;
+        color: $theme;
+    }
+}
+
+.post-created, .post-tags {
+    color: $dimtext;
+    padding-bottom: 2em;
+}
+
+.post-tag {
+    background: $theme;
+    margin: 0.15em;
+    padding: 0em 0.25em;
+    font-size: 0.9em;
+    border-radius: 0.25em;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.post-content {
+    font-family: 'EB Garamond';
+    font-size: 1.5em;
 }
 
 @media (max-width: 768px) {

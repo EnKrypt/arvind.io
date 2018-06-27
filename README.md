@@ -16,11 +16,12 @@
  ### Site map
 
  * `/` : Blog Post Index/List
- * `/posts/*` : Individual Blog Post
- * `/tags/*` : Blog Post Index/List having particular tag
+ * `/posts/<title>` : Individual Blog Post
+ * `/tags/<tag>` : Blog Post Index/List having particular tag
  * `/icons/` : Browser icons (favicons, manifest icons, etc)
  * `/images/` : Picture related assets
  * `/resume.pdf` : Resume document
  * `/robots.txt` : For web crawlers
+ * `*` : Anything else gives a 404 page
 
  #### Built using [Gatsby](https://www.gatsbyjs.org/)

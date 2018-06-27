@@ -12,11 +12,17 @@ class BlogPostTemplate extends React.Component {
         return (
             <div id="content">
                 <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-                <h1>{post.frontmatter.title}</h1>
-                <p>{post.frontmatter.date}</p>
-                <div id="tags">
+                <div className="post-title heading">
+                    {post.frontmatter.title}
+                </div>
+                <div className="post-created">
+                    <i className="fa fa-clock-o" aria-hidden="true" />
+                    &nbsp;&nbsp;
+                    {`Published on ${post.frontmatter.date}`}
+                </div>
+                <div className="post-tags">
                     {post.frontmatter.tags.map(tag => (
-                        <div key={tag} id="tag">
+                        <div key={tag} className="post-tag">
                             <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
                         </div>
                     ))}
