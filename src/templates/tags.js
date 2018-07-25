@@ -8,15 +8,10 @@ class Tags extends React.Component {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
         const tag = get(this, 'props.pathContext.tag');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
-        const totalCount = get(this, 'props.data.allMarkdownRemark.totalCount');
-        const tagHeader = `${totalCount} post${
-            totalCount === 1 ? '' : 's'
-        } tagged with "${tag}"`;
 
         return (
             <div id="content">
                 <Helmet title={`Posts with tag: '${tag}' | ${siteTitle}`} />
-                <h1>{tagHeader}</h1>
                 <PostPreview posts={posts} />
             </div>
         );
