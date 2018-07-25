@@ -21,6 +21,7 @@ class Template extends React.Component {
                     this.setState({
                         theme: storedState.theme,
                     });
+                    this.setBodyClass(`${storedState.theme}-bg`);
                 }
             }
         } catch (e) {
@@ -64,6 +65,7 @@ class Template extends React.Component {
         this.setState({
             theme: newtheme,
         });
+        this.setBodyClass(`${newtheme}-bg`);
     };
 
     unsetFirstLoadHandler = () => {
@@ -71,6 +73,12 @@ class Template extends React.Component {
             firstLoad: false,
         });
     };
+
+    // A bit hacky, but only required for browsers in Mac for not looking
+    // ugly while scrolling past the visible region, so don't fret
+    setBodyClass = name => {
+        document.body.className = name;
+    }
 }
 
 export default Template;

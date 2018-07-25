@@ -7,6 +7,14 @@ html, body, #___gatsby {
     font-family: $fontname;
 }
 
+.dark-bg {
+    background: $fulldark;
+}
+
+.light-bg {
+    background: $fulllight;
+}
+
 #top-container {
     min-height: 100%;
 }
