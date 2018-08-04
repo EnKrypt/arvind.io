@@ -11,42 +11,51 @@ class BlogPostTemplate extends React.Component {
 
         return (
             <div id="content">
-                <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-                <div className="post-title heading">
-                    {post.frontmatter.title}
-                </div>
-                <div className="post-created">
-                    <i className="fa fa-clock-o" aria-hidden="true" />
-                    &nbsp;&nbsp;
-                    {`Published on ${post.frontmatter.date}`}
-                </div>
-                <div className="post-tags">
-                    {post.frontmatter.tags.map(tag => (
-                        <div key={tag} className="post-tag">
-                            <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
-                        </div>
-                    ))}
-                </div>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <hr />
+                <div className="post">
+                    <Helmet
+                        title={`${post.frontmatter.title} | ${siteTitle}`}
+                    />
+                    <div className="post-title heading">
+                        {post.frontmatter.title}
+                    </div>
+                    <div className="post-created">
+                        <i className="fa fa-clock-o" aria-hidden="true" />
+                        &nbsp;&nbsp;
+                        {`Published on ${post.frontmatter.date}`}
+                    </div>
+                    <div className="post-tags">
+                        {post.frontmatter.tags.map(tag => (
+                            <div key={tag} className="post-tag">
+                                <Link to={`/tags/${kebabCase(tag)}`}>
+                                    {tag}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                    <div
+                        className="post-content"
+                        dangerouslySetInnerHTML={{ __html: post.html }}
+                    />
+                    <hr />
 
-                <ul>
-                    {previous && (
-                        <li>
-                            <Link to={previous.fields.slug} rel="prev">
-                                ← {previous.frontmatter.title}
-                            </Link>
-                        </li>
-                    )}
+                    <ul>
+                        {previous && (
+                            <li>
+                                <Link to={previous.fields.slug} rel="prev">
+                                    ← {previous.frontmatter.title}
+                                </Link>
+                            </li>
+                        )}
 
-                    {next && (
-                        <li>
-                            <Link to={next.fields.slug} rel="next">
-                                {next.frontmatter.title} →
-                            </Link>
-                        </li>
-                    )}
-                </ul>
+                        {next && (
+                            <li>
+                                <Link to={next.fields.slug} rel="next">
+                                    {next.frontmatter.title} →
+                                </Link>
+                            </li>
+                        )}
+                    </ul>
+                </div>
             </div>
         );
     }
@@ -68,7 +77,7 @@ export const pageQuery = graphql`
             frontmatter {
                 title
                 tags
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD MMMM, YYYY")
             }
         }
     }

@@ -1,7 +1,9 @@
 @import '../styles/fontfaces';
 @import '../styles/theme';
 
-html, body, #___gatsby {
+html,
+body,
+#___gatsby {
     height: 100%;
     margin: 0;
     font-family: $fontname;
@@ -17,6 +19,13 @@ html, body, #___gatsby {
 
 #top-container {
     min-height: 100%;
+}
+
+.bg-underlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
 }
 
 // Global styling for some common classes in this project
@@ -40,8 +49,11 @@ html, body, #___gatsby {
 }
 
 .dark {
-    background: $darkbg;
     color: $darktext;
+
+    .bg-underlay {
+        background: $darkbg;
+    }
 
     a {
         color: $darklinktext;
@@ -53,8 +65,11 @@ html, body, #___gatsby {
 }
 
 .light {
-    background: $lightbg;
-    color:$lighttext;
+    color: $lighttext;
+
+    .bg-underlay {
+        background: $lightbg;
+    }
 
     a {
         color: $lightlinktext;
@@ -85,7 +100,8 @@ html, body, #___gatsby {
     }
 }
 
-.post-created, .post-tags {
+.post-created,
+.post-tags {
     color: $dimtext;
     padding-bottom: 2em;
 }

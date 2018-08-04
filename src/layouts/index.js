@@ -46,6 +46,7 @@ class Template extends React.Component {
     render() {
         return (
             <div id="top-container" className={this.state.theme}>
+                <div className="bg-underlay" />
                 <Navbar
                     firstLoad={this.state.firstLoad}
                     theme={this.state.theme}
@@ -78,7 +79,7 @@ class Template extends React.Component {
     // ugly while scrolling past the visible region, so don't fret
     setBodyClass = name => {
         document.body.className = name;
-    }
+    };
 }
 
 export default Template;
