@@ -1,0 +1,54 @@
+@import '../styles/theme';
+
+// Styles within the blog post content
+
+.post-content {
+    code {
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 0.7em;
+        border-radius: 3px;
+        font-family: 'Hack';
+    }
+
+    // Disclaimers, subtext, or footer
+    h5 {
+        color: $dimtext;
+        font-weight: normal;
+        font-size: 0.7em;
+    }
+
+    blockquote {
+        font-style: italic;
+        color: #b08060;
+        border-left: 10px solid;
+        margin: 1em;
+        padding: 0.5em;
+        quotes: '\201C' '\201D' '\2018' '\2019';
+
+        p {
+            display: inline;
+        }
+    }
+    blockquote:before {
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+}
+
+// Dark theme specific styles
+.dark .post-content {
+    code {
+        background: $staticdarkerbg;
+    }
+}
+
+// Light theme specific styles
+.light .post-content {
+    code {
+        background: $staticlighterbg;
+    }
+}

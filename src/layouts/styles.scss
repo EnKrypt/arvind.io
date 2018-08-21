@@ -100,10 +100,14 @@ body,
     }
 }
 
-.post-created,
-.post-tags {
-    color: $dimtext;
+.post-created {
     padding-bottom: 2em;
+    color: $dimtext;
+}
+
+.post-tags {
+    padding-bottom: 1em;
+    color: $dimtext;
 }
 
 .post-tag {

@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import { get, kebabCase } from 'lodash';
 
+import './content.scss'
+
 class BlogPostTemplate extends React.Component {
     render() {
         const post = this.props.data.markdownRemark;
