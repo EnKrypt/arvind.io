@@ -14,13 +14,19 @@
         color: $theme;
     }
 
-    #sitename {
+    #sitename,
+    #interim-one,
+    #interim-two,
+    #interim-three {
         display: none;
         width: 0;
     }
 
     #sitename,
-    #fullname {
+    #fullname,
+    #interim-one,
+    #interim-two,
+    #interim-three {
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
