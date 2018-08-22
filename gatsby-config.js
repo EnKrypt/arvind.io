@@ -6,6 +6,7 @@ module.exports = {
         author: config.AUTHOR,
         description: config.DESCRIPTION,
         siteUrl: config.URL,
+        disqusId: config.DISQUSSHORTNAME,
     },
     plugins: [
         {

@@ -1,6 +1,7 @@
 ## Development itinerary
 ---
 
+* Favicons
 * Develop final sidebar layout
 * Pagination for `PostPreview` list view
 * Configure social media comments and sharing via [disquss](https://enkrypt.disqus.com/admin/install/platforms/universalcode/)

@@ -67,6 +67,12 @@ class Template extends React.Component {
             theme: newtheme,
         });
         this.setBodyClass(`${newtheme}-bg`);
+        // Refresh the Disqus plugin so that it matches the new theme
+        if (window.DISQUS) {
+            window.DISQUS.reset({
+                reload: true,
+            });
+        }
     };
 
     unsetFirstLoadHandler = () => {

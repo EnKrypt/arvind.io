@@ -10,8 +10,8 @@
  ### This is the source code for my blog and personal website
 
  This project is not intended to be repurposed. \
- However, if you're a cute little gosh darn stubborn cunt and plan to rip this off anyway, set up a `.env` file at the root of the project with the required environment variables specific to your deployment, such as the site URL, Google Analytics tracking ID, and so on. Refer to [`config.js`](https://github.com/EnKrypt/arvind.io/blob/master/config.js). \
- If you're actually skimming through the code here, I admire your determination to fit square pegs in round holes. I bet you also hate ice cream and eat pizza with pineapple on it, you fucking psychopath.
+ However, if you're a cute little gosh darn stubborn cunt and plan to rip this off anyway, set up a `.env` file at the root of the project with the required environment variables specific to your deployment, such as the site URL, Google Analytics tracking ID, Disqus shortname, and so on. Refer to [`config.js`](https://github.com/EnKrypt/arvind.io/blob/master/config.js). \
+ If you're actually skimming through the code here, I admire your determination to fit square pegs in round holes. I bet you also hate ice cream and like pizza with pineapple on it, you fucking psychopath.
 
  ### Site map
 

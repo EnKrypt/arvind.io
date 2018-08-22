@@ -5,6 +5,7 @@
     "private": true,
     "author": "Arvind Kumar",
     "dependencies": {
+        "disqus-react": "^1.0.5",
         "dotenv-cli": "^1.4.0",
         "font-awesome": "^4.7.0",
         "gatsby": "^1.9.250",

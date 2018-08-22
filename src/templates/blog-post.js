@@ -1,9 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import { DiscussionEmbed } from 'disqus-react';
 import { get, kebabCase } from 'lodash';
 
-import './content.scss'
+import './content.scss';
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -39,7 +40,6 @@ class BlogPostTemplate extends React.Component {
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     />
                     <hr />
-
                     <ul>
                         {previous && (
                             <li>
@@ -57,6 +57,16 @@ class BlogPostTemplate extends React.Component {
                             </li>
                         )}
                     </ul>
+                    <DiscussionEmbed
+                        shortname={this.props.data.site.siteMetadata.disqusId}
+                        config={{
+                            title: post.frontmatter.title,
+                            identifier: post.id,
+                            url: `${post.fields.slug}${
+                                this.props.data.site.siteMetadata.siteUrl
+                            }`,
+                        }}
+                    />
                 </div>
             </div>
         );
@@ -71,11 +81,16 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 author
+                disqusId
+                siteUrl
             }
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             html
+            fields {
+                slug
+            }
             frontmatter {
                 title
                 tags
