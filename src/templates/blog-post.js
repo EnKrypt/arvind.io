@@ -62,8 +62,8 @@ class BlogPostTemplate extends React.Component {
                         config={{
                             title: post.frontmatter.title,
                             identifier: post.id,
-                            url: `${post.fields.slug}${
-                                this.props.data.site.siteMetadata.siteUrl
+                            url: `${this.props.data.site.siteMetadata.siteUrl}${
+                                post.fields.slug
                             }`,
                         }}
                     />

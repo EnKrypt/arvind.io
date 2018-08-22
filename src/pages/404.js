@@ -29,6 +29,7 @@ class NotFound extends React.Component {
 
     render() {
         const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+        const email = get(this.props, 'data.site.siteMetadata.email');
         const path = this.props.location.pathname;
 
         return (
@@ -55,13 +56,11 @@ class NotFound extends React.Component {
                             .join(' ')
                             .trim()}
                     >
-                        <span className="theme">4</span>0<span className="theme">
-                            4
-                        </span>
+                        <span className="theme">4</span>0
+                        <span className="theme">4</span>
                     </span>
-                    <span className="theme">4</span>0<span className="theme">
-                        4
-                    </span>
+                    <span className="theme">4</span>0
+                    <span className="theme">4</span>
                     <span
                         className={[
                             'glitchafter',
@@ -70,9 +69,8 @@ class NotFound extends React.Component {
                             .join(' ')
                             .trim()}
                     >
-                        <span className="theme">4</span>0<span className="theme">
-                            4
-                        </span>
+                        <span className="theme">4</span>0
+                        <span className="theme">4</span>
                     </span>
                 </div>
                 <br />
@@ -137,8 +135,7 @@ class NotFound extends React.Component {
                 {(path && path.length < 50 ? path : 'That') +
                     ' is not a valid location on here'}
                 <br />
-                You may write to{' '}
-                <a href="mailto:mail@arvind.io">mail@arvind.io</a> if you
+                You may write to <a href={`mailto:${email}`}>{email}</a> if you
                 believe this is unintended
                 <br />
                 <br />
@@ -187,6 +184,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                email
             }
         }
     }

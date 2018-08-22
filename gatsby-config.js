@@ -4,6 +4,7 @@ module.exports = {
     siteMetadata: {
         title: config.TITLE,
         author: config.AUTHOR,
+        email: config.EMAIL,
         description: config.DESCRIPTION,
         siteUrl: config.URL,
         disqusId: config.DISQUSSHORTNAME,

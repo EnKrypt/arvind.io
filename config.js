@@ -13,6 +13,7 @@ module.exports = {
     TITLE: process.env.TITLE || noConfig('TITLE'), // Required
     AUTHOR: process.env.AUTHOR || noConfig('AUTHOR'), // Required
     URL: process.env.URL || noConfig('URL'), // Required
+    EMAIL: process.env.EMAIL || noConfig('EMAIL'), // Required
     DESCRIPTION: process.env.DESCRIPTION || noConfig('DESCRIPTION'), // Required
     GATRACKINGID: process.env.GATRACKINGID || noConfig('GATRACKINGID'), // Required
     DISQUSSHORTNAME: process.env.DISQUSSHORTNAME || noConfig('DISQUSSHORTNAME'), // Required
