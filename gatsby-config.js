@@ -40,6 +40,18 @@ module.exports = {
                 ],
             },
         },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: config.TITLE,
+                short_name: config.TITLE,
+                start_url: '/',
+                background_color: '#202020',
+                theme_color: '#0094ff',
+                display: 'standalone',
+                icon: 'static/images/logo-icon.png', // This path is relative to the root of the site.
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {

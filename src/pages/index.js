@@ -2,15 +2,23 @@ import React from 'react';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import PostPreview from '../components/PostPreview';
+import Meta from '../components/Meta';
 
 class BlogIndex extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+        const siteAuthor = get(this, 'props.data.site.siteMetadata.author');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
         return (
             <div id="content">
-                <Helmet title={`Arvind Kumar | ${siteTitle}`} />
+                <Helmet title={`${siteAuthor} | ${siteTitle}`} />
+                <Meta
+                    metadata={{
+                        ...this.props.data.site.siteMetadata,
+                        title: `${siteAuthor} | ${siteTitle}`,
+                    }}
+                />
                 <PostPreview posts={posts} />
             </div>
         );
@@ -23,7 +31,9 @@ export const pageQuery = graphql`
     query IndexQuery {
         site {
             siteMetadata {
+                author
                 title
+                description
             }
         }
         allMarkdownRemark(

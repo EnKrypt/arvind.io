@@ -2,6 +2,7 @@ import React from 'react';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import PostPreview from '../components/PostPreview';
+import Meta from '../components/Meta';
 
 class Tags extends React.Component {
     render() {
@@ -12,6 +13,12 @@ class Tags extends React.Component {
         return (
             <div id="content">
                 <Helmet title={`Posts with tag: '${tag}' | ${siteTitle}`} />
+                <Meta
+                    metadata={{
+                        ...this.props.data.site.siteMetadata,
+                        title: `Posts with tag: '${tag}' | ${siteTitle}`
+                    }}
+                />
                 <PostPreview posts={posts} />
             </div>
         );
@@ -25,6 +32,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
             }
         }
         allMarkdownRemark(

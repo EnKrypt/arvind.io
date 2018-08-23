@@ -2,6 +2,7 @@
 title: The Hackathon Circlejerk
 tags: ["hackathon", "programming", "rant", "technology"]
 date: "2016-06-25T00:00:00.000Z"
+key: "the-hackathon-circlejerk"
 ---
 Just like any other competitive activity that exists for students, like sports, or Model UN, hackathons too have their own little culture going. I know this by [having attended plenty of these](https://docs.google.com/document/d/1xRVgPUirFY9QNeKzdPKfi6RQtCG7YmtUJ4oeDSJ1Ols/edit) to predict that in the next hackathon I go to, I'm almost sure I'll run into someone I've met at a hackathon before. \
 However, I'm not convinced that's a good thing. For the sake of all students out there who still have the inspiration to get something meaningful done in their life, I sure as hell hope this doesn't become the next big trend among them unless the way hackathons work start to change, and I'm more than happy to explain why. Let this be a comprehensive guide to hackathons and what's currently wrong with them. \

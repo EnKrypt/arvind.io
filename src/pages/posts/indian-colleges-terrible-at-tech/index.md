@@ -2,6 +2,7 @@
 title: Indian engineering colleges are terrible at approaching technology
 tags: ["education", "India", "rant", "technology"]
 date: "2015-08-31T00:00:00.000Z"
+key: "indian-colleges-terrible-at-tech"
 ---
 
 You might remember the good old [Turbo C++](https://en.wikipedia.org/wiki/Turbo_C%2B%2B) IDE from your common engineering classes. While the nostalgia inducing GUI can look like a smurf threw up pixels on your screen, there are actual reasons why you'll never see a qualified programmer use something that almost literally resembles a makeshift [BSoD](https://en.wikipedia.org/wiki/Blue_Screen_of_Death).

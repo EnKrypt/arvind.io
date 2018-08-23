@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/enkrypt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://arvind.io
+  * I am enkrypt (https://keybase.io/enkrypt) on keybase.
+  * I have a public key with fingerprint FC47 120B F2D9 0588 4EEC  F1ED D159 A451 4E28 25C1
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101642faa58e2f57dc65f7e849ba24c37dae721731d3df8b9bfbe712172803852670a",
+      "fingerprint": "fc47120bf2d905884eecf1edd159a4514e2825c1",
+      "host": "keybase.io",
+      "key_id": "d159a4514e2825c1",
+      "kid": "0101642faa58e2f57dc65f7e849ba24c37dae721731d3df8b9bfbe712172803852670a",
+      "uid": "16a6cc4ee90248ad5b15aff9b46acd19",
+      "username": "enkrypt"
+    },
+    "service": {
+      "hostname": "arvind.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1513149084,
+  "expire_in": 157680000,
+  "prev": "0232fab479f566309fc40dda1582ddfc07bdcdb90302561a04b1a9e236a98ecc",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIdAnicrVJbSBVBGD7e8Zh4CCIkg1h8KU129r4rRWSFFYkEdiM4zezM6qbtHs+u
+mohKt5OZYicfpCgSI6W3UDAzgtICweiG2otFFy1f0qyMKNFmzd56bF6G+fi+b77/
+m3mYGufzxyR9WRdpjy+ciRl+0FrhO8S+uFLDIBtXM1oNU0qWNlKGieMGS03MaAwL
+WCAJnAGhqBDOEGWsS6IhE0VQEeQEnZcxJDIHZB5gHhsKUpGBiAwowiksr4icJLOQ
+yWYM0yom4VDYtFxqa+gC5bDI4LDKiooiEKIbgGAMRBUKIhAIp3CiDqiwxHY8BQ2H
+oENyTJti9BBcivcP/n/OXbFkByQo6TpNqbKcoEAsIiBCw1CRIEEdA9UjOiRswWOE
+solVGq4OuUxtNkPBSlMnXq/eIMsESEEL/5klFLZdW7fLKFziuiFH82RudcjjVREU
+XHYIIqqgHVJFJQk7pm0xGqBM3TU9SyACHggqqwjZDDkeMsMkaHoMUZYUli7vHlLp
+FcPxtBUkyKohShLPqvQpWIwhEBUOY0NnZYR1jFSWZzlRApAVEIAq4XgJqgrRdcab
+qdyyGU2iMWExtXTMYgu6FWHC1A7cPxzvi/H7EhNivb/l8ycH/v445kjSYrH/594t
+85fGC/ouZy7u6CjrtiPlIx8mr/seo4KNgcEz2wPNL9fkryiMzPcNzk5Nj1dtet0e
+eRe3EJnuWfwa25o8d+CjOPGqtzk1xx8tuLFz4rTmtmiWEO1vcO9k7Bm73tleFn2S
+silBmtXO9XSef3RjpDW6vzt5//PcxmejKzfkXXNzd3X2t85MdXUFhz53jO6eDBbV
+v11LlNSDRV31s1bDvR9O1qqzM4mp70/lzweaVq9Pa8uomyu50CSRhcyB2W/MrYSW
+jdF9wcBwevzVrO6jyWNt26SUuYF6/e6njEb/ic29Ue1p3q+mi+knqzr6biZ9H4oY
+U2/SZDJyGzl1W38DvN1Cbw==
+=iLnX
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/enkrypt
+
+==================================================================

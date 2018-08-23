@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import { DiscussionEmbed } from 'disqus-react';
 import { get, kebabCase } from 'lodash';
+import Meta from '../components/Meta';
 
 import './content.scss';
 
@@ -17,6 +18,14 @@ class BlogPostTemplate extends React.Component {
                 <div className="post">
                     <Helmet
                         title={`${post.frontmatter.title} | ${siteTitle}`}
+                    />
+                    <Meta
+                        metadata={{
+                            ...this.props.data.site.siteMetadata,
+                            title: `${post.frontmatter.title} | ${siteTitle}`,
+                            description: post.excerpt,
+                            image: `/images/previews/${post.frontmatter.key}.png`
+                        }}
                     />
                     <div className="post-title heading">
                         {post.frontmatter.title}
@@ -80,7 +89,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
-                author
+                description
                 disqusId
                 siteUrl
             }
@@ -88,6 +97,7 @@ export const pageQuery = graphql`
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             html
+            excerpt(pruneLength: 200)
             fields {
                 slug
             }
@@ -95,6 +105,7 @@ export const pageQuery = graphql`
                 title
                 tags
                 date(formatString: "DD MMMM, YYYY")
+                key
             }
         }
     }

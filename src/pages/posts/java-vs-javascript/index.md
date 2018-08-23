@@ -2,6 +2,7 @@
 title: Java vs Javascript
 tags: ["comparison", "guide", "programming", "technology"]
 date: "2015-11-23T00:00:00.000Z"
+key: "java-vs-javascript"
 ---
 
 Yesterday wouldn't be the first time an aspiring programmer walked up to someone experienced and asked, "So what does JavaScript have to do with Java?"

@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
+import Meta from '../components/Meta';
 import '../styles/404.scss';
 
 class NotFound extends React.Component {
@@ -38,6 +39,7 @@ class NotFound extends React.Component {
         return (
             <div id="notfound">
                 <Helmet title={`Not Found | ${siteTitle}`} />
+                <Meta metadata={this.props.data.site.siteMetadata} />
                 <br />
                 <img
                     id="notfoundimage"
@@ -188,6 +190,7 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 email
+                description
             }
         }
     }

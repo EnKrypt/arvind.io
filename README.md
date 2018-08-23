@@ -22,6 +22,7 @@
  * `/images/` : Picture related assets
  * `/resume.pdf` : Resume document
  * `/robots.txt` : For web crawlers
+ * `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)
  * `*` : Anything else gives a 404 page
 
  #### Built using [Gatsby](https://www.gatsbyjs.org/)

@@ -15,6 +15,7 @@ class Template extends React.Component {
     componentWillMount() {
         try {
             const storedState = JSON.parse(localStorage.getItem('state'));
+            this.setBodyClass(`${this.state.theme}-bg`);
             if (storedState) {
                 this.unsetFirstLoadHandler();
                 if (storedState.hasOwnProperty('theme')) {
