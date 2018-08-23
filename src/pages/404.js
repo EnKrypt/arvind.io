@@ -30,7 +30,10 @@ class NotFound extends React.Component {
     render() {
         const siteTitle = get(this.props, 'data.site.siteMetadata.title');
         const email = get(this.props, 'data.site.siteMetadata.email');
-        const path = this.props.location.pathname;
+        let path = this.props.location.pathname;
+        if (typeof window !== 'undefined') {
+            path = window.location.pathname;
+        }
 
         return (
             <div id="notfound">
