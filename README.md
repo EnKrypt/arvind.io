@@ -2,6 +2,7 @@
 
 
 [![License](https://img.shields.io/github/license/EnKrypt/arvind.io.svg)](https://raw.githubusercontent.com/EnKrypt/arvind.io/master/LICENSE)
+[![Build-master](https://img.shields.io/travis/EnKrypt/arvind.io/master.svg)](https://travis-ci.org/EnKrypt/arvind.io)
 
  ## [arvind.io](https://arvind.io)
 
