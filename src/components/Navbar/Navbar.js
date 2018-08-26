@@ -101,7 +101,7 @@ class Navbar extends React.Component {
             >
                 <Sidebar />
                 <div id="fullname">
-                    <a href="https://arvind.io" className="naturalLink">
+                    <a href="/" className="naturalLink">
                         <span id="firstname">arvind </span>
                         <span id="lastname">kumar</span>
                     </a>

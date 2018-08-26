@@ -11,6 +11,7 @@ class Sidebar extends React.Component {
         // default state values
         this.state = {
             show: false,
+            dpHover: false,
         };
     }
 
@@ -47,29 +48,45 @@ class Sidebar extends React.Component {
                     id="sidebar"
                     className={this.state.show ? '' : 'hidesidebar'}
                 >
-                    <div id="sidebardp">
-                        <InlineLogo />
+                    <br />
+                    <div className="dpcontainer" onMouseEnter={this.toggleShowDp} onMouseLeave={this.toggleShowDp}>
+                        <div
+                            id="sidebardp"
+                            className={this.state.dpHover ? 'fade-out' : ''}
+                        >
+                            <InlineLogo />
+                        </div>
+                        <div
+                            id="actualdp"
+                            className={this.state.dpHover ? 'fade-in' : ''}
+                        >
+                            <img src="/images/dp.jpg" />
+                        </div>
+                    </div>
+                    <br />
+                    <div className="sidebartext">
+                        Hi, I'm Arvind Kumar. <br />I am a developer, a musician
+                        and an amateur astronomer. <br />
+                        If you want to get in touch, <br />
+                        <a href="mailto:mail@arvind.io">send me an email</a>.
                     </div>
                     <br />
                     <SidebarLink to="/" external={false} alt={true}>
                         Home
                     </SidebarLink>
-                    <SidebarLink to="/about" external={false}>
-                        About
-                    </SidebarLink>
-                    <SidebarLink to="/resume.pdf" external={true} alt={true}>
+                    <SidebarLink to="/resume.pdf" external={true}>
                         Resume
                     </SidebarLink>
                     <SidebarLink
                         to="https://keybase.io/enkrypt"
                         external={true}
+                        alt={true}
                     >
-                        Contact
+                        Keybase
                     </SidebarLink>
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
-                        alt={true}
                     >
                         Source
                     </SidebarLink>
@@ -81,6 +98,12 @@ class Sidebar extends React.Component {
     toggleSidebar = () => {
         this.setState({
             show: !this.state.show,
+        });
+    };
+
+    toggleShowDp = () => {
+        this.setState({
+            dpHover: !this.state.dpHover,
         });
     };
 }
