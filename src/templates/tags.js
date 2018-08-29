@@ -3,6 +3,7 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import PostPreview from '../components/PostPreview';
 import Meta from '../components/Meta';
+import PageNavigation from '../components/PageNavigation';
 
 class Tags extends React.Component {
     render() {
@@ -19,7 +20,9 @@ class Tags extends React.Component {
                         title: `Posts with tag: '${tag}' | ${siteTitle}`
                     }}
                 />
-                <PostPreview posts={posts} />
+                <PageNavigation context={this.props.pathContext}>
+                    <PostPreview posts={posts} />
+                </PageNavigation>
             </div>
         );
     }
@@ -28,7 +31,7 @@ class Tags extends React.Component {
 export default Tags;
 
 export const pageQuery = graphql`
-    query TagPage($tag: String) {
+    query TagPage($tag: String, $skip: Int, $limit: Int) {
         site {
             siteMetadata {
                 title
@@ -36,11 +39,11 @@ export const pageQuery = graphql`
             }
         }
         allMarkdownRemark(
-            limit: 10
-            sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { tags: { in: [$tag] } } }
+            limit: $limit
+            skip: $skip
+            sort: { fields: [frontmatter___date], order: DESC }
         ) {
-            totalCount
             edges {
                 node {
                     excerpt(pruneLength: 300)
@@ -50,6 +53,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         tags
+                        date(formatString: "DD MMMM, YYYY")
                     }
                 }
             }

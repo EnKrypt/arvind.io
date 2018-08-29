@@ -16,9 +16,11 @@
 
  ### Site map
 
- * `/` : Blog Post Index/List
+ * `/` : Root of Blog Post Index/List
+ * `/page/<index>` : Blog Post Index/List at page
  * `/posts/<title>` : Individual Blog Post
- * `/tags/<tag>` : Blog Post Index/List having particular tag
+ * `/tags/<tag>` : Root of Blog Post Index/List having particular tag
+ * `/tags/<tag>/page/<index>` : Blog Post Index/List having particular tag at page
  * `/icons/` : Browser icons (favicons, manifest icons, etc)
  * `/images/` : Picture related assets
  * `/resume.pdf` : Resume document

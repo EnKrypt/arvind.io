@@ -24,7 +24,9 @@ class BlogPostTemplate extends React.Component {
                             ...this.props.data.site.siteMetadata,
                             title: `${post.frontmatter.title} | ${siteTitle}`,
                             description: post.excerpt,
-                            image: `/images/previews/${post.frontmatter.key}.png`
+                            image: `/images/previews/${
+                                post.frontmatter.key
+                            }.png`,
                         }}
                     />
                     <div className="post-title heading">
@@ -49,23 +51,21 @@ class BlogPostTemplate extends React.Component {
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     />
                     <hr />
-                    <ul>
-                        {previous && (
-                            <li>
-                                <Link to={previous.fields.slug} rel="prev">
-                                    ← {previous.frontmatter.title}
-                                </Link>
-                            </li>
-                        )}
-
-                        {next && (
-                            <li>
-                                <Link to={next.fields.slug} rel="next">
-                                    {next.frontmatter.title} →
-                                </Link>
-                            </li>
-                        )}
-                    </ul>
+                    {previous && (
+                        <span className="prev-post-link">
+                            <Link to={previous.fields.slug} rel="prev">
+                                ← {previous.frontmatter.title}
+                            </Link>
+                        </span>
+                    )}
+                    {next && (
+                        <span className="next-post-link">
+                            <Link to={next.fields.slug} rel="next">
+                                {next.frontmatter.title} →
+                            </Link>
+                        </span>
+                    )}
+                    <hr className="float-clear" />
                     <DiscussionEmbed
                         shortname={this.props.data.site.siteMetadata.disqusId}
                         config={{

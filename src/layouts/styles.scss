@@ -84,6 +84,10 @@ body,
     display: none;
 }
 
+.float-clear {
+    clear: both;
+}
+
 // Blog Post common styling
 
 .post {
@@ -126,6 +130,17 @@ body,
 .post-content {
     font-family: 'EB Garamond';
     font-size: 1.5em;
+}
+
+.prev-post-link,
+.next-post-link {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+.next-post-link {
+    float: right;
 }
 
 @media (max-width: 768px) {

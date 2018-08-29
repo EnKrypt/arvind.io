@@ -3,13 +3,13 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import PostPreview from '../components/PostPreview';
 import Meta from '../components/Meta';
+import PageNavigation from '../components/PageNavigation';
 
 class BlogIndex extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
         const siteAuthor = get(this, 'props.data.site.siteMetadata.author');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
-
         return (
             <div id="content">
                 <Helmet title={`${siteAuthor} | ${siteTitle}`} />
@@ -19,7 +19,9 @@ class BlogIndex extends React.Component {
                         title: `${siteAuthor} | ${siteTitle}`,
                     }}
                 />
-                <PostPreview posts={posts} />
+                <PageNavigation context={this.props.pathContext}>
+                    <PostPreview posts={posts} />
+                </PageNavigation>
             </div>
         );
     }
@@ -28,7 +30,7 @@ class BlogIndex extends React.Component {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-    query IndexQuery {
+    query IndexQuery($skip: Int, $limit: Int) {
         site {
             siteMetadata {
                 author
@@ -37,7 +39,8 @@ export const pageQuery = graphql`
             }
         }
         allMarkdownRemark(
-            limit: 10
+            limit: $limit
+            skip: $skip
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
