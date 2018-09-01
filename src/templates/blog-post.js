@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import { DiscussionEmbed } from 'disqus-react';
 import { get, kebabCase } from 'lodash';
 import Meta from '../components/Meta';
+import PostMatter from '../components/PostMatter';
 
 import './content.scss';
 
@@ -15,7 +16,7 @@ class BlogPostTemplate extends React.Component {
 
         return (
             <div id="content">
-                <div className="post">
+                <div className="post expanded">
                     <Helmet
                         title={`${post.frontmatter.title} | ${siteTitle}`}
                     />
@@ -29,43 +30,55 @@ class BlogPostTemplate extends React.Component {
                             }.png`,
                         }}
                     />
-                    <div className="post-title heading">
-                        {post.frontmatter.title}
-                    </div>
-                    <div className="post-created">
-                        <i className="fa fa-clock-o" aria-hidden="true" />
-                        &nbsp;&nbsp;
-                        {`Published on ${post.frontmatter.date}`}
-                    </div>
-                    <div className="post-tags">
-                        {post.frontmatter.tags.map(tag => (
-                            <div key={tag} className="post-tag">
-                                <Link to={`/tags/${kebabCase(tag)}`}>
-                                    {tag}
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
+                    <PostMatter
+                        zoomed={true}
+                        slug={post.fields.slug}
+                        post={post.frontmatter}
+                    />
                     <div
                         className="post-content"
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     />
-                    <hr />
-                    {previous && (
-                        <span className="prev-post-link">
-                            <Link to={previous.fields.slug} rel="prev">
-                                ← {previous.frontmatter.title}
-                            </Link>
-                        </span>
-                    )}
+                    <br />
+                    <br />
                     {next && (
-                        <span className="next-post-link">
+                        <div className="next-post">
                             <Link to={next.fields.slug} rel="next">
-                                {next.frontmatter.title} →
+                                <img
+                                    className="next-post-image"
+                                    src={`/images/previews/${
+                                        next.frontmatter.key
+                                    }.png`}
+                                />
+                                <div className="next-post-link">
+                                    <div className="post-link-subtext">
+                                        Next Post →
+                                    </div>
+                                    {next.frontmatter.title}
+                                </div>
                             </Link>
-                        </span>
+                        </div>
                     )}
-                    <hr className="float-clear" />
+                    {previous && (
+                        <div className="prev-post">
+                            <Link to={previous.fields.slug} rel="prev">
+                                <img
+                                    className="prev-post-image"
+                                    src={`/images/previews/${
+                                        previous.frontmatter.key
+                                    }.png`}
+                                />
+                                <div className="prev-post-link">
+                                    <div className="post-link-subtext">
+                                        ← Previous post
+                                    </div>
+                                    {previous.frontmatter.title}
+                                </div>
+                            </Link>
+                        </div>
+                    )}
+                    <br />
+                    <br />
                     <DiscussionEmbed
                         shortname={this.props.data.site.siteMetadata.disqusId}
                         config={{

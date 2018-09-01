@@ -10,9 +10,18 @@ class SidebarLink extends React.Component {
                     .trim()}
             >
                 {this.props.external ? (
-                    <a href={this.props.to} target="_blank" rel="noopener noreferrer">{this.props.children}</a>
+                    <a
+                        href={this.props.to}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={this.props.clickHandler}
+                    >
+                        {this.props.children}
+                    </a>
                 ) : (
-                    <Link to={this.props.to}>{this.props.children}</Link>
+                    <Link to={this.props.to} onClick={this.props.clickHandler}>
+                        {this.props.children}
+                    </Link>
                 )}
             </div>
         );

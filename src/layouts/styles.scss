@@ -62,6 +62,11 @@ body,
     .post-tag a {
         color: $fulldark;
     }
+
+    .prev-post,
+    .next-post {
+        background: $fulldark;
+    }
 }
 
 .light {
@@ -78,6 +83,11 @@ body,
     .post-tag a {
         color: $fulllight;
     }
+
+    .prev-post,
+    .next-post {
+        background: $fulllight;
+    }
 }
 
 .hide {
@@ -92,6 +102,53 @@ body,
 
 .post {
     padding: 2em 0em;
+}
+
+.post-matter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info {
+    margin-right: 1em;
+}
+
+.post-preview {
+    min-width: 12em;
+    max-width: 12em;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+        border-radius: 0.2em;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+        cursor: zoom-in;
+    }
+}
+
+.post-matter.zoomed {
+    flex-direction: column;
+
+    .post-preview {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 1em 0 2em 0;
+    }
+
+    img {
+        width: 35em;
+        margin: 0 auto;
+        cursor: zoom-out;
+    }
+}
+
+.expanded {
+    .post-matter.zoomed {
+        img {
+            width: 45em;
+        }
+    }
 }
 
 .post-title {
@@ -132,15 +189,39 @@ body,
     font-size: 1.5em;
 }
 
-.prev-post-link,
-.next-post-link {
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 0.5em 0;
+.prev-post,
+.next-post {
+    width: 20em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
-.next-post-link {
+.next-post {
     float: right;
+
+    .next-post-link {
+        text-align: right;
+    }
+}
+
+.prev-post-link,
+.next-post-link {
+    font-size: 1.25em;
+    padding: 0.5em;
+}
+
+.post-link-subtext {
+    color: $dimtext;
+    font-size: 0.96em;
 }
 
 @media (max-width: 768px) {
@@ -148,5 +229,43 @@ body,
         width: 100%;
         padding: 2.5em;
         box-sizing: border-box;
+    }
+
+    .post-matter,
+    .post-matter.zoomed {
+        flex-direction: column;
+
+        .post-preview {
+            min-width: 100%;
+            max-width: 100%;
+            margin: 0.5em 0 1em 0;
+        }
+
+        img {
+            width: 20em;
+            margin: 0 auto;
+            cursor: default;
+        }
+    }
+
+    .expanded {
+        .post-preview {
+            img {
+                width: 100%;
+            }
+        }
+        .post-matter.zoomed {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .next-post,
+    .prev-post {
+        float: none;
+        width: 23em;
+        margin: 0 auto;
+        margin-bottom: 2em;
     }
 }

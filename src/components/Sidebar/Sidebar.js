@@ -49,7 +49,11 @@ class Sidebar extends React.Component {
                     className={this.state.show ? '' : 'hidesidebar'}
                 >
                     <br />
-                    <div className="dpcontainer" onMouseEnter={this.toggleShowDp} onMouseLeave={this.toggleShowDp}>
+                    <div
+                        className="dpcontainer"
+                        onMouseEnter={this.toggleShowDp}
+                        onMouseLeave={this.toggleShowDp}
+                    >
                         <div
                             id="sidebardp"
                             className={this.state.dpHover ? 'fade-out' : ''}
@@ -71,22 +75,33 @@ class Sidebar extends React.Component {
                         <a href="mailto:mail@arvind.io">send me an email</a>.
                     </div>
                     <br />
-                    <SidebarLink to="/" external={false} alt={true}>
+                    <SidebarLink
+                        to="/"
+                        external={false}
+                        alt={true}
+                        clickHandler={this.toggleSidebar}
+                    >
                         Home
                     </SidebarLink>
-                    <SidebarLink to="/resume.pdf" external={true}>
+                    <SidebarLink
+                        to="/resume.pdf"
+                        external={true}
+                        clickHandler={this.toggleSidebar}
+                    >
                         Resume
                     </SidebarLink>
                     <SidebarLink
                         to="https://keybase.io/enkrypt"
                         external={true}
                         alt={true}
+                        clickHandler={this.toggleSidebar}
                     >
                         Keybase
                     </SidebarLink>
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
+                        clickHandler={this.toggleSidebar}
                     >
                         Source
                     </SidebarLink>
