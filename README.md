@@ -24,6 +24,7 @@
  * `/icons/` : Browser icons (favicons, manifest icons, etc)
  * `/images/` : Picture related assets
  * `/resume.pdf` : Resume document
+ * `/rss.xml` : RSS Feed for blog posts
  * `/robots.txt` : For web crawlers
  * `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)
  * `*` : Anything else gives a 404 page
