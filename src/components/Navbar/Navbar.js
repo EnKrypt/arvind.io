@@ -119,7 +119,14 @@ class Navbar extends React.Component {
                     <span id="firstname">arvind</span>
                     <span id="lastname">&#8202;.&#8202;io</span>
                 </div>
-                <div id="toggleTheme">
+                <div
+                    id="toggleTheme"
+                    onClick={() =>
+                        this.props.toggleTheme(
+                            this.reverseThemeName(this.props.theme)
+                        )
+                    }
+                >
                     <i
                         className={[
                             'fa fa-moon-o',
@@ -128,7 +135,6 @@ class Navbar extends React.Component {
                             .join(' ')
                             .trim()}
                         aria-hidden="true"
-                        onClick={this.props.toggleTheme.bind(this, 'dark')}
                     />
                     <i
                         className={[
@@ -138,11 +144,18 @@ class Navbar extends React.Component {
                             .join(' ')
                             .trim()}
                         aria-hidden="true"
-                        onClick={this.props.toggleTheme.bind(this, 'light')}
                     />
                 </div>
             </div>
         );
+    }
+
+    reverseThemeName(theme) {
+        if (theme == 'dark') {
+            return 'light';
+        } else {
+            return 'dark';
+        }
     }
 }
 

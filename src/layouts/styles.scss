@@ -30,6 +30,66 @@ body,
 
 // Global styling for some common classes in this project
 
+.hire-me {
+    padding: 2em 0;
+}
+
+.hire-para {
+    margin-bottom: 1em;
+}
+
+.green-text {
+    color: #50b050;
+}
+
+.red-text {
+    color: #c05050;
+}
+
+.form-group {
+    display: block;
+    max-width: 25em;
+    margin: 0 auto;
+    padding: 0.5em;
+
+    label {
+        display: block;
+        font-size: 0.8em;
+        padding-bottom: 0.25em;
+    }
+
+    .form-control {
+        width: 100%;
+        font-family: inherit;
+        font-size: 0.8em;
+        border: none;
+        outline: none;
+        padding: 0.5em;
+        border-radius: 0.25em;
+        line-height: 1.5;
+    }
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 0.75em;
+    width: 100%;
+    border: none;
+    border-radius: 0.25em;
+    outline: none;
+    background: $theme;
+    line-height: 1.5;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: $themedarker;
+}
+
+.btn:active {
+    margin-top: 0.3em;
+}
+
 #content {
     padding-top: 3.5em;
     width: 50em;
@@ -42,6 +102,10 @@ body,
 
 .bigtext {
     font-size: 1.25em;
+}
+
+.smaller-text {
+    font-size: 0.85em;
 }
 
 .naturalLink {
@@ -67,6 +131,16 @@ body,
     .next-post {
         background: $fulldark;
     }
+
+    .form-control {
+        background: $fulldark;
+        color: $darktext;
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+        color: $fulldark;
+    }
 }
 
 .light {
@@ -87,6 +161,16 @@ body,
     .prev-post,
     .next-post {
         background: $fulllight;
+    }
+
+    .form-control {
+        background: $fulllight;
+        color: $lighttext;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+        color: $fulllight;
     }
 }
 

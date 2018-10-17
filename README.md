@@ -21,6 +21,7 @@
  * `/posts/<title>` : Individual Blog Post
  * `/tags/<tag>` : Root of Blog Post Index/List having particular tag
  * `/tags/<tag>/page/<index>` : Blog Post Index/List having particular tag at page
+ * `/hire` : Client landing page for contract work
  * `/icons/` : Browser icons (favicons, manifest icons, etc)
  * `/images/` : Picture related assets
  * `/resume.pdf` : Resume document
@@ -28,5 +29,7 @@
  * `/robots.txt` : For web crawlers
  * `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)
  * `*` : Anything else gives a 404 page
+
+ ##### Note: If using Windows 10 with node v10.x you might find that `yarn` shits its pants while trying to build `sharp` as a dependancy, and no currently documented solution works. Use `npm install` instead for now. This is not an issue on OSX (and linux presumably), and other versions of Windows.
 
  #### Built using [Gatsby](https://www.gatsbyjs.org/)
