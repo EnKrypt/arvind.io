@@ -8476,6 +8476,11 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
+reaptcha@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/reaptcha/-/reaptcha-1.4.0.tgz#458caf653da31c4919117bad082f5cdc5f9851d6"
+  integrity sha512-E5m/fLlcqSb1UkbgmaYbXV0JOG0SUVjZT7ZMGy52twvF3eNMhiE5ZjDXMbPjhXcsTCjVPi95kUIKbmOZwy1ETg==
+
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"

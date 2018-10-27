@@ -38,6 +38,43 @@ body,
     margin-bottom: 1em;
 }
 
+.info-message {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 6em;
+    font-size: 1.1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: -10em;
+    max-height: 10em;
+    overflow-x: auto;
+    transition: 0.2s ease;
+
+    .info-message-text {
+        flex: 1;
+    }
+
+    .info-message-icon {
+        align-self: center;
+        cursor: pointer;
+    }
+}
+
+.info-message.visible {
+    bottom: 0em;
+    transition: 0.2s ease;
+}
+
+.info-message.error {
+    background: #c07070;
+}
+
+.info-message.success {
+    background: #60a060;
+}
+
 .green-text {
     color: #50b050;
 }
@@ -180,6 +217,10 @@ body,
 
 .float-clear {
     clear: both;
+}
+
+.grecaptcha-badge {
+    z-index: 2;
 }
 
 // Blog Post common styling
