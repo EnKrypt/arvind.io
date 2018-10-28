@@ -69,8 +69,8 @@ class Sidebar extends React.Component {
                     </div>
                     <br />
                     <div className="sidebartext">
-                        Hi, I&apos;m Arvind Kumar. <br />I am a developer, a musician
-                        and an amateur astronomer. <br />
+                        Hi, I&apos;m Arvind Kumar. <br />I am a developer, a
+                        musician and an amateur astronomer. <br />
                         If you want to get in touch, <br />
                         <a href="mailto:mail@arvind.io">send me an email</a>.
                     </div>
@@ -84,8 +84,17 @@ class Sidebar extends React.Component {
                         Home
                     </SidebarLink>
                     <SidebarLink
+                        to="/hire"
+                        external={false}
+                        emphasize={true}
+                        clickHandler={this.toggleSidebar}
+                    >
+                        Hire Me
+                    </SidebarLink>
+                    <SidebarLink
                         to="/resume.pdf"
                         external={true}
+                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Resume
@@ -93,7 +102,6 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="https://keybase.io/enkrypt"
                         external={true}
-                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Keybase
@@ -101,6 +109,7 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="/rss.xml"
                         external={true}
+                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         RSS Feed
@@ -108,7 +117,6 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
-                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Source

@@ -53,6 +53,14 @@
         .sidebarlink {
             font-size: 0.7em;
             padding: 0.25em;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .sidebarlink.emphasized a {
+            color: $emphasizedtext;
         }
     }
 

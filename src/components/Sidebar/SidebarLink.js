@@ -5,7 +5,11 @@ class SidebarLink extends React.Component {
     render() {
         return (
             <div
-                className={['sidebarlink', this.props.alt ? 'alt' : '']
+                className={[
+                    'sidebarlink',
+                    this.props.alt ? 'alt' : '',
+                    this.props.emphasize ? 'emphasized' : '',
+                ]
                     .join(' ')
                     .trim()}
             >

@@ -172,8 +172,11 @@ class Hire extends React.Component {
                             <Paragraph>
                                 I have experience architecting and developing
                                 complex tech solutions at scale for small to
-                                medium sized businesses for the past 4 years. My
-                                rate is 40 USD per hour.
+                                medium sized businesses for the past four years.
+                                For development, my proficiency includes React,
+                                Angular, Node.js, Typescript, and many other
+                                commonly used frameworks. My rate is 40 USD per
+                                hour.
                             </Paragraph>
                             <Paragraph>
                                 If you're someone who's just not sure where to
