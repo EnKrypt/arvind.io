@@ -1,5 +1,6 @@
 @import '../styles/fontfaces';
 @import '../styles/theme';
+@import '../styles/scrollbar';
 
 html,
 body,
@@ -49,7 +50,7 @@ body,
     box-sizing: border-box;
     bottom: -10em;
     max-height: 10em;
-    overflow-x: auto;
+    overflow-y: auto;
     transition: 0.2s ease;
 
     .info-message-text {
