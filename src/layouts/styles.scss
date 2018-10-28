@@ -117,6 +117,10 @@ body,
     background: $theme;
     line-height: 1.5;
     transition: 0.2s;
+
+    .btn-loading {
+        height: 1em;
+    }
 }
 
 .btn:hover {
@@ -125,6 +129,19 @@ body,
 
 .btn:active {
     margin-top: 0.3em;
+}
+
+.btn.disabled {
+    background: $dimtext;
+    cursor: default;
+}
+
+.btn.disabled:hover {
+    background: $dimtext;
+}
+
+.btn.disabled:active {
+    margin-top: 0em;
 }
 
 #content {

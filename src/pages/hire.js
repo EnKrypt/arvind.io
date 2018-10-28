@@ -15,6 +15,7 @@ class Hire extends React.Component {
         super(props);
         this.state = {
             status: 'undetermined', // Meaningless value as placeholder that will prevent either section from being rendered
+            loading: false,
         };
         this.nameRef = undefined;
         this.emailRef = undefined;
@@ -56,6 +57,9 @@ class Hire extends React.Component {
     }
 
     onVerify = token => {
+        this.setState({
+            loading: true,
+        });
         const submitURL = '/api/client-form';
         fetch(submitURL, {
             method: 'POST',
@@ -75,16 +79,32 @@ class Hire extends React.Component {
                     this.infoRef && this.infoRef.showError(res.message);
                 } else {
                     this.infoRef && this.infoRef.showSuccess(res.message);
+                    if (this.nameRef) {
+                        this.nameRef.value = '';
+                    }
+                    if (this.emailRef) {
+                        this.emailRef.value = '';
+                    }
+                    if (this.messageRef) {
+                        this.messageRef.value = '';
+                    }
                 }
+                this.setState({
+                    loading: false,
+                });
             })
             .catch(err => {
                 this.infoRef && this.infoRef.showError();
+                this.setState({
+                    loading: false,
+                });
             });
+        this.captcha.reset();
     };
 
     hideInfo = () => {
         this.infoRef && this.infoRef.hideInfo();
-    }
+    };
 
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -226,12 +246,24 @@ class Hire extends React.Component {
                                 </div>
                                 <br />
                                 <button
-                                    className="btn form-group"
+                                    className={[
+                                        'btn',
+                                        'form-group',
+                                        this.state.loading ? 'disabled' : '',
+                                    ].join(' ')}
                                     onClick={() => {
-                                        this.captcha.execute();
+                                        if (!this.state.loading) {
+                                            this.captcha.execute();
+                                        }
                                     }}
                                 >
-                                    Submit
+                                    {this.state.loading && (
+                                        <img
+                                            className="btn-loading"
+                                            src="/images/loader.svg"
+                                        />
+                                    )}
+                                    {!this.state.loading && 'Submit'}
                                 </button>
                                 <Recaptcha
                                     ref={e => (this.captcha = e)}
