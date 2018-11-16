@@ -30,6 +30,6 @@
  * `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)
  * `*` : Anything else gives a 404 page
 
- ##### Note: If using Windows 10 with node v10.x you might find that `yarn` shits its pants while trying to build `sharp` as a dependancy, and no currently documented solution works. Use `npm install` instead for now. This is not an issue on OSX (and linux presumably), and other versions of Windows.
+ ##### Note: If using Windows 10 with node v10.x you might find that `yarn` shits its pants while trying to build `sharp` as a dependancy, and no currently documented solution works. Use `npm install` instead for now. This is not an issue on OSX (and linux presumably).
 
  #### Built using [Gatsby](https://www.gatsbyjs.org/)

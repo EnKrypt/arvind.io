@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import { TimelineLite, Power2 } from 'gsap';
 
 import ParticlesConfig from './particles.json';
@@ -101,10 +102,10 @@ class Navbar extends React.Component {
             >
                 <Sidebar />
                 <div id="fullname">
-                    <a href="/" className="naturalLink">
+                    <Link to="/" className="natural-link">
                         <span id="firstname">arvind </span>
                         <span id="lastname">kumar</span>
-                    </a>
+                    </Link>
                 </div>
                 <div id="interim-three">
                     <span id="lastname">developer</span>
