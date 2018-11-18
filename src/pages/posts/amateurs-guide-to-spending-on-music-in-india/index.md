@@ -1,6 +1,6 @@
 ---
 title: The amateur's guide to buying musical instruments and equipment in India
-tags: ["finance", "India", "music", "rant"]
+tags: ["finance", "guide", "India", "music", "rant"]
 date: "2018-11-09T00:00:00.000Z"
 key: "amateurs-guide-to-spending-on-music-in-india"
 ---
