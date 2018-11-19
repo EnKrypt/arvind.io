@@ -107,9 +107,16 @@ class Sidebar extends React.Component {
                         Keybase
                     </SidebarLink>
                     <SidebarLink
-                        to="/rss.xml"
+                        to="https://twitter.com/TheEnKrypt"
                         external={true}
                         alt={true}
+                        clickHandler={this.toggleSidebar}
+                    >
+                        Twitter
+                    </SidebarLink>
+                    <SidebarLink
+                        to="/rss.xml"
+                        external={true}
                         clickHandler={this.toggleSidebar}
                     >
                         RSS Feed
@@ -117,6 +124,7 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
+                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Source
