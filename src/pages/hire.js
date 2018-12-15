@@ -10,6 +10,10 @@ const Paragraph = ({ children, className }) => (
     <div className={['hire-para', className].join(' ')}>{children}</div>
 );
 
+const Subtext = ({ children, className }) => (
+    <div className={['sub-text', className].join(' ')}>{children}</div>
+);
+
 class Hire extends React.Component {
     constructor(props) {
         super(props);
@@ -124,7 +128,15 @@ class Hire extends React.Component {
                         <div className="hire-me-more">
                             <Paragraph>
                                 I am an individual contractor and offer services
-                                for development and consulting.
+                                for software development and consulting.
+                                <Subtext>
+                                    If you wish to hire me for a different
+                                    purpose, consider{' '}
+                                    <a href="mailto:mail@arvind.io">
+                                        writing me a mail
+                                    </a>{' '}
+                                    instead.
+                                </Subtext>
                             </Paragraph>
                             {this.state.status === 'available' && (
                                 <div>
@@ -175,7 +187,7 @@ class Hire extends React.Component {
                                 medium sized businesses for the past four years.
                                 For development, my proficiency includes React,
                                 Angular, Node.js, Typescript, and many other
-                                commonly used frameworks. My rate is 40 USD per
+                                commonly used frameworks. My rate is 100 USD per
                                 hour.
                             </Paragraph>
                             <Paragraph>
