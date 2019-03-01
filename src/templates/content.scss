@@ -11,7 +11,32 @@
         font-family: 'Hack';
     }
 
-    // Disclaimers, subtext, or footer
+    .index {
+        width: 30%;
+        min-width: 300px;
+        padding: 0.5em;
+        margin: 2.5em 0.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+        font-family: $fontname;
+
+        .index-title {
+            text-align: center;
+            padding-bottom: 0.25em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $theme;
+        }
+    }
+
+    // headers, disclaimers, subtexts, or footers
+
+    h2 {
+        font-size: 1.4em;
+    }
+
     h5 {
         color: $dimtext;
         font-weight: normal;
@@ -42,6 +67,14 @@
         padding-top: 2.5em;
         margin-top: -2.5em;
     }
+
+    th {
+        text-align: center;
+    }
+
+    td {
+        padding: 0em 0.5em;
+    }
 }
 
 // Dark theme specific styles
@@ -49,11 +82,37 @@
     code {
         background: $staticdarkerbg;
     }
+
+    .index {
+        background: $staticdarkerbg;
+
+        .index-title {
+            border-bottom: solid 1px $dimtext;
+        }
+    }
 }
 
 // Light theme specific styles
 .light .post-content {
     code {
         background: $staticlighterbg;
+    }
+
+    .index {
+        background: $staticlighterbg;
+
+        .index-title {
+            border-bottom: solid 1px $dimtext;
+        }
+    }
+}
+
+// Media queries for mobile view
+@media (max-width: 768px) {
+    .post-content {
+        .index {
+            width: calc(100% - 2em);
+            font-size: 0.9em;
+        }
     }
 }

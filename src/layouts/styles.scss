@@ -336,6 +336,7 @@ body,
 .post-content {
     font-family: 'EB Garamond';
     font-size: 1.5em;
+    text-align: justify;
 }
 
 .prev-post,
@@ -373,6 +374,7 @@ body,
     font-size: 0.96em;
 }
 
+// Media queries for mobile view
 @media (max-width: 768px) {
     #content {
         width: 100%;
