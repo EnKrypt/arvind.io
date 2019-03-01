@@ -1,6 +1,6 @@
 ---
 title: An amateur rock musician's guide to buying instruments in India
-tags: ['finance', 'guide', 'India', 'music', 'rant']
+tags: ['finance', 'guide', 'India', 'music']
 date: '2018-03-01T00:00:00.000Z'
 key: 'amateurs-spending-guide-to-playing-rock-music-in-india'
 ---
