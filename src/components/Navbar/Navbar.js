@@ -31,7 +31,7 @@ class Navbar extends React.Component {
                         ease: Power2.easeInOut,
                     })
                     .to(interimOne, animationSpeed, {
-                        css: { width: '3em' },
+                        css: { width: '5.5em' },
                         onStart: () => {
                             interimOne.style.display = 'inline-block';
                         },
@@ -46,7 +46,7 @@ class Navbar extends React.Component {
                         ease: Power2.easeInOut,
                     })
                     .to(interimTwo, animationSpeed, {
-                        css: { width: '3.5em' },
+                        css: { width: '4em' },
                         onStart: () => {
                             interimTwo.style.display = 'inline-block';
                         },
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
                         ease: Power2.easeInOut,
                     })
                     .to(interimThree, animationSpeed, {
-                        css: { width: '4.5em' },
+                        css: { width: '5em' },
                         onStart: () => {
                             interimThree.style.display = 'inline-block';
                         },
@@ -108,13 +108,13 @@ class Navbar extends React.Component {
                     </Link>
                 </div>
                 <div id="interim-three">
-                    <span id="lastname">developer</span>
+                    <span id="lastname">astronomer</span>
                 </div>
                 <div id="interim-two">
-                    <span id="firstname">hacker</span>
+                    <span id="firstname">musician</span>
                 </div>
                 <div id="interim-one">
-                    <span id="lastname">coder</span>
+                    <span id="lastname">programmer</span>
                 </div>
                 <div id="sitename">
                     <span id="firstname">arvind</span>
