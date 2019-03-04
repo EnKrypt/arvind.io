@@ -57,6 +57,12 @@ The deeper you dive into your hobby and the more specific your requirements get,
     Instruments will sound very different when you hear them being played on a Youtube video vs in your room. Buying from a store lets you hear what it sounds like in person before buying, which you cannot do online. \
     Most stores also do price matching, i.e if you can show them a reputable online marketplace selling the same item for a lower price, they will drop their price down to match it.
 
+*   If you're a beginner, have an experienced friend with you when you're buying
+
+    This might be an obvious point, but it's important nonetheless so you don't get ripped off at a store. He or she can also tell you if an online purchase is worth it, and help inspect the instrument to make sure it's in good condition when it arrives.
+
+    If you don't have such a friend, I encourage you to ask around a bit. Most musicians are likely eager to help you (if you're taking the help of someone you don't know well, be careful; but also make sure you at least buy them lunch for their effort). I took a friend with me to buy my first guitar and I've helped many buy their own too. Had those purchases been made alone, I doubt things would have gone as well.
+
 *   Do your research and watch out for the cheap 'entry level' stuff that you know is low quality
 
     The prices might be very tempting, but playing on bad instruments will tend to demotivate you or limit you from advancing further, which means you will either waste your time and money, or end up spending more anyway if and when you have to upgrade. \
@@ -97,7 +103,7 @@ Note to beginners: If you plan to play any of these instruments live, it is impo
 
     *   **Acoustic**: Fender SA105, Yamaha F310, Ibanez MD39C, Cort AD810, etc.
     *   **Electric**: Fender Squier Bullet Strat, Cort X1 or X100, ESP LTD M-10, Ibanez GRX20, Epiphone Les Paul Special, etc.
-    *   **Bass**: Yamaha TRBX174, Ibanez GSR200 or GSR320, ESP LTD B-10
+    *   **Bass**: Yamaha TRBX174, Ibanez GSR200 or GSR320, ESP LTD B-10, etc.
     *   **Processor**: Zoom G1on or G1Xon, Vox SL2G.
 
 <h3 id="rules-drums" class="internal-link">Drums</h3>
