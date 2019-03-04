@@ -378,8 +378,10 @@ body,
 @media (max-width: 768px) {
     #content {
         width: 100%;
+        min-width: 250px;
         padding: 2.5em;
         box-sizing: border-box;
+        font-size: 0.8em;
     }
 
     .post-matter,
