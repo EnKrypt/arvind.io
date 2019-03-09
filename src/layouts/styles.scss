@@ -376,6 +376,10 @@ body,
 
 // Media queries for mobile view
 @media (max-width: 768px) {
+    .disableScroll {
+        overflow: hidden;
+    }
+
     #content {
         width: 100%;
         padding: 2.5em;

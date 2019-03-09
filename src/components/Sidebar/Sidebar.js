@@ -135,6 +135,11 @@ class Sidebar extends React.Component {
     }
 
     toggleSidebar = () => {
+        if (this.state.show) {
+            document.documentElement.classList.remove('disableScroll');
+        } else {
+            document.documentElement.classList.add('disableScroll');
+        }
         this.setState({
             show: !this.state.show,
         });
