@@ -48,11 +48,11 @@
 
         .sidebartext {
             font-size: 0.5em;
-            padding: 1em;
+            padding: 2em 1em;
         }
 
         .sidebarlink {
-            font-size: 0.7em;
+            font-size: 0.65em;
             padding: 0.25em;
 
             a {
@@ -104,6 +104,10 @@
         background: $lightertext;
     }
 
+    .sidebarlink.gold {
+        background: $goldondark;
+    }
+
     .sidebarlink:hover,
     .sidebarlink.alt:hover {
         background: $fulldark;
@@ -132,6 +136,10 @@
         background: $darkertext;
     }
 
+    .sidebarlink.gold {
+        background: $goldonlight;
+    }
+
     .sidebarlink:hover,
     .sidebarlink.alt:hover {
         background: $fulllight;
@@ -150,7 +158,7 @@
             }
 
             .sidebarlink {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
 

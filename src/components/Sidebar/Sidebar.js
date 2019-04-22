@@ -67,14 +67,12 @@ class Sidebar extends React.Component {
                             <img src="/images/dp.jpg" />
                         </div>
                     </div>
-                    <br />
                     <div className="sidebartext">
                         Hi, I&apos;m Arvind Kumar. <br />I am a software
                         developer, a musician and an amateur astronomer. <br />
                         If you want to get in touch, <br />
                         <a href="mailto:mail@arvind.io">send me an email</a>.
                     </div>
-                    <br />
                     <SidebarLink
                         to="/"
                         external={false}
@@ -128,6 +126,14 @@ class Sidebar extends React.Component {
                         clickHandler={this.toggleSidebar}
                     >
                         Source
+                    </SidebarLink>
+                    <SidebarLink
+                        to="https://paypal.me/EnKrypt"
+                        external={true}
+                        gold={true}
+                        clickHandler={this.toggleSidebar}
+                    >
+                        Donate
                     </SidebarLink>
                 </div>
             </div>

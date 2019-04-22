@@ -9,6 +9,7 @@ class SidebarLink extends React.Component {
                     'sidebarlink',
                     this.props.alt ? 'alt' : '',
                     this.props.emphasize ? 'emphasized' : '',
+                    this.props.gold ? 'gold' : '',
                 ]
                     .join(' ')
                     .trim()}
