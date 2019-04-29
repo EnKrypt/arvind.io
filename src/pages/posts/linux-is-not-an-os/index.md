@@ -30,9 +30,9 @@ Don't tell me it's both.
 ![](./mpd.jpg)
 
 I'm just kidding. \
-I'm not actually running Ubuntu on my laptop. Can you imagine how horrible that would actually be?
+I'm not actually running Ubuntu on my laptop. Can you imagine how horrible that would be?
 
-So no, on a serious note: it is not both. It would be running Ubuntu, a Linux distro. \
+So no, on a serious note: it is not both. The Operating System would be running Ubuntu, a Linux distro. \
 However it would also be right to say that it is running Linux, since you can run a kernel, nothing wrong with that; but Linux here is not the Operating System.
 
 ### If Linux is an OS, then what kernel does it run?
@@ -41,7 +41,7 @@ _The Linux kernel duh! You stupid or something, Arvind?_
 
 ...I could be.
 
-But I'm also pretty sure that if Linux ran on Linux, that would make less sense than actually running Linux inside Linux with a Virtual Machine; the latter of which might actually have some need for someone somewhere.
+But I'm also pretty sure that if Linux ran on Linux, that would make less sense than actually running Linux inside Linux with a Virtual Machine; the latter of which probably have some need for someone somewhere.
 
 There is a common convention where people assume Linux refers to both, the Operating System and the Linux kernel; meaning that according to them, Linux does indeed run Linux. \
 What a nice convention. No scope for confusion and ambiguity at all, right?
@@ -66,6 +66,8 @@ Another controversial definition, but they're not related.
 
 UNIX is a set of standards. That's it. \
 I learnt this in college, and it might be among the few useful things I've taken away from class.
+
+##### Historically there's more to it, but all that's a bit too much for this post
 
 On a very rough and simplified scale, you can think of it as : \
 UNIX : Linux :: Linux : Ubuntu.
