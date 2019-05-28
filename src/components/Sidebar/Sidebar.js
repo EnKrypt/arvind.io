@@ -127,14 +127,6 @@ class Sidebar extends React.Component {
                     >
                         Source
                     </SidebarLink>
-                    <SidebarLink
-                        to="https://paypal.me/EnKrypt"
-                        external={true}
-                        gold={true}
-                        clickHandler={this.toggleSidebar}
-                    >
-                        Donate
-                    </SidebarLink>
                 </div>
             </div>
         );

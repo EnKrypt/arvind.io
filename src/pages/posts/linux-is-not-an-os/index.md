@@ -41,7 +41,7 @@ _The Linux kernel duh! You stupid or something, Arvind?_
 
 ...I could be.
 
-But I'm also pretty sure that if Linux ran on Linux, that would make less sense than actually running Linux inside Linux with a Virtual Machine; the latter of which probably have some need for someone somewhere.
+But I'm also pretty sure that if Linux ran on Linux, that would make less sense than actually running Linux inside Linux with a Virtual Machine; the latter of which probably has some need for someone somewhere.
 
 There is a common convention where people assume Linux refers to both, the Operating System and the Linux kernel; meaning that according to them, Linux does indeed run Linux. \
 What a nice convention. No scope for confusion and ambiguity at all, right?
@@ -67,7 +67,7 @@ Another controversial definition, but they're not related.
 UNIX is a set of standards. That's it. \
 I learnt this in college, and it might be among the few useful things I've taken away from class.
 
-##### Historically there's more to it, but all that's a bit too much for this post
+##### Historically there's more to it of course, but it's too big to discuss in this post, just like Torvald's ego.
 
 On a very rough and simplified scale, you can think of it as : \
 UNIX : Linux :: Linux : Ubuntu.
