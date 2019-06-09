@@ -32,7 +32,7 @@ Don't tell me it's both.
 I'm just kidding. \
 I'm not actually running Ubuntu on my laptop. Can you imagine how horrible that would be?
 
-So no, on a serious note: it is not both. The Operating System would be running Ubuntu, a Linux distro. \
+So no, on a serious note: it is not both. The Operating System that's running would be Ubuntu, a Linux distro. \
 However it would also be right to say that it is running Linux, since you can run a kernel, nothing wrong with that; but Linux here is not the Operating System.
 
 ### If Linux is an OS, then what kernel does it run?
