@@ -64,7 +64,7 @@ I personally prefer the neck to be completely flat under playing conditions, but
 
 To adjust the truss rod, you will need a screwdriver, and an allen key.
 
-##### A 5mm allen key is what I use for all my guitars, but the size really depends on the make of your guitar and what standards are used in your region. You may not even need an allen key if the mechanism calls for a female allen wrench, or a Phillips head.
+##### A 5mm allen key is what I use for all my guitars, but the size really depends on the make of your guitar and what standards are used in your region. You may not even need an allen key if the mechanism calls for a female socket wrench, or a Phillips head.
 
 On most guitars, you can access the adjustment point on the headstock of the guitar. You may need to take off the cover with a screwdriver.
 
@@ -90,7 +90,7 @@ Hold the guitar such that the frets are perpendicular to your eyes and observe t
 
 If the line is not exactly straight and flat, continue making adjustments until it is.
 
-##### No matter what you've read on the internet, adjusting the truss rod **is** a perfectly valid way to adjust the action as it has a direct effect on the string height. Just because there are multiple ways to set the action doesn't mean that this is not one of them.
+##### While the above method is generally good enough for an approximation, the ideal way to check for relief is to to hold down a string on the first fret and the fret where the neck joins the body (around the 17th fret on a regular strat), and then checking the clearance between the string and the frets in the middle (around the 8th or 9th fret region).
 
 <h3 id="saddle" class="internal-link">Adjusting the saddle</h3>
 
@@ -152,7 +152,7 @@ Keep making these adjustments until the 12th fret note is also perfectly in tune
 
 The process is the same for floyd rose or floating bridge guitars as well, if you follow these steps in the correct order.
 
-On acoustic guitars, the process is unfortunately trickier. Your bridge likely will not not have a mechanism to shift the saddle front and back like in electric guitars.
+On acoustic guitars, the process is unfortunately trickier. Your bridge likely will not have a mechanism to shift the saddle front and back like in electric guitars.
 
 As a result, you will need a compensated saddle or a compensated nut. You can either sand your existing saddle, or purchase one that's already compensated.
 
