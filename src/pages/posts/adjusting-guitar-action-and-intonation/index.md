@@ -32,7 +32,7 @@ Since you're here, there's a good chance you already know why you need to make t
     *   Make your playing much more comfortable
     *   Possibly eliminate fret buzz
 *   Setting the intonation will :
-    *   Makes your guitar sound in tune as you play on higher frets
+    *   Make your guitar sound in tune as you play on higher frets
 
 These adjustments should be made immediately after buying a new guitar. If for some reason you haven't, or like me you just didn't know about it until much later, feel free to do it now as you're reading this post. This is something that can be done on every kind of guitar including bass guitars and acoustic guitars, so you really have no excuse.
 
@@ -62,7 +62,9 @@ There is a rod that runs along the neck of your guitar which can bend slightly o
 
 I personally prefer the neck to be completely flat under playing conditions, but some prefer it with very slight concave bowing.
 
-To adjust the truss rod, you will need a 5mm allen key, and a screwdriver.
+To adjust the truss rod, you will need a screwdriver, and an allen key.
+
+##### A 5mm allen key is what I use for all my guitars, but the size really depends on the make of your guitar and what standards are used in your region. You may not even need an allen key if the mechanism calls for a female allen wrench, or a Phillips head.
 
 On most guitars, you can access the adjustment point on the headstock of the guitar. You may need to take off the cover with a screwdriver.
 
