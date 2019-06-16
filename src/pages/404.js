@@ -1,6 +1,6 @@
+import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
-import get from 'lodash/get';
 import Meta from '../components/Meta';
 import '../styles/404.scss';
 

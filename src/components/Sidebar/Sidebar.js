@@ -1,8 +1,6 @@
 import React from 'react';
-
 import InlineLogo from '../InlineLogo';
 import SidebarLink from './SidebarLink';
-
 import './styles.scss';
 
 class Sidebar extends React.Component {

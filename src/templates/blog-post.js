@@ -1,11 +1,10 @@
+import { DiscussionEmbed } from 'disqus-react';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import { DiscussionEmbed } from 'disqus-react';
-import { get, kebabCase } from 'lodash';
 import Meta from '../components/Meta';
 import PostMatter from '../components/PostMatter';
-
 import './content.scss';
 
 class BlogPostTemplate extends React.Component {

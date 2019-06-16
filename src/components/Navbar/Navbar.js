@@ -1,9 +1,8 @@
-import React from 'react';
 import Link from 'gatsby-link';
-import { TimelineLite, Power2 } from 'gsap';
-
-import ParticlesConfig from './particles.json';
+import { Power2, TimelineLite } from 'gsap';
+import React from 'react';
 import Sidebar from '../Sidebar';
+import ParticlesConfig from './particles.json';
 import './styles.scss';
 
 class Navbar extends React.Component {

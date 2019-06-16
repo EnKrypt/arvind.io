@@ -88,15 +88,27 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     const tagPageCount = Math.ceil(tagMap[tag] / postsInAPage);
                     _.times(tagPageCount, index => {
                         createPage({
-                            path: paginationPath(index, tagPageCount, `/tags/${_.kebabCase(tag)}/`),
+                            path: paginationPath(
+                                index,
+                                tagPageCount,
+                                `/tags/${_.kebabCase(tag)}/`
+                            ),
                             component: blogTag,
                             context: {
                                 tag: tag,
                                 skip: index * postsInAPage,
                                 limit: postsInAPage,
                                 tagPageCount,
-                                prevPath: paginationPath(index - 1, tagPageCount, `/tags/${_.kebabCase(tag)}/`),
-                                nextPath: paginationPath(index + 1, tagPageCount, `/tags/${_.kebabCase(tag)}/`),
+                                prevPath: paginationPath(
+                                    index - 1,
+                                    tagPageCount,
+                                    `/tags/${_.kebabCase(tag)}/`
+                                ),
+                                nextPath: paginationPath(
+                                    index + 1,
+                                    tagPageCount,
+                                    `/tags/${_.kebabCase(tag)}/`
+                                ),
                             },
                         });
                     });

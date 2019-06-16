@@ -1,9 +1,9 @@
-import React from 'react';
 import get from 'lodash/get';
+import React from 'react';
 import Helmet from 'react-helmet';
-import PostPreview from '../components/PostPreview';
 import Meta from '../components/Meta';
 import PageNavigation from '../components/PageNavigation';
+import PostPreview from '../components/PostPreview';
 
 class BlogIndex extends React.Component {
     render() {

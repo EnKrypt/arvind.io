@@ -1,9 +1,9 @@
+import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Recaptcha from 'reaptcha';
-import get from 'lodash/get';
-import Meta from '../components/Meta';
 import Info from '../components/Info';
+import Meta from '../components/Meta';
 
 // A crazy guy made me write this mostly useless component.
 const Paragraph = ({ children, className }) => (

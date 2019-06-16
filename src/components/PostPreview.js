@@ -1,5 +1,4 @@
 import React from 'react';
-import { get } from 'lodash';
 import PostMatter from '../components/PostMatter';
 
 const PostPreview = ({ posts }) => {

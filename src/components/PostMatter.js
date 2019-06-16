@@ -1,6 +1,6 @@
-import React from 'react';
 import Link from 'gatsby-link';
-import { kebabCase } from 'lodash';
+import kebabCase from 'lodash/kebabCase';
+import React from 'react';
 
 class PostMatter extends React.Component {
     constructor(props) {
