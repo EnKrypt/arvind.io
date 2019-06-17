@@ -43,7 +43,7 @@ Moreover, almost any field of study or expertise makes use of powers of two in s
 
     Why does this exist? The time interval within a bar or a measure gets divided by 2 every time we want to add a note between two already existing contiguous notes. As you keep dividing, we eventually get 128th notes, 256th notes, 512th notes, and so on in powers of two.
 
-    I normally use this concept to illustrate that music theory are a means to an end, and knowing the idea behind a 256th note is enough and you don't need to learn the demifuckinghemisemi whatever formal term exists for it. However, once again we see that the power of two remains ever present in a field that has nothing to do with math.
+    I normally use this concept to illustrate that knowing music theory is a means to an end, and understanding the idea behind a 256th note is enough and you don't need to learn the demifuckinghemisemi whatever formal term exists for it. However, once again we see that the power of two remains ever present in a field that has nothing to do with math.
 
 The fact that we chose the decimal system is actually completely arbitrary.
 
@@ -57,12 +57,12 @@ All that said, now the important point that this has led up to so far is this :
 
 Base 2 or binary is actually the most efficient system to encode and communicate any kind of information. All you need is two states which can be anything (on or off, black or white, 0 or 1), and a sequence representing a manifestation of these states.
 
-That is why the binary system was used and still is used in all digital formats and in all computers.
+That is why the binary system was used and is still used in all digital formats and in all computers.
 
 ![](./tab.jpg)
 
 What I'm trying to get at is that the concept of two, is more than just a simple number. \
-It's more than a decider what is even. \
+It's more than a decider of what is even. \
 It's more than the ... number of biological parents everyone has.
 
 ##### And it's also more than the number of genders that exist.
@@ -75,9 +75,9 @@ Food for thought.
 
 ---
 
-Thanks for sticking by my ramblings. These kind of abstract posts are not for everyone, and while they used to be a part of my writing style long ago, I've since lost the habit.
+Thanks for sticking through my ramblings. These kind of abstract posts are not for everyone, and while they used to be a part of my writing style long ago, I've since lost the habit.
 
-Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them, so it'd be quite a loss if this one had none, hence my impulse to write this one. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write another abstract post for quite a while.
+Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them, It'd be quite a loss if this one had none, hence my impulse to write this post. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write anything abstract again for quite a while.
 
 If you've made it so far and found your way here, thank you. I hope you were not too lost in the wishy washy nature of the writing.
 
