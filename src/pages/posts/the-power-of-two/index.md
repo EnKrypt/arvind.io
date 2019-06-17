@@ -77,8 +77,6 @@ Food for thought.
 
 Thanks for sticking through my ramblings. These kind of abstract posts are not for everyone, and while they used to be a part of my writing style long ago, I've since lost the habit.
 
-Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them, It'd be quite a loss if this one had none, hence my impulse to write this post. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write anything abstract again for quite a while.
-
-If you've made it so far and found your way here, thank you. I hope you were not too lost in the wishy washy nature of the writing.
+Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them. It'd be quite a loss if this one had none, hence my impulse to write this post. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write anything abstract again for quite a while.
 
 On another note, is anyone else excited and can't wait till Auguest 30th when Tool's new album drops? I sure as fuck am.
