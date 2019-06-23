@@ -10,23 +10,36 @@ class Template extends React.Component {
         this.state = {
             firstLoad: true,
             theme: 'dark',
+            loading: true,
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         try {
             const storedState = JSON.parse(localStorage.getItem('state'));
             this.setBodyClass(`${this.state.theme}-bg`);
             if (storedState) {
-                this.unsetFirstLoadHandler();
-                if (storedState.hasOwnProperty('theme')) {
-                    this.setState({
-                        theme: storedState.theme,
-                    });
-                    this.setBodyClass(`${storedState.theme}-bg`);
-                }
+                this.unsetFirstLoadHandler(() => {
+                    if (storedState.hasOwnProperty('theme')) {
+                        this.setState(
+                            {
+                                theme: storedState.theme,
+                            },
+                            () => {
+                                this.setBodyClass(`${storedState.theme}-bg`);
+                                this.doneLoading();
+                            }
+                        );
+                    } else {
+                        this.doneLoading();
+                    }
+                });
+            } else {
+                this.pushState();
+                this.doneLoading();
             }
         } catch (e) {
+            this.doneLoading();
             if (e instanceof SyntaxError) {
                 // Something went wrong
                 console.warn(
@@ -37,26 +50,24 @@ class Template extends React.Component {
         }
     }
 
-    componentDidMount() {
-        this.pushState();
-    }
-
     componentDidUpdate() {
         this.pushState();
     }
 
     render() {
         return (
-            <div id="top-container" className={this.state.theme}>
-                <div className="bg-underlay" />
-                <Navbar
-                    firstLoad={this.state.firstLoad}
-                    theme={this.state.theme}
-                    toggleTheme={this.toggleThemeHandler}
-                    unsetFirstLoad={this.unsetFirstLoadHandler}
-                />
-                {this.props.children}
-            </div>
+            !this.state.loading && (
+                <div id="top-container" className={this.state.theme}>
+                    <div className="bg-underlay" />
+                    <Navbar
+                        firstLoad={this.state.firstLoad}
+                        theme={this.state.theme}
+                        toggleTheme={this.toggleThemeHandler}
+                        unsetFirstLoad={this.unsetFirstLoadHandler}
+                    />
+                    {this.props.children}
+                </div>
+            )
         );
     }
 
@@ -77,9 +88,18 @@ class Template extends React.Component {
         }
     };
 
-    unsetFirstLoadHandler = () => {
+    unsetFirstLoadHandler = callback => {
+        this.setState(
+            {
+                firstLoad: false,
+            },
+            callback
+        );
+    };
+
+    doneLoading = () => {
         this.setState({
-            firstLoad: false,
+            loading: false,
         });
     };
 
