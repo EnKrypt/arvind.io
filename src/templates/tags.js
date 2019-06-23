@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -8,7 +9,7 @@ import PostPreview from '../components/PostPreview';
 class Tags extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-        const tag = get(this, 'props.pathContext.tag');
+        const tag = get(this, 'props.pageContext.tag');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
         return (
@@ -20,7 +21,7 @@ class Tags extends React.Component {
                         title: `Posts with tag: '${tag}' | ${siteTitle}`,
                     }}
                 />
-                <PageNavigation context={this.props.pathContext}>
+                <PageNavigation context={this.props.pageContext}>
                     <PostPreview posts={posts} />
                 </PageNavigation>
             </div>

@@ -1,4 +1,4 @@
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import { Power2, TimelineLite } from 'gsap';
 import React from 'react';
 import Sidebar from '../Sidebar';

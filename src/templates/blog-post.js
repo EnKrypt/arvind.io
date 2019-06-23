@@ -1,5 +1,5 @@
 import { DiscussionEmbed } from 'disqus-react';
-import Link from 'gatsby-link';
+import { graphql, Link } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
     render() {
         const post = this.props.data.markdownRemark;
         const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-        const { previous, next } = this.props.pathContext;
+        const { previous, next } = this.props.pageContext;
 
         return (
             <div id="content">
@@ -24,9 +24,7 @@ class BlogPostTemplate extends React.Component {
                             ...this.props.data.site.siteMetadata,
                             title: `${post.frontmatter.title} | ${siteTitle}`,
                             description: post.excerpt,
-                            image: `/images/previews/${
-                                post.frontmatter.key
-                            }.png`,
+                            image: `/images/previews/${post.frontmatter.key}.png`,
                         }}
                     />
                     <PostMatter
@@ -45,9 +43,7 @@ class BlogPostTemplate extends React.Component {
                             <Link to={next.fields.slug} rel="next">
                                 <img
                                     className="next-post-image"
-                                    src={`/images/previews/${
-                                        next.frontmatter.key
-                                    }.png`}
+                                    src={`/images/previews/${next.frontmatter.key}.png`}
                                 />
                                 <div className="next-post-link">
                                     <div className="post-link-subtext">
@@ -63,9 +59,7 @@ class BlogPostTemplate extends React.Component {
                             <Link to={previous.fields.slug} rel="prev">
                                 <img
                                     className="prev-post-image"
-                                    src={`/images/previews/${
-                                        previous.frontmatter.key
-                                    }.png`}
+                                    src={`/images/previews/${previous.frontmatter.key}.png`}
                                 />
                                 <div className="prev-post-link">
                                     <div className="post-link-subtext">
@@ -83,9 +77,7 @@ class BlogPostTemplate extends React.Component {
                         config={{
                             title: post.frontmatter.title,
                             identifier: post.id,
-                            url: `${this.props.data.site.siteMetadata.siteUrl}${
-                                post.fields.slug
-                            }`,
+                            url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
                         }}
                     />
                 </div>

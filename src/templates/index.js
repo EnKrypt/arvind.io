@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -19,7 +20,7 @@ class BlogIndex extends React.Component {
                         title: `${siteAuthor} | ${siteTitle}`,
                     }}
                 />
-                <PageNavigation context={this.props.pathContext}>
+                <PageNavigation context={this.props.pageContext}>
                     <PostPreview posts={posts} />
                 </PageNavigation>
             </div>

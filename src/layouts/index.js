@@ -55,7 +55,7 @@ class Template extends React.Component {
                     toggleTheme={this.toggleThemeHandler}
                     unsetFirstLoad={this.unsetFirstLoadHandler}
                 />
-                {this.props.children()}
+                {this.props.children}
             </div>
         );
     }

@@ -50,7 +50,7 @@ module.exports = {
                 background_color: '#202020',
                 theme_color: '#0094ff',
                 display: 'standalone',
-                icon: 'static/images/logo-icon.png', // This path is relative to the root of the site.
+                icon: 'static/images/logo-icon.png',
             },
         },
         `gatsby-transformer-sharp`,
@@ -64,5 +64,6 @@ module.exports = {
         `gatsby-plugin-feed`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-layout`,
     ],
 };
