@@ -53,7 +53,7 @@
         "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
         "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/*.md'",
         "build": "rm -rf ./.cache/ && dotenv gatsby build",
-        "start": "gatsby serve",
+        "start": "dotenv gatsby serve",
         "deploy": "rm -rf ./.cache/ && dotenv gatsby build && rm -rf ../arvind.io-build/public && cp -r ./public ../arvind.io-build && cd ../arvind.io-build && sh mergecomment.sh && git add . && git commit -m \"Generated production build\" && git push"
     }
 }
