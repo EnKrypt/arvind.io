@@ -1,8 +1,8 @@
 ---
 title: Java vs Javascript
-tags: ["comparison", "guide", "programming", "technology"]
-date: "2015-11-23T00:00:00.000Z"
-key: "java-vs-javascript"
+tags: ['comparison', 'guide', 'programming', 'technology']
+date: '2015-11-23T00:00:00.000Z'
+key: 'java-vs-javascript'
 ---
 
 Yesterday wouldn't be the first time an aspiring programmer walked up to someone experienced and asked, "So what does JavaScript have to do with Java?"
@@ -54,7 +54,7 @@ Also useful to note is that as a scripting language, JavaScript has come a long 
 
 -   For anything web related - JavaScript is used primarily in browsers to make web pages dynamic and functional with client side scripting. There are a lot of libraries like JQuery and AngularJS that can use be used to boost its capabilities.
 -   For backend or server side - With Node.js, JavaScript can also work on the server end. You can either cater to web pages with server side scripting, or just make a different desktop app altogether. Node Package Manager (npm) will help you get all sorts of libraries so you don't have to re-invent the wheel.
--   For light computation - There exist several JavaScript engines out there, so whether you're using [V8](https://en.wikipedia.org/wiki/Chrome_V8), [Rhino](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)), or [Spidermonkey](https://en.wikipedia.org/wiki/SpiderMonkey), you can just run some code off of them in your browser console, or node terminal to quickly get some work done like basic or dynamic math.
+-   For light computation - There exist several JavaScript engines out there, so whether you're using [V8](https://en.wikipedia.org/wiki/Chrome_V8), [Rhino](<https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)>), or [Spidermonkey](https://en.wikipedia.org/wiki/SpiderMonkey), you can just run some code off of them in your browser console, or node terminal to quickly get some work done like basic or dynamic math.
 
 By now you should know the difference between Java and JavaScript, not just in syntax and code, but also in usability and application. You should know which type of language to choose for your next project, and hopefully what you learnt in this post will make your project more successful.
 

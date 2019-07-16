@@ -1,8 +1,8 @@
 ---
 title: Linux is not an Operating System
-tags: ["os", "psa", "rant", "technology"]
-date: "2019-04-29T00:00:00.000Z"
-key: "linux-is-not-an-os"
+tags: ['os', 'psa', 'rant', 'technology']
+date: '2019-04-29T00:00:00.000Z'
+key: 'linux-is-not-an-os'
 ---
 
 > The Linux Operating System...

@@ -1,8 +1,8 @@
 ---
 title: This blog
-tags: ["blog", "meta", "narration", "personal"]
-date: "0000-01-01T00:00:00.000Z"
-key: "this-blog"
+tags: ['blog', 'meta', 'narration', 'personal']
+date: '0000-01-01T00:00:00.000Z'
+key: 'this-blog'
 ---
 
 This blog has without doubt been a big part of my life. I wrote my first blog post on March 2012. \
@@ -12,12 +12,12 @@ A lot of the original posts are not here anymore. They've been archived and kept
 
 This blog has been hosted on oh so many domains in that time. If you were a part of that journey, some of these might ring a bell.
 
-* `enkrypt.0fees.net`
-* `enkrypt.blogspot.in`
-* `enkrypt.duckdns.org`
-* `blog.enkrypt.in`
-* `enkrypt.in`
-* `arvind.io`
+-   `enkrypt.0fees.net`
+-   `enkrypt.blogspot.in`
+-   `enkrypt.duckdns.org`
+-   `blog.enkrypt.in`
+-   `enkrypt.in`
+-   `arvind.io`
 
 My most valued asset in this blog is you, the viewer. Whether or not you landed here from another post, from a search engine, or because someone gave you my visiting card, this post that you're reading right now is not an actual blog post. It's here simply as extra information to anyone who made it all the way here to the end and wants to know a bit more about the meaning and the little history behind this place.
 

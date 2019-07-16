@@ -1,8 +1,8 @@
 ---
 title: The power of two
-tags: ["abstract", "narration", "personal", "random"]
-date: "2019-06-20T00:00:00.000Z"
-key: "the-power-of-two"
+tags: ['abstract', 'narration', 'personal', 'random']
+date: '2019-06-20T00:00:00.000Z'
+key: 'the-power-of-two'
 ---
 
 On September 1996, progressive rock band Tool released a track as part of their album called [Ænima](https://en.wikipedia.org/wiki/%C3%86nima), which would go on to debut at No. 2 on the Billboard 200 chart upon its initial release.
@@ -29,13 +29,13 @@ The concept of the number '2' can be used abstractly to represent many ideas: **
 
 Moreover, almost any field of study or expertise makes use of powers of two in some implementation of its theory.
 
-*   Let's take computers:
+-   Let's take computers:
 
     [According to SI Units](https://en.wikipedia.org/wiki/Kilobyte), one kilobyte represents 1000 bytes. Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
 
     There is an official term in SI Units for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
 
-*   Let's take music theory:
+-   Let's take music theory:
 
     Do you know what a **demisemihemidemisemiquaver** is?
 

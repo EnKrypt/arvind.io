@@ -1,8 +1,8 @@
 ---
 title: Your guide to Antialiasing
-tags: ["comparison", "guide", "technology", "video game"]
-date: "2016-03-20T00:00:00.000Z"
-key: "your-guide-to-antialiasing"
+tags: ['comparison', 'guide', 'technology', 'video game']
+date: '2016-03-20T00:00:00.000Z'
+key: 'your-guide-to-antialiasing'
 ---
 
 If you play enough video games, you know that Antialiasing or AA is a software technique for diminishing jaggy-stairstep-like edges that should be smooth.
