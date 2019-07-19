@@ -107,9 +107,9 @@ This is one of those instances where knowing a convention is not enough. You sho
 
 Just like knowing when to separate components, when to use state management also has a similar answer: **When it gets too complex without**.
 
-For most small websites including this blog, local state is good enough.
+For most small websites, including this blog, local state is good enough.
 
-When the hassle of passing props around becomes too complex, like if you find yourself passing the same props down to so many components consecutively that simply imagining the flow takes significant effort, it might be time for state management.
+When the hassle of passing props around becomes too complex, like say you find yourself passing the same props down to so many components consecutively that simply imagining the flow takes significant effort, it might be time for state management.
 
 Introducing state management before that point only _adds_ to the complexity instead of removing it.
 
@@ -126,7 +126,7 @@ Technically, they're _functions_ that take in a component, and return a new comp
 Once you understand that, HOCs should become easier to work around. Use them as a level of abstraction over components. Think 'class factory' except without the nightmares.
 
 With that in mind, do not call a HOC within a components `render()` method. \
-The reason why this is bad is because a new component is mounted every time the parent component is re-rendered, meaning you lose the state of the generated component and all its children.
+The reason why this is bad is because a new component will be mounted every time the parent component is re-rendered, meaning you lose the state of the generated component and all its children.
 
 <h2 id="inline" class="internal-link">Embrace inline JSX-fu</h2>
 
