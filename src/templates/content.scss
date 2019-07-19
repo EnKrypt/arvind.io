@@ -157,7 +157,8 @@
         color: #b090f0;
     }
 
-    .token.attr-name {
+    .token.attr-name,
+    .token.function {
         color: #80c000;
     }
 
@@ -201,7 +202,8 @@
         color: #a070c0;
     }
 
-    .token.attr-name {
+    .token.attr-name,
+    .token.function {
         color: #60a000;
     }
 
