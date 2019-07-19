@@ -49,7 +49,7 @@
         border-left: 10px solid;
         margin: 1em;
         padding: 0.5em;
-        quotes: '\201C' '\201D' '\2018' '\2019';
+        quotes: '\201C''\201D''\2018''\2019';
 
         p {
             display: inline;
@@ -75,6 +75,51 @@
     td {
         padding: 0em 0.5em;
     }
+
+    .footnote-ref {
+        padding: 0.1em;
+        font-size: 0.9em;
+
+        &:before {
+            content: '[';
+        }
+
+        &:after {
+            content: ']';
+        }
+    }
+
+    .footnotes {
+        font-size: 0.8em;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3.5em;
+            margin-top: -3.5em;
+
+            p {
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+            }
+        }
+
+        .footnote-backref {
+            margin-left: 1em;
+        }
+    }
+
+    sup[id^='fnref-'] {
+        padding-top: 3.5em;
+        margin-top: -3.5em;
+    }
+
+    .gatsby-highlight code {
+        display: block;
+        padding: 0.5em;
+        overflow-x: auto;
+    }
 }
 
 // Dark theme specific styles
@@ -90,6 +135,35 @@
             border-bottom: solid 1px $dimtext;
         }
     }
+
+    //prismjs
+    .token.punctuation {
+        color: #f0c040;
+    }
+
+    .token.class-name {
+        color: #50c0f0;
+    }
+
+    .token.keyword {
+        color: #f05080;
+    }
+
+    .token.operator {
+        color: #f09040;
+    }
+
+    .token.boolean {
+        color: #b090f0;
+    }
+
+    .token.attr-name {
+        color: #80c000;
+    }
+
+    .token.comment {
+        color: #909090;
+    }
 }
 
 // Light theme specific styles
@@ -104,6 +178,35 @@
         .index-title {
             border-bottom: solid 1px $dimtext;
         }
+    }
+
+    //prismjs
+    .token.punctuation {
+        color: #a09000;
+    }
+
+    .token.class-name {
+        color: #1080a0;
+    }
+
+    .token.keyword {
+        color: #f05080;
+    }
+
+    .token.operator {
+        color: #b07040;
+    }
+
+    .token.boolean {
+        color: #a070c0;
+    }
+
+    .token.attr-name {
+        color: #60a000;
+    }
+
+    .token.comment {
+        color: #909090;
     }
 }
 
