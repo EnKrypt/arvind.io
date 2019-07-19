@@ -17,6 +17,7 @@
         padding: 0.5em;
         margin: 2.5em 0.5em;
         border-radius: 0.5em;
+        text-align: left;
         font-size: 0.8em;
         font-family: $fontname;
 
@@ -28,6 +29,10 @@
         a {
             text-decoration: none;
             color: $theme;
+        }
+
+        li {
+            padding-right: 1em;
         }
     }
 
