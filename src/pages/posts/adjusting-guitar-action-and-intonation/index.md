@@ -124,7 +124,7 @@ This concludes setting the action on your guitar. With this, your playing should
 
 A well maintained guitar has correct intonation, i.e. if the guitar is tuned perfectly, it continues to sound in tune as you play on higher frets on all strings.
 
-##### If you're new to music theory, don't get confused between temperament and intonation. [Intonation is the process by which a temperament is achieved.](https://music.stackexchange.com/questions/34427/what-is-the-difference-between-temperament-and-intonation) Most correctly intonated guitars are not in equal temperament.
+##### If you're new to music theory, don't get confused between temperament and intonation. Intonation is the process by which a temperament is achieved.[^1] Most correctly intonated guitars are not in equal temperament.
 
 If your guitar has never seen that kind of proper maintenance, or you've changed to a different string gauge since, it needs to be intonated right. Let's get to it. We'll need a screwdriver and a guitar tuner.
 
@@ -181,3 +181,5 @@ For example, you can adjust the pickup height, which affects the tone. You can c
 _What's that? You want to actually spend time playing and practicing to get better instead of just fiddling around with your guitar?_
 
 Atrocious. How are you going to justify expensive and unnecessary upgrades to your instruments with that kind of attitude?
+
+[^1]: [What is the difference between temperament and intonation? - Music: Practice & Theory Stack Exchange](https://music.stackexchange.com/questions/34427/what-is-the-difference-between-temperament-and-intonation)

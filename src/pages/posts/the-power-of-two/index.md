@@ -5,7 +5,7 @@ date: '2019-06-20T00:00:00.000Z'
 key: 'the-power-of-two'
 ---
 
-On September 1996, progressive rock band Tool released a track as part of their album called [Ænima](https://en.wikipedia.org/wiki/%C3%86nima), which would go on to debut at No. 2 on the Billboard 200 chart upon its initial release.
+On September 1996, progressive rock band Tool released a track as part of their album called [Ænima](https://en.wikipedia.org/wiki/%C3%86nima), which would go on to debut at No. 2 on the Billboard 200 chart upon its initial release.[^1]
 
 The track in question is called 'Forty Six & 2'
 
@@ -31,7 +31,7 @@ Moreover, almost any field of study or expertise makes use of powers of two in s
 
 -   Let's take computers:
 
-    [According to SI Units](https://en.wikipedia.org/wiki/Kilobyte), one kilobyte represents 1000 bytes. Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
+    According to SI Units, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
 
     There is an official term in SI Units for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
 
@@ -39,7 +39,7 @@ Moreover, almost any field of study or expertise makes use of powers of two in s
 
     Do you know what a **demisemihemidemisemiquaver** is?
 
-    It's an actual term in music theory. It represents the [two hundred fifty-sixth note](https://en.wikipedia.org/wiki/Two_hundred_fifty-sixth_note).
+    It's an actual term in music theory. It represents the two hundred fifty-sixth note.[^3]
 
     Why does this exist? The time interval within a bar or a measure gets divided by 2 every time we want to add a note between two already existing contiguous notes. As you keep dividing, we eventually get 128th notes, 256th notes, 512th notes, and so on in powers of two.
 
@@ -49,7 +49,7 @@ The fact that we chose the decimal system is actually completely arbitrary.
 
 In fact, many civilizations throughout time _did not_ do so, and independently made use of some other base.
 
-[For example](https://math.stackexchange.com/a/8748), the Babylonians used base 60, the Mayans used base 20, and so on.
+For example, the Babylonians used base 60, the Mayans used base 20, and so on.[^4]
 
 All that said, now the important point that this has led up to so far is this :
 
@@ -80,3 +80,8 @@ Thanks for sticking through my ramblings. These kind of abstract posts are not f
 Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them. It'd be quite a loss if this one had none, hence my impulse to write this post. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write anything abstract again for quite a while.
 
 On another note, is anyone else excited and can't wait till Auguest 30th when Tool's new album drops? I sure as fuck am.
+
+[^1]: [Tool's 'Lateralus' Leads Five Top-10 Debuts](https://www.billboard.com/articles/news/79641/tools-lateralus-leads-five-top-10-debuts)
+[^2]: [Kilobyte - Wikipedia](https://en.wikipedia.org/wiki/Kilobyte)
+[^3]: [Two hundred fifty-sixth note - Wikipedia](https://en.wikipedia.org/wiki/Two_hundred_fifty-sixth_note)
+[^4]: [Why have we chosen our number system to be decimal (base 10)? - Mathematics Stack Exchange](https://math.stackexchange.com/a/8748)
