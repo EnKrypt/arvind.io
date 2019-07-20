@@ -58,7 +58,7 @@ There are also components here that you should **not** make.
 
 Components like `CardText`, `CardContents` or `ButtonText` would not be useful, and only add to the overall complexity of the code.
 
-Take `CardText` for example. Ideally, you would want to pass the text or contents as children to the `Card` component from the parent directly, as such :
+Take rendering the text inside `Card` for example. Ideally, you would want to pass the text or contents as children to the `Card` component from the parent directly, as such :
 
 ```jsx
 <Card key={id}>Card text goes here</Card>
@@ -73,6 +73,8 @@ class Card extends React.Component {
     }
 }
 ```
+
+Hence making a `CardText` component would be a bad idea as it takes away this flexibility and introduces an avoidable layer of complexity.
 
 <h2 id="state" class="internal-link">Identify your state and when it needs management</h2>
 
@@ -101,7 +103,7 @@ I'm talking about **State Management**.
 
 [Redux](https://github.com/reduxjs/redux), for example is a very popular library for state management.
 
-However, the guy who made Redux, Dan Abramov himself often writes about how most people probably don't even need it.[^3]
+However, Dan Abramov, the creator of Redux himself, often writes about how most people probably don't even need it.[^3]
 
 This is one of those instances where knowing a convention is not enough. You should also know _when_ to use it lest you fall into problems created by reckless over-engineering.
 
@@ -117,7 +119,7 @@ Introducing state management before that point only _adds_ to the complexity ins
 
 <h2 id="hoc" class="internal-link">Don't get tripped up by HOCs</h2>
 
-The term 'Higher Order Components' can be a bit misleading if you're not familiar with the etymology, because Higher Order Components are not components at all.
+The term 'Higher Order Component' can be a bit misleading if you're not familiar with the etymology, because Higher Order Components are not components at all.
 
 ![](./lie.jpg)
 
@@ -125,7 +127,7 @@ Technically, they're _functions_ that take in a component, and return a new comp
 
 Once you understand that, HOCs should become easier to work around. Use them as a level of abstraction over components. Think 'class factory' except without the nightmares.
 
-With that in mind, do not call a HOC within a components `render()` method. \
+With that in mind, do not call a HOC within a component's `render()` method. \
 The reason why this is bad is because a new component will be mounted every time the parent component is re-rendered, meaning you lose the state of the generated component and all its children.
 
 <h2 id="inline" class="internal-link">Embrace inline JSX-fu</h2>
