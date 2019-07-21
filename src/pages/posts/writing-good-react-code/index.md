@@ -20,7 +20,7 @@ React as of 2019 is the most popular framework for the web.[^1][^2]
 
 One of it's major selling points is that it integrates quite seamlessly with good old Javascript, giving you a lot more freedom to write your code however you want. However this freedom also makes it very easy to write bad or messy code.
 
-What counts as good code and what counts as bad code is perhaps the subject of a future blog post, but for now I wanted to list down a few helpful ideas that were not obvious to me when I first started writing in React four years ago.
+What counts as good code and what counts as bad code is perhaps the subject of a future blog post, but for now I want to list down a few helpful ideas that were not obvious to me when I first started writing in React four years ago.
 
 ##### The following is not meant to be an exhaustive set of ways to go about writing React. There are exceptions to every rule of course.
 
@@ -44,7 +44,7 @@ Let's take a look at an example. I apologize in advance for the poor illustratio
 
 ![](./components.png)
 
-Some of the components are easily identifiable.
+Some components are easily identifiable.
 
 `Button` should be a component, and so should `Card` since we're seeing them being clearly re-used.
 
@@ -80,9 +80,9 @@ Hence making a `CardText` component would be a bad idea as it takes away this fl
 
 A common mistake I've seen repeated often is to just dump all component attributes into state.
 
-You should put only those properties into state, which on being changed via `setState()`, should trigger a re-render.
+Only those properties which should trigger a re-render on being changed via `setState()`, should be put into state.
 
-Any other attribute that doesn't need to re-render or change something on the UI, should not be in state. Consider declaring it as a simple class property instead.
+Any other attribute that doesn't need to re-render or change something on the UI, does not belong in state. Consider declaring it as a simple class property instead.
 
 ```jsx
 class Card extends React.Component {
