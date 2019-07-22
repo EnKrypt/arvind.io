@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Recaptcha from 'reaptcha';
 import Info from '../components/Info';
 import Meta from '../components/Meta';
+import NoScript from '../components/NoScript';
 import Layout from '../layouts';
 
 // A crazy guy made me write this mostly useless component.
@@ -123,6 +124,9 @@ class Hire extends React.Component {
                         title: `Hire me | ${siteTitle}`,
                     }}
                 />
+                <noscript>
+                    <style>{`.use-form { display: none; }`}</style>
+                </noscript>
                 <Layout>
                     <div id="content">
                         <div className="hire-me bigtext">
@@ -209,94 +213,111 @@ class Hire extends React.Component {
                                     consultation to specifically architect your
                                     business solution.
                                 </Paragraph>
-                                <Paragraph className="smaller-text">
-                                    Use this form to fill out your requirements
-                                    or other details, and I'll get back to you
-                                    with a quote (or answer) at no charge. You
-                                    can also just email me at{' '}
+                                <div className="use-form">
+                                    <Paragraph className="smaller-text">
+                                        Use this form to fill out your
+                                        requirements or other details, and I'll
+                                        get back to you with a quote (or answer)
+                                        at no charge. You can also just email me
+                                        at{' '}
+                                        <a href="mailto:mail@arvind.io">
+                                            mail@arvind.io
+                                        </a>
+                                    </Paragraph>
+                                    <br />
+                                    <Paragraph>
+                                        <div className="form-group">
+                                            <label htmlFor="client-form-name">
+                                                Name / Company
+                                            </label>
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                id="client-form-name"
+                                                placeholder="John Doe"
+                                                onChange={this.hideInfo}
+                                                ref={e => {
+                                                    this.nameRef = e;
+                                                }}
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="client-form-email">
+                                                Email address (I'll use this to
+                                                get back to you)
+                                            </label>
+                                            <input
+                                                type="email"
+                                                className="form-control"
+                                                id="client-form-email"
+                                                placeholder="someone@example.com"
+                                                onChange={this.hideInfo}
+                                                ref={e => {
+                                                    this.emailRef = e;
+                                                }}
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="client-form-message">
+                                                Details about your requirements
+                                                / question / message
+                                            </label>
+                                            <textarea
+                                                className="form-control"
+                                                id="client-form-message"
+                                                placeholder="Type your message here..."
+                                                rows="5"
+                                                onChange={this.hideInfo}
+                                                ref={e => {
+                                                    this.messageRef = e;
+                                                }}
+                                            />
+                                        </div>
+                                        <br />
+                                        <button
+                                            className={[
+                                                'btn',
+                                                'form-group',
+                                                this.state.loading
+                                                    ? 'disabled'
+                                                    : '',
+                                            ].join(' ')}
+                                            onClick={() => {
+                                                if (!this.state.loading) {
+                                                    this.captcha.execute();
+                                                }
+                                            }}
+                                        >
+                                            {this.state.loading && (
+                                                <img
+                                                    className="btn-loading"
+                                                    src="/images/loader.svg"
+                                                />
+                                            )}
+                                            {!this.state.loading && 'Submit'}
+                                        </button>
+                                        <Recaptcha
+                                            ref={e => (this.captcha = e)}
+                                            sitekey="6LeWOCEUAAAAAPVh4ObNT7avzud3Ifsr2Tsx3HLX"
+                                            size="invisible"
+                                            onVerify={this.onVerify}
+                                        />
+                                    </Paragraph>
+                                </div>
+                                <NoScript>
+                                    Looks like you've disabled Javascript on
+                                    your browser, so you won't be able to use
+                                    the handy contact form I'd written for you
+                                    to get in touch with me.
+                                    <br />
+                                    No matter, you can still email me your
+                                    requirements or other details at{' '}
                                     <a href="mailto:mail@arvind.io">
                                         mail@arvind.io
                                     </a>
-                                </Paragraph>
-                                <br />
-                                <Paragraph>
-                                    <div className="form-group">
-                                        <label htmlFor="client-form-name">
-                                            Name / Company
-                                        </label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id="client-form-name"
-                                            placeholder="John Doe"
-                                            onChange={this.hideInfo}
-                                            ref={e => {
-                                                this.nameRef = e;
-                                            }}
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="client-form-email">
-                                            Email address (I'll use this to get
-                                            back to you)
-                                        </label>
-                                        <input
-                                            type="email"
-                                            className="form-control"
-                                            id="client-form-email"
-                                            placeholder="someone@example.com"
-                                            onChange={this.hideInfo}
-                                            ref={e => {
-                                                this.emailRef = e;
-                                            }}
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="client-form-message">
-                                            Details about your requirements /
-                                            question / message
-                                        </label>
-                                        <textarea
-                                            className="form-control"
-                                            id="client-form-message"
-                                            placeholder="Type your message here..."
-                                            rows="5"
-                                            onChange={this.hideInfo}
-                                            ref={e => {
-                                                this.messageRef = e;
-                                            }}
-                                        />
-                                    </div>
-                                    <br />
-                                    <button
-                                        className={[
-                                            'btn',
-                                            'form-group',
-                                            this.state.loading
-                                                ? 'disabled'
-                                                : '',
-                                        ].join(' ')}
-                                        onClick={() => {
-                                            if (!this.state.loading) {
-                                                this.captcha.execute();
-                                            }
-                                        }}
-                                    >
-                                        {this.state.loading && (
-                                            <img
-                                                className="btn-loading"
-                                                src="/images/loader.svg"
-                                            />
-                                        )}
-                                        {!this.state.loading && 'Submit'}
-                                    </button>
-                                    <Recaptcha
-                                        ref={e => (this.captcha = e)}
-                                        sitekey="6LeWOCEUAAAAAPVh4ObNT7avzud3Ifsr2Tsx3HLX"
-                                        size="invisible"
-                                        onVerify={this.onVerify}
-                                    />
-                                </Paragraph>
+                                    , and I'll get back to you with a quote (or
+                                    answer) at no charge.
+                                </NoScript>
                             </div>
                         </div>
                     </div>

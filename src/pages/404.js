@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Meta from '../components/Meta';
 import Layout from '../layouts';
 import '../styles/404.scss';
+import NoScript from '../components/NoScript';
 
 class NotFound extends React.Component {
     constructor(props) {
@@ -42,6 +43,9 @@ class NotFound extends React.Component {
             <>
                 <Helmet title={`Not Found | ${siteTitle}`} />
                 <Meta metadata={this.props.data.site.siteMetadata} />
+                <noscript>
+                    <style>{`.effects { display: none; }`}</style>
+                </noscript>
                 <Layout>
                     <div id="notfound">
                         <br />
@@ -163,6 +167,10 @@ class NotFound extends React.Component {
                         <br />
                         <br />
                         <div className="bigtext">HTTP - 404</div>
+                        <NoScript>
+                            Enable Javascript to control the glitch effect, and
+                            to look at the old 404 gifs
+                        </NoScript>
                     </div>
                 </Layout>
             </>

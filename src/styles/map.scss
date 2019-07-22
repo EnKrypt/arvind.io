@@ -1,0 +1,39 @@
+@import './colors';
+
+.map {
+    padding: 3em 0;
+    text-align: center;
+    font-size: 1.5em;
+
+    .map-image {
+        width: 7.5em;
+        height: 9em;
+        margin: 0 auto;
+    }
+
+    .map-image:hover {
+        background-image: url(/images/dp.jpg);
+        background-size: cover;
+
+        svg {
+            visibility: hidden;
+        }
+    }
+
+    .sidebarlink {
+        padding: 0.25em;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .sidebarlink.emphasized a {
+        color: $emphasizedtext;
+    }
+}
+
+.map-para {
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}

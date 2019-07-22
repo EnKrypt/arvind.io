@@ -1,6 +1,6 @@
 import 'font-awesome/css/font-awesome.min.css';
 import React from 'react';
-import Navbar from '../components/Navbar';
+import { DumbNavbar, Navbar } from '../components/Navbar';
 import './styles.scss';
 
 class Template extends React.Component {
@@ -54,20 +54,38 @@ class Template extends React.Component {
         this.pushState();
     }
 
+    /*
+     * There are a few unconventional lines of code here
+     * which are needed to make this website load even
+     * without Javascript. These include noscript tags
+     * and some conditional styling.
+     */
     render() {
         return (
-            !this.state.loading && (
-                <div id="top-container" className={this.state.theme}>
+            <>
+                <noscript>
+                    <style>{`#top-container { display: block !important; }`}</style>
+                </noscript>
+                <div
+                    id="top-container"
+                    className={this.state.theme}
+                    style={{ display: this.state.loading ? 'none' : 'block' }}
+                >
                     <div className="bg-underlay" />
-                    <Navbar
-                        firstLoad={this.state.firstLoad}
-                        theme={this.state.theme}
-                        toggleTheme={this.toggleThemeHandler}
-                        unsetFirstLoad={this.unsetFirstLoadHandler}
-                    />
+                    <noscript>
+                        <DumbNavbar />
+                    </noscript>
+                    {!this.state.loading && (
+                        <Navbar
+                            firstLoad={this.state.firstLoad}
+                            theme={this.state.theme}
+                            toggleTheme={this.toggleThemeHandler}
+                            unsetFirstLoad={this.unsetFirstLoadHandler}
+                        />
+                    )}
                     {this.props.children}
                 </div>
-            )
+            </>
         );
     }
 

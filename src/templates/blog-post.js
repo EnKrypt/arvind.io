@@ -4,6 +4,7 @@ import get from 'lodash/get';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Meta from '../components/Meta';
+import NoScript from '../components/NoScript';
 import PostMatter from '../components/PostMatter';
 import Layout from '../layouts';
 import './content.scss';
@@ -83,6 +84,7 @@ class BlogPostTemplate extends React.Component {
                                     url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
                                 }}
                             />
+                            <NoScript />
                         </div>
                     </div>
                 </Layout>

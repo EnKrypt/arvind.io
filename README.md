@@ -21,6 +21,7 @@ This project is not intended to be repurposed. \
 -   `/tags/<tag>` : Root of Blog Post Index/List having particular tag
 -   `/tags/<tag>/page/<index>` : Blog Post Index/List having particular tag at page
 -   `/hire` : Client landing page for contract work
+-   `/map` : Static page with Sidebar links (for when someone browses without Javascript)
 -   `/icons/` : Browser icons (favicons, manifest icons, etc)
 -   `/images/` : Picture related assets
 -   `/resume.pdf` : Resume document

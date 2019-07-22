@@ -20,6 +20,10 @@ body,
     background: $fulllight;
 }
 
+#gatsby-noscript {
+    display: none;
+}
+
 #top-container {
     min-height: 100%;
 }
@@ -32,6 +36,12 @@ body,
 }
 
 // Global styling for some common classes in this project
+
+.noscript-warning {
+    padding: 2em 1em;
+    color: $redtext;
+    font-size: 20px;
+}
 
 .hire-me {
     padding: 2em 0;
