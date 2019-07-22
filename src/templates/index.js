@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Meta from '../components/Meta';
 import PageNavigation from '../components/PageNavigation';
 import PostPreview from '../components/PostPreview';
+import Layout from '../layouts';
 
 class BlogIndex extends React.Component {
     render() {
@@ -12,7 +13,7 @@ class BlogIndex extends React.Component {
         const siteAuthor = get(this, 'props.data.site.siteMetadata.author');
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
         return (
-            <div id="content">
+            <>
                 <Helmet title={`${siteAuthor} | ${siteTitle}`} />
                 <Meta
                     metadata={{
@@ -20,10 +21,14 @@ class BlogIndex extends React.Component {
                         title: `${siteAuthor} | ${siteTitle}`,
                     }}
                 />
-                <PageNavigation context={this.props.pageContext}>
-                    <PostPreview posts={posts} />
-                </PageNavigation>
-            </div>
+                <Layout>
+                    <div id="content">
+                        <PageNavigation context={this.props.pageContext}>
+                            <PostPreview posts={posts} />
+                        </PageNavigation>
+                    </div>
+                </Layout>
+            </>
         );
     }
 }

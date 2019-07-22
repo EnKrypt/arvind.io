@@ -5,6 +5,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Meta from '../components/Meta';
 import PostMatter from '../components/PostMatter';
+import Layout from '../layouts';
 import './content.scss';
 
 class BlogPostTemplate extends React.Component {
@@ -14,74 +15,78 @@ class BlogPostTemplate extends React.Component {
         const { previous, next } = this.props.pageContext;
 
         return (
-            <div id="content">
-                <div className="post expanded">
-                    <Helmet
-                        title={`${post.frontmatter.title} | ${siteTitle}`}
-                    />
-                    <Meta
-                        metadata={{
-                            ...this.props.data.site.siteMetadata,
-                            title: `${post.frontmatter.title} | ${siteTitle}`,
-                            description: post.excerpt,
-                            image: `/images/previews/${post.frontmatter.key}.png`,
-                        }}
-                    />
-                    <PostMatter
-                        zoomed={true}
-                        slug={post.fields.slug}
-                        post={post.frontmatter}
-                    />
-                    <div
-                        className="post-content"
-                        dangerouslySetInnerHTML={{ __html: post.html }}
-                    />
-                    <br />
-                    <br />
-                    {next && (
-                        <div className="next-post">
-                            <Link to={next.fields.slug} rel="next">
-                                <img
-                                    className="next-post-image"
-                                    src={`/images/previews/${next.frontmatter.key}.png`}
-                                />
-                                <div className="next-post-link">
-                                    <div className="post-link-subtext">
-                                        Next Post →
-                                    </div>
-                                    {next.frontmatter.title}
+            <>
+                <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+                <Meta
+                    metadata={{
+                        ...this.props.data.site.siteMetadata,
+                        title: `${post.frontmatter.title} | ${siteTitle}`,
+                        description: post.excerpt,
+                        image: `/images/previews/${post.frontmatter.key}.png`,
+                    }}
+                />
+                <Layout>
+                    <div id="content">
+                        <div className="post expanded">
+                            <PostMatter
+                                zoomed={true}
+                                slug={post.fields.slug}
+                                post={post.frontmatter}
+                            />
+                            <div
+                                className="post-content"
+                                dangerouslySetInnerHTML={{ __html: post.html }}
+                            />
+                            <br />
+                            <br />
+                            {next && (
+                                <div className="next-post">
+                                    <Link to={next.fields.slug} rel="next">
+                                        <img
+                                            className="next-post-image"
+                                            src={`/images/previews/${next.frontmatter.key}.png`}
+                                        />
+                                        <div className="next-post-link">
+                                            <div className="post-link-subtext">
+                                                Next Post →
+                                            </div>
+                                            {next.frontmatter.title}
+                                        </div>
+                                    </Link>
                                 </div>
-                            </Link>
-                        </div>
-                    )}
-                    {previous && (
-                        <div className="prev-post">
-                            <Link to={previous.fields.slug} rel="prev">
-                                <img
-                                    className="prev-post-image"
-                                    src={`/images/previews/${previous.frontmatter.key}.png`}
-                                />
-                                <div className="prev-post-link">
-                                    <div className="post-link-subtext">
-                                        ← Previous post
-                                    </div>
-                                    {previous.frontmatter.title}
+                            )}
+                            {previous && (
+                                <div className="prev-post">
+                                    <Link to={previous.fields.slug} rel="prev">
+                                        <img
+                                            className="prev-post-image"
+                                            src={`/images/previews/${previous.frontmatter.key}.png`}
+                                        />
+                                        <div className="prev-post-link">
+                                            <div className="post-link-subtext">
+                                                ← Previous post
+                                            </div>
+                                            {previous.frontmatter.title}
+                                        </div>
+                                    </Link>
                                 </div>
-                            </Link>
+                            )}
+                            <br />
+                            <br />
+                            <DiscussionEmbed
+                                shortname={
+                                    this.props.data.site.siteMetadata.disqusId
+                                }
+                                config={{
+                                    title: post.frontmatter.title,
+                                    identifier: post.id,
+                                    url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
+                                }}
+                            />
                         </div>
-                    )}
-                    <br />
-                    <br />
-                    <DiscussionEmbed
-                        shortname={this.props.data.site.siteMetadata.disqusId}
-                        config={{
-                            title: post.frontmatter.title,
-                            identifier: post.id,
-                            url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
-                        }}
-                    />
-                </div>
-            </div>
+                    </div>
+                </Layout>
+            </>
         );
     }
 }

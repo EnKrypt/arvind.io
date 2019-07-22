@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Meta from '../components/Meta';
 import PageNavigation from '../components/PageNavigation';
 import PostPreview from '../components/PostPreview';
+import Layout from '../layouts';
 
 class Tags extends React.Component {
     render() {
@@ -13,7 +14,7 @@ class Tags extends React.Component {
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
         return (
-            <div id="content">
+            <>
                 <Helmet title={`Posts with tag: '${tag}' | ${siteTitle}`} />
                 <Meta
                     metadata={{
@@ -21,10 +22,14 @@ class Tags extends React.Component {
                         title: `Posts with tag: '${tag}' | ${siteTitle}`,
                     }}
                 />
-                <PageNavigation context={this.props.pageContext}>
-                    <PostPreview posts={posts} />
-                </PageNavigation>
-            </div>
+                <Layout>
+                    <div id="content">
+                        <PageNavigation context={this.props.pageContext}>
+                            <PostPreview posts={posts} />
+                        </PageNavigation>
+                    </div>
+                </Layout>
+            </>
         );
     }
 }
