@@ -56,25 +56,25 @@ I would say that `SearchBar`, even though it's not re-used here, might have some
 
 There are also components here that you should **not** make.
 
-Components like `CardText`, `CardContents` or `ButtonText` would not be useful, and only add to the overall complexity of the code.
+Components like `ButtonText` or `CardText` (for our simple non-dynamic card) would not be useful, and only add to the overall complexity of the code.
 
-Take rendering the text inside `Card` for example. Ideally, you would want to pass the text or contents as children to the `Card` component from the parent directly, as such :
+Take rendering the text inside `Button` for example. Ideally, you would want to pass the text as children (not as a prop) to the `Button` component from the parent directly, as such :
 
 ```jsx
-<Card key={id}>Card text goes here</Card>
+<Button>Card text goes here</Button>
 ```
 
 and then within the component's `render()` method, display the children :
 
 ```jsx
-class Card extends React.Component {
+class Button extends React.Component {
     render() {
         return <div>{this.props.children}</div>;
     }
 }
 ```
 
-Hence making a `CardText` component would be a bad idea as it takes away this flexibility and introduces an avoidable layer of complexity.
+Hence making a `ButtonText` component would be a bad idea as it takes away this flexibility and introduces an avoidable layer of complexity. `CardText` or `CardContent` in our case would be just as bad, but if your `Card`'s structure is not fixed and might contain dynamic content, then an argument could be made.
 
 <h2 id="state" class="internal-link">Identify your state and when it needs management</h2>
 
