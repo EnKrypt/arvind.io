@@ -1,0 +1,56 @@
+// Theme specific variables
+$fulldark: #000000;
+$fulllight: #ffffff;
+
+$theme: #0094ff;
+$themedarker: #0070dd;
+
+$staticdarkbg: rgba(30, 30, 30, 1);
+$staticlightbg: rgba(230, 230, 230, 1);
+
+$staticdarkerbg: rgba(50, 50, 50, 1);
+$staticlighterbg: rgba(210, 210, 210, 1);
+
+// These gradients render with horrible banding artifacts
+// Someday maybe the tech will be good enough to use these
+$darkbg: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(50, 50, 50, 1) 100%
+);
+$lightbg: linear-gradient(
+    315deg,
+    rgba(200, 200, 200, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+);
+
+$darktext: #e0e0e0;
+$lighttext: #202020;
+
+$darkertext: #dadada;
+$lightertext: #303030;
+
+$darklinktext: #60c0e0;
+$lightlinktext: #3080a0;
+
+$goldondark: #404000;
+$goldonlight: #f0f0a0;
+
+$errorbg: #c07070;
+$redtext: #c05050;
+
+$successbg: #60a060;
+$greentext: #50b050;
+
+$invertedshadowlight: rgba(255, 255, 255, 0.1);
+$shadowlight: rgba(0, 0, 0, 0.1);
+$shadowmedium: rgba(0, 0, 0, 0.25);
+$shadowdark: rgba(0, 0, 0, 0.5);
+
+$middark: #606060;
+
+$dimtext: #888888;
+
+$emphasizedtext: #00c060;
+
+$quote: #b08060;

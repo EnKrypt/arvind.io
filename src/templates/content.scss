@@ -1,4 +1,6 @@
-@import '../styles/theme';
+@import '../styles/colors';
+@import '../styles/values';
+@import '../styles/prism';
 
 // Styles within the blog post content
 
@@ -50,7 +52,7 @@
 
     blockquote {
         font-style: italic;
-        color: #b08060;
+        color: $quote;
         border-left: 10px solid;
         margin: 1em;
         padding: 0.5em;
@@ -140,36 +142,6 @@
             border-bottom: solid 1px $dimtext;
         }
     }
-
-    //prismjs
-    .token.punctuation {
-        color: #f0c040;
-    }
-
-    .token.class-name {
-        color: #50c0f0;
-    }
-
-    .token.keyword {
-        color: #f05080;
-    }
-
-    .token.operator {
-        color: #f09040;
-    }
-
-    .token.boolean {
-        color: #b090f0;
-    }
-
-    .token.attr-name,
-    .token.function {
-        color: #80c000;
-    }
-
-    .token.comment {
-        color: #909090;
-    }
 }
 
 // Light theme specific styles
@@ -184,36 +156,6 @@
         .index-title {
             border-bottom: solid 1px $dimtext;
         }
-    }
-
-    //prismjs
-    .token.punctuation {
-        color: #a09000;
-    }
-
-    .token.class-name {
-        color: #1080a0;
-    }
-
-    .token.keyword {
-        color: #a01060;
-    }
-
-    .token.operator {
-        color: #b07040;
-    }
-
-    .token.boolean {
-        color: #a070c0;
-    }
-
-    .token.attr-name,
-    .token.function {
-        color: #60a000;
-    }
-
-    .token.comment {
-        color: #909090;
     }
 }
 
