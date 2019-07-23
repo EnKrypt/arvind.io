@@ -182,4 +182,4 @@ _What's that? You want to actually spend time playing and practicing to get bett
 
 Atrocious. How are you going to justify expensive and unnecessary upgrades to your instruments with that kind of attitude?
 
-[^1]: [What is the difference between temperament and intonation? - Music: Practice & Theory Stack Exchange](https://music.stackexchange.com/questions/34427/what-is-the-difference-between-temperament-and-intonation)
+[^1]: [1. What is the difference between temperament and intonation? - Music: Practice & Theory Stack Exchange](https://music.stackexchange.com/questions/34427/what-is-the-difference-between-temperament-and-intonation)

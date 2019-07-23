@@ -81,8 +81,8 @@ Older versions of my blog had a lot of abstract posts like this, and a lot of my
 
 On another note, is anyone else excited and can't wait till August 30th when Tool's new album drops? I sure as fuck am.
 
-[^1]: [Tool's 'Lateralus' Leads Five Top-10 Debuts](https://www.billboard.com/articles/news/79641/tools-lateralus-leads-five-top-10-debuts)
-[^2]: [Kilobyte - Wikipedia](https://en.wikipedia.org/wiki/Kilobyte)
-[^3]: [Two hundred fifty-sixth note - Wikipedia](https://en.wikipedia.org/wiki/Two_hundred_fifty-sixth_note)
-[^4]: [Why have we chosen our number system to be decimal (base 10)? - Mathematics Stack Exchange](https://math.stackexchange.com/a/8748)
-[^5]: [Binary code - Wikipedia](https://en.wikipedia.org/wiki/Binary_code#History_of_binary_code)
+[^1]: [1. Tool's 'Lateralus' Leads Five Top-10 Debuts](https://www.billboard.com/articles/news/79641/tools-lateralus-leads-five-top-10-debuts)
+[^2]: [2. Kilobyte - Wikipedia](https://en.wikipedia.org/wiki/Kilobyte)
+[^3]: [3. Two hundred fifty-sixth note - Wikipedia](https://en.wikipedia.org/wiki/Two_hundred_fifty-sixth_note)
+[^4]: [4. Why have we chosen our number system to be decimal (base 10)? - Mathematics Stack Exchange](https://math.stackexchange.com/a/8748)
+[^5]: [5. Binary code - Wikipedia](https://en.wikipedia.org/wiki/Binary_code#History_of_binary_code)
