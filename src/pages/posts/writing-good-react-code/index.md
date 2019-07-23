@@ -1,7 +1,7 @@
 ---
 title: Writing good React code
 tags: ['guide', 'programming', 'react', 'technology']
-date: '2019-07-20T00:00:00.000Z'
+date: '2019-07-23T00:00:00.000Z'
 key: 'writing-good-react-code'
 ---
 

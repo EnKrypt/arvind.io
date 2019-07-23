@@ -31,7 +31,7 @@ Moreover, almost any field of study or expertise makes use of powers of two in s
 
 -   Let's take computers:
 
-    According to SI Units, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
+    According to IEC, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
 
     There is an official term in SI Units for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
 
@@ -53,11 +53,11 @@ For example, the Babylonians used base 60, the Mayans used base 20, and so on.[^
 
 All that said, now the important point that this has led up to so far is this :
 
-**The use of binary system however is NOT arbitary.**
+**The use of binary system however is NOT arbitrary.**
 
-Base 2 or binary is actually the most efficient system to encode and communicate any kind of information. All you need is two states which can be anything (on or off, black or white, 0 or 1), and a sequence representing a manifestation of these states.
+Base 2 or binary is the simplest system to encode and communicate any kind of information. All you need is two states which can be anything (on or off, black or white, 0 or 1), and a sequence representing a manifestation of these states.
 
-That is why the binary system was used and is still used in all digital formats and in all computers.
+That is why the binary system was used and is still used in all digital formats and in all computers.[^5]
 
 ![](./tab.jpg)
 
@@ -79,9 +79,10 @@ Thanks for sticking through my ramblings. These kind of abstract posts are not f
 
 Older versions of my blog had a lot of abstract posts like this, and a lot of my readers seemed to enjoy them. It'd be quite a loss if this one had none, hence my impulse to write this post. I will not publish this, or post it on the internet to be discovered, and chances are that I will not write anything abstract again for quite a while.
 
-On another note, is anyone else excited and can't wait till Auguest 30th when Tool's new album drops? I sure as fuck am.
+On another note, is anyone else excited and can't wait till August 30th when Tool's new album drops? I sure as fuck am.
 
 [^1]: [Tool's 'Lateralus' Leads Five Top-10 Debuts](https://www.billboard.com/articles/news/79641/tools-lateralus-leads-five-top-10-debuts)
 [^2]: [Kilobyte - Wikipedia](https://en.wikipedia.org/wiki/Kilobyte)
 [^3]: [Two hundred fifty-sixth note - Wikipedia](https://en.wikipedia.org/wiki/Two_hundred_fifty-sixth_note)
 [^4]: [Why have we chosen our number system to be decimal (base 10)? - Mathematics Stack Exchange](https://math.stackexchange.com/a/8748)
+[^5]: [Binary code - Wikipedia](https://en.wikipedia.org/wiki/Binary_code#History_of_binary_code)
