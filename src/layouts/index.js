@@ -8,7 +8,7 @@ class Template extends React.Component {
         super();
         // default state values
         this.state = {
-            firstLoad: true,
+            firstLoad: false,
             theme: 'dark',
             loading: true,
         };
