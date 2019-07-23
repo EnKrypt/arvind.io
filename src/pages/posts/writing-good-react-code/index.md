@@ -16,7 +16,7 @@ key: 'writing-good-react-code'
     </ul>
 </div>
 
-React as of 2019 is the most popular framework for the web.[^1][^2]
+React as of 2019 is the most popular library for the web.[^1][^2]
 
 One of it's major selling points is that it integrates quite seamlessly with good old Javascript, giving you a lot more freedom to write your code however you want. However this freedom also makes it very easy to write bad or messy code.
 

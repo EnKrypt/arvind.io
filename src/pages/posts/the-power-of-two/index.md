@@ -33,7 +33,7 @@ Moreover, almost any field of study or expertise makes use of powers of two in s
 
     According to IEC, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
 
-    There is an official term in SI Units for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
+    There is an official term by IEC for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
 
 -   Let's take music theory:
 
