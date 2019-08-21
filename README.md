@@ -7,6 +7,8 @@
 
 I write code, make music, and study the skies. You can read about what I've been up to there, along with my thoughts and discoveries.
 
+#### [How do I decide blog post tags?](https://github.com/EnKrypt/arvind.io/blob/master/tags-guide.md)
+
 ### This is the source code for my blog and personal website
 
 This project is not intended to be repurposed. \
