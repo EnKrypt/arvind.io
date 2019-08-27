@@ -15,6 +15,6 @@ module.exports = {
     URL: process.env.URL || noConfig('URL'), // Required
     EMAIL: process.env.EMAIL || noConfig('EMAIL'), // Required
     DESCRIPTION: process.env.DESCRIPTION || noConfig('DESCRIPTION'), // Required
-    GATRACKINGID: process.env.GATRACKINGID || noConfig('GATRACKINGID'), // Required
+    FATHOMSITEID: process.env.FATHOMSITEID || noConfig('FATHOMSITEID'), // Required
     DISQUSSHORTNAME: process.env.DISQUSSHORTNAME || noConfig('DISQUSSHORTNAME'), // Required
 };

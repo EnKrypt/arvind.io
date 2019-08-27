@@ -52,9 +52,10 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: 'gatsby-plugin-fathom',
             options: {
-                trackingId: config.GATRACKINGID,
+                trackingUrl: 'fathom.arvind.io',
+                siteId: config.FATHOMSITEID,
             },
         },
         `gatsby-plugin-feed`,
