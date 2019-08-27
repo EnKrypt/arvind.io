@@ -63,14 +63,7 @@ class Template extends React.Component {
     render() {
         return (
             <>
-                <noscript>
-                    <style>{`#top-container { display: block !important; }`}</style>
-                </noscript>
-                <div
-                    id="top-container"
-                    className={this.state.theme}
-                    style={{ display: this.state.loading ? 'none' : 'block' }}
-                >
+                <div id="top-container" className={this.state.theme}>
                     <div className="bg-underlay" />
                     <noscript>
                         <DumbNavbar />
