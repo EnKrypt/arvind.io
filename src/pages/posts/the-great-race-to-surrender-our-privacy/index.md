@@ -83,7 +83,7 @@ As a good first step, simply using [Firefox](https://www.mozilla.org/en-US/firef
 
 Having been a long-time Chrome user, I was personally surprised to find the transition pretty smooth. The dev tools are great, all the extensions I used on Chrome exist as Firefox add-ons, and the browser is just a lot more customizable. Firefox for Android even supports add-ons, meaning that you can run a full ad-blocker or download themes for your mobile browser. However I decided to use Firefox Preview because of the smoother UX.
 
-[DuckDuckGo](https://duckduckgo.com/) as a search engine is just as good as Google if not better. I found myself not having to do wordplay gymnastics whenever I wanted to look up something specific but niche, since Google would always fuck it up with personalized and popular results.
+[DuckDuckGo](https://duckduckgo.com/) has come a long way as a search engine. I found myself not having to do wordplay gymnastics whenever I wanted to look up something specific but niche, since Google would always fuck it up with personalized and popular results.
 
 ##### There are some drawbacks, and I have to make this clear. DuckDuckGo isn't very good at handling long and vague queries, such as ones where you feed it a lot of context to make it guess what you want. Its index is also not as exhaustive as Google's, but none of this has been a problem for me except when I was looking up something really obscure.
 
@@ -101,7 +101,7 @@ A better browser + search engine is half the battle done. You could follow this 
 
 The point was more to get you to think about privacy in the context of your online activity. There are enough data breaches happening all the time by malicious attackers, that we don't really need to give away our data willingly on top of it.
 
-Given how many software devs in this country struggle at implementing basic security for websites and software, I'm honestly impressed that we managed to tell Zuckerberg to fuck right off when he pitched Free Basics to us.[^9] Somehow that gives me hope that we might not be a lost cause just yet, and we can eventually stop all our Whatsapp forwarding uncles from telling some surveillance worker their bank balance along with how there was not enough chutney with their dosa everyday.
+Given the general apathy in this country toward good tech practices, I'm honestly impressed that we managed to tell Zuckerberg to fuck right off when he pitched Free Basics to us.[^9] Somehow that gives me hope that we might not be a lost cause just yet, and we can eventually stop all our Whatsapp forwarding uncles from telling some surveillance worker their bank balance along with how there was not enough chutney with their dosa everyday.
 
 &nbsp;
 
