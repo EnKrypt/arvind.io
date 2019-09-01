@@ -57,6 +57,22 @@
 
             a {
                 text-decoration: none;
+
+                .sidebar-icon {
+                    font-size: 0.8em;
+                }
+
+                .sidebar-icon.fa-twitter {
+                    color: #00aced;
+                }
+
+                .sidebar-icon.fa-key {
+                    color: #ff6c1b;
+                }
+
+                .sidebar-icon.fa-twitch {
+                    color: #744bbe;
+                }
             }
         }
 

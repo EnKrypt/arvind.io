@@ -100,19 +100,39 @@ class Sidebar extends React.Component {
                         external={true}
                         clickHandler={this.toggleSidebar}
                     >
+                        <i
+                            className="fa fa-key sidebar-icon"
+                            aria-hidden="true"
+                        />{' '}
                         Keybase
                     </SidebarLink>
                     <SidebarLink
-                        to="https://twitter.com/TheEnKrypt"
+                        to="https://www.twitch.tv/enkryptontwitch"
                         external={true}
                         alt={true}
                         clickHandler={this.toggleSidebar}
                     >
+                        <i
+                            className="fa fa-twitch sidebar-icon"
+                            aria-hidden="true"
+                        />{' '}
+                        Twitch
+                    </SidebarLink>
+                    <SidebarLink
+                        to="https://twitter.com/TheEnKrypt"
+                        external={true}
+                        clickHandler={this.toggleSidebar}
+                    >
+                        <i
+                            className="fa fa-twitter sidebar-icon"
+                            aria-hidden="true"
+                        />{' '}
                         Twitter
                     </SidebarLink>
                     <SidebarLink
                         to="/rss.xml"
                         external={true}
+                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         RSS Feed
@@ -120,7 +140,6 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
-                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Source
