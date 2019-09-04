@@ -27,9 +27,21 @@ const Meta = ({ metadata }) => {
                 content={metadata.image || '/images/preview.png'}
             />
             <meta property="og:description" content={metadata.description} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:creator" content="@TheEnKrypt" />
+            <meta name="twitter:title" content={metadata.title} />
+            <meta name="twitter:description" content={metadata.description} />
+            <meta
+                name="twitter:image"
+                content={`${metadata.siteUrl}${metadata.image ||
+                    '/images/preview.png'}`}
+            />
             <meta itemprop="name" content={metadata.title} />
             <meta itemprop="description" content={metadata.description} />
-            <meta itemprop="image" content="/images/preview.png" />
+            <meta
+                itemprop="image"
+                content={metadata.image || '/images/preview.png'}
+            />
 
             <meta
                 name="msapplication-config"

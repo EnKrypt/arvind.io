@@ -219,6 +219,7 @@ export const pageQuery = graphql`
                 title
                 email
                 description
+                siteUrl
             }
         }
     }
