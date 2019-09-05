@@ -71,6 +71,52 @@ class Sidebar extends React.Component {
                         If you want to get in touch, <br />
                         <a href="mailto:mail@arvind.io">send me an email</a>.
                     </div>
+                    <div className="sidebarsocial">
+                        <a
+                            href="https://keybase.io/enkrypt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={this.toggleSidebar}
+                        >
+                            <i
+                                className="fa fa-key sidebar-icon"
+                                aria-hidden="true"
+                            />
+                        </a>
+                        <a
+                            href="https://open.spotify.com/user/theenkrypt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={this.toggleSidebar}
+                        >
+                            <i
+                                className="fa fa-spotify sidebar-icon"
+                                aria-hidden="true"
+                            />
+                        </a>
+                        <a
+                            href="https://www.twitch.tv/enkryptontwitch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={this.toggleSidebar}
+                        >
+                            <i
+                                className="fa fa-twitch sidebar-icon"
+                                aria-hidden="true"
+                            />
+                        </a>
+                        <a
+                            href="https://twitter.com/TheEnKrypt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={this.toggleSidebar}
+                        >
+                            <i
+                                className="fa fa-twitter sidebar-icon"
+                                aria-hidden="true"
+                            />
+                        </a>
+                    </div>
                     <SidebarLink
                         to="/"
                         external={false}
@@ -96,43 +142,8 @@ class Sidebar extends React.Component {
                         Resume
                     </SidebarLink>
                     <SidebarLink
-                        to="https://keybase.io/enkrypt"
-                        external={true}
-                        clickHandler={this.toggleSidebar}
-                    >
-                        <i
-                            className="fa fa-key sidebar-icon"
-                            aria-hidden="true"
-                        />{' '}
-                        Keybase
-                    </SidebarLink>
-                    <SidebarLink
-                        to="https://www.twitch.tv/enkryptontwitch"
-                        external={true}
-                        alt={true}
-                        clickHandler={this.toggleSidebar}
-                    >
-                        <i
-                            className="fa fa-twitch sidebar-icon"
-                            aria-hidden="true"
-                        />{' '}
-                        Twitch
-                    </SidebarLink>
-                    <SidebarLink
-                        to="https://twitter.com/TheEnKrypt"
-                        external={true}
-                        clickHandler={this.toggleSidebar}
-                    >
-                        <i
-                            className="fa fa-twitter sidebar-icon"
-                            aria-hidden="true"
-                        />{' '}
-                        Twitter
-                    </SidebarLink>
-                    <SidebarLink
                         to="/rss.xml"
                         external={true}
-                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         RSS Feed
@@ -140,6 +151,7 @@ class Sidebar extends React.Component {
                     <SidebarLink
                         to="https://github.com/EnKrypt/arvind.io"
                         external={true}
+                        alt={true}
                         clickHandler={this.toggleSidebar}
                     >
                         Source

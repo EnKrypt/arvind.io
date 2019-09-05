@@ -20,6 +20,33 @@
         }
     }
 
+    .sidebarsocial {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-evenly;
+
+        .sidebar-icon {
+            color: $middark;
+        }
+
+        // .fa-twitter {
+        //     color: #00aced;
+        // }
+
+        // .fa-spotify {
+        //     color: #1dd65f;
+        // }
+
+        // .fa-key {
+        //     color: #ff6c1b;
+        // }
+
+        // .fa-twitch {
+        //     color: #744bbe;
+        // }
+    }
+
     .sidebarlink {
         padding: 0.25em;
 

@@ -51,28 +51,39 @@
             padding: 2em 1em;
         }
 
+        .sidebarsocial {
+            font-size: 0.8em;
+            margin-bottom: 1em;
+            display: flex;
+            justify-content: space-evenly;
+
+            .sidebar-icon {
+                color: $middark;
+            }
+
+            // .fa-twitter {
+            //     color: #00aced;
+            // }
+
+            // .fa-spotify {
+            //     color: #1dd65f;
+            // }
+
+            // .fa-key {
+            //     color: #ff6c1b;
+            // }
+
+            // .fa-twitch {
+            //     color: #744bbe;
+            // }
+        }
+
         .sidebarlink {
             font-size: 0.65em;
             padding: 0.25em;
 
             a {
                 text-decoration: none;
-
-                .sidebar-icon {
-                    font-size: 0.8em;
-                }
-
-                .sidebar-icon.fa-twitter {
-                    color: #00aced;
-                }
-
-                .sidebar-icon.fa-key {
-                    color: #ff6c1b;
-                }
-
-                .sidebar-icon.fa-twitch {
-                    color: #744bbe;
-                }
             }
         }
 

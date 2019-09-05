@@ -39,6 +39,52 @@ class Map extends React.Component {
                                 </a>
                                 .
                             </div>
+                            <div className="sidebarsocial">
+                                <a
+                                    href="https://keybase.io/enkrypt"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={this.toggleSidebar}
+                                >
+                                    <i
+                                        className="fa fa-key sidebar-icon"
+                                        aria-hidden="true"
+                                    />
+                                </a>
+                                <a
+                                    href="https://open.spotify.com/user/theenkrypt"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={this.toggleSidebar}
+                                >
+                                    <i
+                                        className="fa fa-spotify sidebar-icon"
+                                        aria-hidden="true"
+                                    />
+                                </a>
+                                <a
+                                    href="https://www.twitch.tv/enkryptontwitch"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={this.toggleSidebar}
+                                >
+                                    <i
+                                        className="fa fa-twitch sidebar-icon"
+                                        aria-hidden="true"
+                                    />
+                                </a>
+                                <a
+                                    href="https://twitter.com/TheEnKrypt"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={this.toggleSidebar}
+                                >
+                                    <i
+                                        className="fa fa-twitter sidebar-icon"
+                                        aria-hidden="true"
+                                    />
+                                </a>
+                            </div>
                             <SidebarLink to="/" external={false} alt={true}>
                                 Home
                             </SidebarLink>
@@ -55,19 +101,6 @@ class Map extends React.Component {
                                 alt={true}
                             >
                                 Resume
-                            </SidebarLink>
-                            <SidebarLink
-                                to="https://keybase.io/enkrypt"
-                                external={true}
-                            >
-                                Keybase
-                            </SidebarLink>
-                            <SidebarLink
-                                to="https://twitter.com/TheEnKrypt"
-                                external={true}
-                                alt={true}
-                            >
-                                Twitter
                             </SidebarLink>
                             <SidebarLink to="/rss.xml" external={true}>
                                 RSS Feed
