@@ -17,7 +17,7 @@ It's comparable to that one kid in your high school gym class who couldn't follo
 
 The biggest problem is that this allows anyone who can access your internet traffic, to intercept the DNS requests and spoof it completely.
 
-In case you didn't know, a DNS request is what converts a domain (like `reddit.com` for example), to its actual intended IP address where the website or service is located on the internet.
+In case you didn't know, a DNS request is what converts a domain (like `arvind.io` for example), to its actual intended IP address where the website or service is located on the internet.
 
 This means that an attacker can intercept this DNS request of yours, and simply give you a wrong IP address. This wrong address could take you to a completely different malicious website, and you may not even know it.
 
@@ -41,7 +41,7 @@ Encrypting DNS requests solves all the above problems.
 
 ### _Okay, so what are the solutions?_
 
-By default, your network will be setup to use your ISPs own DNS servers. It might seem like a good idea to change the DNS servers to [Google DNS](https://developers.google.com/speed/public-dns/docs/using) or [OpenDNS](https://www.opendns.com/) (run by Cisco), but in the case of DNS hijacking, this is not good enough.
+By default, your network will be setup to use your ISP's own DNS servers. It might seem like a good idea to change the DNS servers to [Google DNS](https://developers.google.com/speed/public-dns/docs/using) or [OpenDNS](https://www.opendns.com/) (run by Cisco), but in the case of DNS hijacking, this is not good enough.
 
 The DNS requests will still be sent as plaintext. We need to encrypt these requests.
 
