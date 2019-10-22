@@ -1,4 +1,4 @@
-# [<img src="https://raw.githubusercontent.com/EnKrypt/arvind.io/master/static/images/preview.png" width="300" />](https://arvind.io)
+# [<p align="center"><img src="https://raw.githubusercontent.com/EnKrypt/arvind.io/master/static/images/preview.png" width="300" /></p>](https://arvind.io)
 
 [![License](https://img.shields.io/github/license/EnKrypt/arvind.io.svg)](https://raw.githubusercontent.com/EnKrypt/arvind.io/master/LICENSE)
 [![Build-master](https://img.shields.io/travis/EnKrypt/arvind.io/master.svg)](https://travis-ci.org/EnKrypt/arvind.io)
