@@ -46,7 +46,7 @@ You should be able to follow along regardless of whether you have a floating bri
 
 **Action** refers to the distance between the strings of your guitar and the frets. Also known simply as string height.
 
-##### No, I don't want to listen to your shitty joke about how much action you got last night
+##### No, I don't want to listen to your shitty joke about how much action you got last night.
 
 Lowering the action of the guitar makes playing on it much easier and comfortable, but if you lower it too much, it can introduce fret buzz as you play.
 

@@ -130,8 +130,6 @@ class Hire extends React.Component {
                 <Layout>
                     <div id="content">
                         <div className="hire-me bigtext">
-                            <div className="bigtext">Hey there!</div>
-                            <br />
                             <div className="hire-me-more">
                                 <Paragraph>
                                     I am an individual contractor and offer
@@ -193,9 +191,9 @@ class Hire extends React.Component {
                                 )}
                                 <Paragraph>
                                     I have experience architecting and
-                                    developing complex tech solutions at scale
+                                    developing diverse tech solutions at scale
                                     for small to medium sized businesses for the
-                                    past four years. For development, my
+                                    past five years. For development, my
                                     proficiency includes React, Angular,
                                     Node.js, Typescript, and many other commonly
                                     used frameworks. My rate is 100 USD per

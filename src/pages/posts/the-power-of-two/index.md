@@ -9,7 +9,7 @@ On September 1996, progressive rock band Tool released a track as part of their 
 
 The track in question is called 'Forty Six & 2'
 
-<iframe class="embed-video" src="https://www.youtube.com/embed/Lm38Ojh61lY" width="600" height="340"></iframe>
+<iframe class="embed-video" src="https://www.youtube.com/embed/GIuZUCpm9hc" width="600" height="340"></iframe>
 
 Why the '& 2'? Why is it part of the track's name and what does it mean?
 
