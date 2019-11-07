@@ -112,9 +112,9 @@ This means that out of all the millions of games[^8] that you can purchase and p
 
 These video games might look like jokes, but they've been received more favorably than a lot of AAA titles[^9][^10], and I can personally attest to how much fun they can be.
 
-All these games mean that there is now extra pressure among game developers to stand out among the competition. In a free market, this often results in upcoming indie games turning out to be amazing works of art, but it also means that the remaining majority of games remain underwhelmingly poor. This incentive to reward only the exceptionally good games often results in small developers not being able to compete with bigger studios that have more resources, which means that this also removes buying power available in the hands of the consumers to reward fresh content and break emerging monopolies from big video game companies.
+For this reason, when people say that "back in their days", video games had a lot more passion, I think that's just nostalgia speaking. If anything, the quality of video games has only gone up due to the competition and popularity of it. There are a lot of modern games that are exceptionally good, and many that I am actively looking forward to playing.
 
-So when people say that "back in their days", video games had a lot more passion, maybe that's just nostalgia speaking. Maybe the quality of video games has only gone up due to the competition and popularity of it. There are a lot of modern games that are exceptionally good, and many that I am actively looking forward to playing.
+##### All these games mean that there is now extra pressure among game developers to stand out among the competition. In a free market, this often results in upcoming indie games turning out to be amazing works of art, but it also means that the remaining majority of games remain underwhelmingly poor in quality. This incentive to reward only the exceptionally good games often results in small developers not being able to compete with bigger studios that have more resources, which means that this also removes buying power available in the hands of the consumers to reward fresh content and break emerging monopolies from big video game companies.
 
 However with so many good games coming out every year, and so many of them going on sale, my collection of unplayed games just keeps piling on and on, which brings us finally to :
 
@@ -155,7 +155,7 @@ As for video game companies, not all the big ones are horrible even if I do thin
 
 [Valve](https://en.wikipedia.org/wiki/Valve_Corporation) has still kept my trust despite making CSGO free to play which made some of us very uncomfortable.[^11]
 
-[CD Projekt Red](https://en.wikipedia.org/wiki/CD_Projekt) really left an impression with their Witcher series, and how well they catered to the playerbase. Cyberpunk 2077 is next on their list and I can't wait for it.
+[CD Projekt Red](https://en.wikipedia.org/wiki/CD_Projekt) really left an impression with their Witcher series, and how well they catered to the playerbase. [Cyberpunk 2077](https://en.wikipedia.org/wiki/Cyberpunk_2077) is next on their list and I can't wait for it.
 
 ---
 
