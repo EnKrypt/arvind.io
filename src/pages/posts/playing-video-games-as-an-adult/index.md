@@ -39,7 +39,7 @@ Why is that? Let's take a look.
 
 It is quite sad how so many modern games have taken the concept of a reasonably paced, fun and linear character progression and turned it into an unrewarding, repetitive chore.
 
-As a kid, if I was asked to do the exact same thing again and again to level up my character, with no change in gameplay or anything new to explore, I'd think the game was broken. I have to admit I've quit a sad amount games in the middle because of this, such as [Destiny](<https://en.wikipedia.org/wiki/Destiny_(video_game)>) or [Final Fantasy XIV](<https://en.wikipedia.org/wiki/Final_Fantasy_XIV_(2010_video_game)>).
+As a kid, if I was asked to do the exact same thing again and again to level up my character, with no change in gameplay or anything new to explore, I'd think the game was broken. I have to admit I've quit a sad amount of games in the middle because of this, such as [Destiny](<https://en.wikipedia.org/wiki/Destiny_(video_game)>) and [Final Fantasy XIV](<https://en.wikipedia.org/wiki/Final_Fantasy_XIV_(2010_video_game)>).
 
 [![](./runescape.png)](https://www.reddit.com/r/AskReddit/comments/320sge/gamers_what_is_the_worst_grindingfarming_youve/cq6xk5q/)
 
