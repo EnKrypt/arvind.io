@@ -190,14 +190,13 @@ class Hire extends React.Component {
                                     </div>
                                 )}
                                 <Paragraph>
-                                    I have experience architecting and
-                                    developing diverse tech solutions at scale
-                                    for small to medium sized businesses for the
-                                    past five years. For development, my
-                                    proficiency includes React, Angular,
-                                    Node.js, Typescript, and many other commonly
-                                    used frameworks. My rate is 100 USD per
-                                    hour.
+                                    I have experience developing and deploying
+                                    diverse tech solutions at scale for small to
+                                    medium sized businesses for the past five
+                                    years. My proficiency includes software
+                                    design and architecture in React,
+                                    Typescript, Node.js, Golang, and many more
+                                    commonly used libraries and languages.
                                 </Paragraph>
                                 <Paragraph>
                                     If you're someone who's just not sure where

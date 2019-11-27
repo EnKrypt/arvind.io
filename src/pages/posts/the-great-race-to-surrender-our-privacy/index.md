@@ -7,7 +7,7 @@ key: 'the-great-race-to-surrender-our-privacy'
 
 > Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say. ~ Edward Snowden[^1]
 
-What a line, right? Edward Snowden may not have pioneered the resistance against the 'Nothing to hide' argument[^2], but he's made it quite clear that we're losing ownership of our own data faster than we can do much about it.
+Edward Snowden may not have pioneered the resistance against the 'Nothing to hide' argument[^2], but he's made it quite clear that we're losing ownership of our own data faster than we can do much about it.
 
 Just the other day, I was at a bar with a couple friends when the question of _should we even care about data privacy_ came up.
 
