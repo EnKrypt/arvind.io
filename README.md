@@ -7,13 +7,13 @@
 
 I write code, make music, and study the skies. You can read about what I've been up to there, along with my thoughts and discoveries.
 
-#### [How do I decide blog post tags?](https://github.com/EnKrypt/arvind.io/blob/master/tags-guide.md)
-
 ### This is the source code for my blog and personal website
 
 This project is not intended to be repurposed. \
  However, if you want to run this project anyway, set up a `.env` file at the root of the project with the required environment variables specific to your deployment, such as the site URL, Google Analytics tracking ID, Disqus shortname, and so on. Refer to [`config.js`](https://github.com/EnKrypt/arvind.io/blob/master/config.js). \
  If you actually plan to repurpose the code here, I admire your determination to fit square pegs in round holes. I bet you also hate ice cream and like pizza with pineapple on it, you fucking psychopath.
+
+#### [How do I decide blog post tags?](https://github.com/EnKrypt/arvind.io/blob/master/tags-guide.md)
 
 ### Site map
 
@@ -30,6 +30,6 @@ This project is not intended to be repurposed. \
 -   `/rss.xml` : RSS Feed for blog posts
 -   `/robots.txt` : For web crawlers
 -   `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)
--   `*` : Anything else gives a 404 page
+-   `*` : Anything else (that doesn't point to a generated resource) gives a 404 page
 
 #### Built using [Gatsby](https://www.gatsbyjs.org/)

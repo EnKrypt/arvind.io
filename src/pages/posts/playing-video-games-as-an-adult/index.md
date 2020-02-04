@@ -55,6 +55,8 @@ Even worse perhaps is that a lot of games deliberately introduce horrible grinds
 
 DLC? Microtransactions? If you tried to explain those things to me as a kid, I might have quit video games outright, and I find it really depressing that the kids of this generation have to deal with such terrible practices.
 
+##### To be fair, I have no qualms when executed correctly and decently. Good examples include DLCs from The Witcher 3, or microtransactions that are purely cosmetic such as in CS:GO. However, many big AAA titles seem to reflect plain corporate greed, locking game items on day one of launch that can also be unlocked with in-game grinding. If their aim is to fleece money from ten year olds, they can surely afford to be a bit more subtle about it.
+
 Perhaps this was inevitable once video games entered the mainstream and video game development became more accessible, allowing the video game industry to rise, and video game companies to turn into corporate machines with departments dedicated to maximizing revenue.
 
 But in what world does it make sense to pay 80 USD (or more) for a game, only to find out that main characters or maps or parts of the main story remain locked, until you also pay for them in-game as DLCs or microtransactions?
