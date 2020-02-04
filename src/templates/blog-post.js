@@ -74,16 +74,19 @@ class BlogPostTemplate extends React.Component {
                             )}
                             <br />
                             <br />
-                            <DiscussionEmbed
-                                shortname={
-                                    this.props.data.site.siteMetadata.disqusId
-                                }
-                                config={{
-                                    title: post.frontmatter.title,
-                                    identifier: post.id,
-                                    url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
-                                }}
-                            />
+                            <div className="comments-section">
+                                <DiscussionEmbed
+                                    shortname={
+                                        this.props.data.site.siteMetadata
+                                            .disqusId
+                                    }
+                                    config={{
+                                        title: post.frontmatter.title,
+                                        identifier: post.id,
+                                        url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
+                                    }}
+                                />
+                            </div>
                             <NoScript />
                         </div>
                     </div>

@@ -393,6 +393,10 @@ body,
     font-size: 0.96em;
 }
 
+.comments-section {
+    min-height: 25em;
+}
+
 // Media queries for mobile view
 @media (max-width: 768px) {
     .disableScroll {
