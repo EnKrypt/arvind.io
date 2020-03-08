@@ -73,24 +73,24 @@ class Sidebar extends React.Component {
                     </div>
                     <div className="sidebarsocial">
                         <a
-                            href="https://keybase.io/enkrypt"
+                            href="https://twitter.com/TheEnKrypt"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={this.toggleSidebar}
                         >
                             <i
-                                className="fa fa-key sidebar-icon"
+                                className="fa fa-twitter sidebar-icon"
                                 aria-hidden="true"
                             />
                         </a>
                         <a
-                            href="https://open.spotify.com/user/theenkrypt"
+                            href="https://github.com/EnKrypt"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={this.toggleSidebar}
                         >
                             <i
-                                className="fa fa-spotify sidebar-icon"
+                                className="fa fa-github sidebar-icon"
                                 aria-hidden="true"
                             />
                         </a>
@@ -106,13 +106,13 @@ class Sidebar extends React.Component {
                             />
                         </a>
                         <a
-                            href="https://twitter.com/TheEnKrypt"
+                            href="https://keybase.io/enkrypt"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={this.toggleSidebar}
                         >
                             <i
-                                className="fa fa-twitter sidebar-icon"
+                                className="fa fa-key sidebar-icon"
                                 aria-hidden="true"
                             />
                         </a>
