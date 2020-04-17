@@ -27,9 +27,9 @@ The scariest revelation here however, is that the biggest culprit of them all ar
 
 This is not speculation. Many ISPs have been documented actively doing this.[^2] I know mine does, and there's a good chance that so does yours, which means you're probably already a victim of such an attack.
 
-##### If porn sites or The Pirate Bay is blocked for you (even with HTTPS), then DNS hijacking is most likely how your ISP is doing it. Refer to the section below on good available solutions. Simply changing your DNS server or settings won't help.
+##### If torrent (or porn) sites are blocked for you even with HTTPS, then DNS hijacking is most likely how your ISP is doing it. Refer to the section below on good available solutions. Simply changing your DNS server or settings won't help.
 
-If you read my last post on data privacy, you might remember me mentioning how I caught my ISP in the act.[^3] Concerned citizens have also appealed to TRAI asking the government to take action against such practices.[^4]
+If you read my last post on data privacy, you might remember me mentioning how I caught my ISP in the act.[^3] Concerned citizens have also appealed to TRAI, asking the government here to take action against such practices.[^4]
 
 Un-encrypted DNS also poses a threat to your privacy, as anyone who can access your internet traffic now also has information on which sites you are visiting.
 
@@ -49,9 +49,9 @@ There does exist [DNS over TLS (DoT)](https://en.wikipedia.org/wiki/DNS_over_TLS
 
 The adoption rate is slow, the support is still catching up, and installation can range from very simple to quite complicated.
 
-I've been using [DNSCrypt](https://dnscrypt.info/) for the past couple years, and it's worked great. It's very customizable, can be made to filter out ads, and supports DoH (if you need it).
+Instead, I've been using [DNSCrypt](https://dnscrypt.info/) for the past couple years, and it's worked great. It's fairly customizable, can be made to filter out ads, and supports DoH (if you really need it).
 
-I run my own DNSCrypt resolver and I get a latency of ~2ms which works really well for me. It is on the [list of public resolvers](https://dnscrypt.info/public-servers) (search for `arvind-io`), so feel free to use it if you're in or around Bangalore, India.
+I run my own DNSCrypt resolver which should give you a latency of ~2ms if you're near Bangalore, India. It is on the [list of public resolvers](https://dnscrypt.info/public-servers) (search for `arvind-io`), so feel free to use it if you're in or around the region.
 
 ##### I don't know how many actual people are relying on it currently (I keep no data, including logs or analytics), but if you are, and you're reading this, you're welcome. Two summers ago, when my server faced a couple hours of accidental downtime while I was gone for vacation, I was fairly surprised to find a bunch of emails asking about the resolver. Until that point, I had no idea anyone else was using it.
 
