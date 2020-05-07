@@ -17,7 +17,7 @@ It seems that most of us have long resigned to our data being taken away. The re
 
 ![](./wiretap.png)
 
-Data privacy is important for more reasons than just being edgy or making a stand. There is a lot of damage that can be done by leveraging information against an individual, and after a certain point, the lines get too blurred to to tell the difference between right and wrong, innocent and guilty. Even completely correct information taken out of context can prove harmful.
+Data privacy is important for more reasons than just being edgy or making a stand. There is a lot of damage that can be done by leveraging information against an individual, and after a certain point, the lines get too blurred to tell the difference between right and wrong, innocent and guilty. Even completely correct information taken out of context can prove harmful.
 
 As a very primitive example, let's say you accidentally managed to get on the wrong side of someone in a position of power. They can frame you on completely fabricated charges by simply wrapping it up with the remaining _correct_ data they have on you. Your friends and family read about it and they think _'Oh yeah, he does tend to drink quite often. I guess it was only a matter of time until he was caught driving drunk.'_, and before you know it, you have no support from them because they bought the lie.
 
@@ -51,7 +51,7 @@ A disclaimer if you didn't already know this about me: I used to be, and still a
 
 Now that's a lot of pain and I don't expect everyone to go to all those lengths for the sanity of owning their data, especially when I'm not consistent in following through most of it myself.
 
-But after years of painfully trying to do so, I can safely say that neither I nor the companies collecting my data care that I don't like pineapple on my pizza, or that I prefer Maine Coons over Bengals. Perfect privacy is not just painful to implement, but also gets you diminishing returns.
+But after years of painfully trying to do so, I can safely say that neither I, nor the companies collecting my data care about the fact that I hate pineapple on pizza, or that I like Maine Coons more than Bengals. Perfect privacy is not just painful to implement, but also gets you diminishing returns.
 
 At any rate, I'd argue on the flip side that no privacy might still be preferable to bad attempts at privacy, such as installing something like say, [Flagger](https://github.com/rubbingalcoholic/flagger).
 
@@ -81,7 +81,7 @@ Having said everything above, obtaining a reasonable amount of privacy is actual
 
 As a good first step, simply using [Firefox](https://www.mozilla.org/en-US/firefox/new/) instead of Chrome can do wonders. I won't go into detail about how Firefox has always been a part of the privacy battle, but you might even remember it as Netscape Navigator back when Internet Explorer had its monopoly.[^8] Today of course, Google Chrome has the majority, and it's quite sad that neither Microsoft nor Google had their users' best interests in mind.
 
-Having been a long-time Chrome user, I was personally surprised to find the transition pretty smooth. The dev tools are great, all the extensions I used on Chrome exist as Firefox add-ons, and the browser is just a lot more customizable. Firefox for Android even supports add-ons, meaning that you can run a full ad-blocker or download themes for your mobile browser. However I decided to use Firefox Preview because of the smoother UX.
+Having been a long-time Chrome user, I was personally surprised to find the transition pretty smooth. The dev tools are great, all the extensions I used on Chrome exist as Firefox add-ons, and the browser is just a lot more customizable. Firefox for Android even supports add-ons, meaning that you can run a full ad-blocker or download themes for your mobile browser. However, I decided to use Firefox Preview because of the smoother UX.
 
 [DuckDuckGo](https://duckduckgo.com/) has come a long way as a search engine. I found myself not having to do wordplay gymnastics whenever I wanted to look up something specific but niche, since Google would always fuck it up with personalized and popular results.
 
