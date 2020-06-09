@@ -17,6 +17,12 @@ const Subtext = ({ children, className }) => (
     <div className={['sub-text', className].join(' ')}>{children}</div>
 );
 
+const Domain = ({ children, className, title }) => (
+    <div className={['domain', className].join(' ')}>
+        <span className="title">{title}</span> : {children}
+    </div>
+);
+
 class Hire extends React.Component {
     constructor(props) {
         super(props);
@@ -191,12 +197,47 @@ class Hire extends React.Component {
                                 )}
                                 <Paragraph>
                                     I have experience developing and deploying
-                                    diverse tech solutions at scale for small to
-                                    medium sized businesses for the past five
-                                    years. My proficiency includes software
-                                    design and architecture in React,
-                                    Typescript, Node.js, Golang, and many more
-                                    commonly used libraries and languages.
+                                    diverse tech solutions at scale for small,
+                                    medium and large businesses over the past
+                                    decade. My proficiency includes software
+                                    design and architecture in the following
+                                    domains:
+                                </Paragraph>
+                                <Paragraph>
+                                    <Domain title="Frontend">
+                                        Websites that are fast, fluid,
+                                        performant and responsive. Single Page
+                                        Applications (SPA) and Progressive Web
+                                        Apps (PWA) with Gatsby or React, built
+                                        for good SEO.
+                                    </Domain>
+                                    <Domain title="Mobile">
+                                        Reach your audience better with mobile
+                                        apps written in React Native. Distribute
+                                        for Android via the Google Play Store,
+                                        and for iOS via the Apple App Store.
+                                    </Domain>
+                                    <Domain title="Backend">
+                                        APIs and services that are built to
+                                        scale. Your business logic written in
+                                        Typescript, Node.js, Java or Golang.
+                                    </Domain>
+                                    <Domain title="DevOps">
+                                        Deploy your product with high
+                                        availability on AWS or GCP. No more
+                                        surprise cloud bills or production
+                                        downtime. Automate your entire
+                                        infrastructure and deployment process
+                                        with Ansible and Terraform.
+                                    </Domain>
+                                </Paragraph>
+                                <Paragraph>
+                                    <Subtext>
+                                        Scroll down to check out some of my past
+                                        domestic clients, or feel free to ask me
+                                        for an in-depth portfolio of past work
+                                        in the domain you are interested in.
+                                    </Subtext>
                                 </Paragraph>
                                 <Paragraph>
                                     If you're someone who's just not sure where
@@ -315,6 +356,79 @@ class Hire extends React.Component {
                                     , and I'll get back to you with a quote (or
                                     answer) at no charge.
                                 </NoScript>
+                                <Paragraph className="clients">
+                                    Some of my past local clients from my own
+                                    city. I enjoy serving the Bangalore
+                                    ambition.
+                                </Paragraph>
+                                <div className="clients-list">
+                                    <div className="clients-row">
+                                        <a
+                                            href="https://crio.do/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/crio-light.png"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://mallik.in/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/ideogram-light.png"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div className="clients-row">
+                                        <a
+                                            href="https://zysk.in/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/zysk-light.png"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://client.outreachcircle.com/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/outreachcircle-light.png"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div className="clients-row">
+                                        <a
+                                            href="https://www.geektrust.in/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/geektrust-light.png"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://www.pickcel.com/"
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <img
+                                                className="client-logo"
+                                                src="/images/clients/pickcel-light.png"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

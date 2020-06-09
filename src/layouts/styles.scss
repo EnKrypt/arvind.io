@@ -181,6 +181,46 @@ body,
     font-size: 0.7em;
 }
 
+.domain {
+    font-weight: 300;
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+
+    .title {
+        width: 4em;
+        display: inline-block;
+        color: #0094ff;
+    }
+}
+
+.clients {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.clients-list {
+    padding: 1.5em 0;
+}
+
+.clients-row {
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.client-logo {
+    width: 15em;
+    margin: 0 1em;
+    border-radius: 0.1em;
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    transition: 0.2s ease;
+}
+
 .natural-link {
     text-decoration: none;
 }
@@ -209,6 +249,10 @@ body,
         background: $fulldark;
         color: $darktext;
         box-shadow: inset 0 1px 1px $invertedshadowlight;
+    }
+
+    .client-logo {
+        box-shadow: 0 0 20px 0px $fulldark;
     }
 
     .btn {
@@ -240,6 +284,10 @@ body,
         background: $fulllight;
         color: $lighttext;
         box-shadow: inset 0 1px 1px $shadowlight;
+    }
+
+    .client-logo {
+        box-shadow: 0 0 20px 0px $shadowmedium;
     }
 
     .btn {
@@ -447,5 +495,9 @@ body,
         max-width: 23em;
         margin: 0 auto;
         margin-bottom: 2em;
+    }
+
+    .client-logo {
+        width: 10em;
     }
 }
