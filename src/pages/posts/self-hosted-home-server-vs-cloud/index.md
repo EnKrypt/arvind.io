@@ -54,9 +54,9 @@ Cloud services tend to be tailored around high availability so it really should 
 
 ## Hardware maintenance
 
-Very few people talk about this, but it is a measurable pain if you're running a <span class="choice-a">home server</span>. Mechanical hard drives will eventually fail, any fans will slowly degrade, you will have to clean out the dust buildup every few months. You will also very likely have to upgrade the hardware itself every few years if you don't want to be stuck with old and slow parts from your parents' generation. Even if you love tinkering with hardware, the timing will probably be such that you will have to take downtime and open up the chasis when you'd planned for doing something else that day.
+Very few people talk about it, but this is a measurable pain if you're running a <span class="choice-a">home server</span>. Mechanical hard drives will eventually fail, any fans will slowly degrade and you will have to clean out the dust buildup every few months. You will also very likely have to upgrade the hardware itself every few years if you don't want to be stuck with old and slow parts from your parents' generation. Even if you love tinkering with hardware, the timing will probably be such that you will have to take downtime and open up the chasis when you'd planned for doing something else that day.
 
-My collection of dead hard drives from the home servers I've run over the years before I switched to SSDs. Every one of them also killed the plans I had for the day they died.
+Here's my collection of dead hard drives from the home servers I've run over the years before I switched to SSDs. Every one of them also killed the plans I had for the day they died.
 
 ![](./deaddrives.jpg)
 
@@ -98,12 +98,10 @@ If you use the <span class="choice-b">cloud</span>, you won't even know these pr
 
 Ultimately, it boils down to what your needs and preferences are.
 
-Do you like dealing with computer hardware enough to spend time cleaning, maintaining and upgrading it; along with tolerating the heat, noise, etc.? Then go ahead and build your own <span class="choice-a">home server</span>.
+Do you enjoy dealing with computer hardware enough to put up with the heat, noise, cleaning, maintenance, upgrading, etc.? Then go ahead and build your own <span class="choice-a">home server</span>.
 
 If availability is your main goal or you'd rather pay a little extra for a more hands off experience, the <span class="choice-b">cloud</span> might be right for you.
 
-What you choose past this point is up to you. Both options have clear pros and cons. However, they both involve a certain degree of commitment as with anything self-hosted.
+What you choose past this point is up to you. Both options have clear pros and cons. There is rarely ever a one-size-fits-all solution in computers, so keep experimenting and don't let a fear of trying out new things hold you back.
 
-There is rarely ever a one-size-fits-all solution in computers, so keep experimenting and don't let a fear of trying out new things hold you back.
-
-I'd love to hear what unique challenges you faced going down your route.
+Thanks for reading, and I'd love to hear what unique challenges you faced going down your route.
