@@ -76,7 +76,7 @@ If you went with a <span class="choice-a">home server</span>, you get to relax b
 
 ## Bandwidth
 
-On two separate occasions, My ISP flagged my home account because I had used up more than 500 GB of data in only a few hours. In the first incident, I had a DDoS attack on an open port on my <span class="choice-a">home server</span> (there was never a security risk, I just never accounted for an attacker bleeding my bandwidth dry). In the second incident, I noticed that several web crawlers (Google's included) were going over my entire self-hosted wikipedia page by page.
+On two separate occasions, My ISP flagged my home account because I had used up more than 500 GB of data in only a few hours. In the first incident, because I'd kept port 53 open on my <span class="choice-a">home server</span>, it fell victim to a [DNS Amplification](https://www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack/) attack. In the second incident, I noticed that several web crawlers (Google's included) were going over my entire self-hosted wikipedia page by page.
 
 Running ntopng is how I made that discovery:
 
@@ -91,6 +91,16 @@ CPUs run hot. If you're running one or many of them 24/7 in a <span class="choic
 Servers also make noise. If you sleep in the same room as one, you will be very aware of its presence when you sleep if the moving parts weren't carefully picked out. It's usually the fans that contribute the most here. I had to swap my server's PSU to a semi-fanless design before I could sleep in peace.
 
 If you use the <span class="choice-b">cloud</span>, you won't even know these problems exist, making it again the winner here.
+
+## Latency and security
+
+This one's more of a luxury than a pain point but it's something to consider depending on what applications or services you intend to self-host.
+
+Because a <span class="choice-a">home server</span> will exist on your local network when you're at home, your latency to it will be minimal (and as a bonus, connections are routed internally and don't hit your ISP). This is great for running NAS servers or media servers like Plex, Emby or Jellyfin for yourself or your family. Personal or sensitive data is also easier to secure when they're stored on bare metal infrastructure that you personally own and control, provided you're experienced with network security.
+
+The <span class="choice-b">cloud</span> loses here. All connections are routed through your ISP to the cloud provider's data center, adding latency every hop. You can try and reduce this latency by selecting cloud provider regions located closer to you, but it will never compare to the low latency of a local network.
+
+Making matters worse, you can never be fully sure that your data is completely secure on the cloud without encrypting things on your end. Often data and media on cloud storage have to go through automated audits, and that's assuming that your cloud provider isn't shady enough to personally snoop through what you've stored on their infrastructure (which becomes more and more likely the less popular and cheaper your cloud provider is).
 
 ---
 
