@@ -90,7 +90,7 @@ Hold the guitar such that the frets are perpendicular to your eyes and observe t
 
 If the line is not exactly straight and flat, continue making adjustments until it is.
 
-##### While the above method is generally good enough for an approximation, the ideal way to check for relief is to to hold down a string on the first fret and the fret where the neck joins the body (around the 17th fret on a regular strat), and then checking the clearance between the string and the frets in the middle (around the 8th or 9th fret region).
+##### While the above method is generally good enough for an approximation, the ideal way to check for relief is to hold down a string on the first fret and the fret where the neck joins the body (around the 17th fret on a regular strat), and then checking the clearance between the string and the frets in the middle (around the 8th or 9th fret region).
 
 <h3 id="saddle" class="internal-link">Adjusting the saddle</h3>
 
@@ -160,7 +160,7 @@ As a result, you will need a compensated saddle or a compensated nut. You can ei
 
 With that, your guitar should be intonated correctly. Playing on it should sound much better and you should be able to tell the difference immediately if it was poorly intonated before.
 
-A very simple way to verify the intonation, is to play a 12th fret natural harmonic. The location on the string where the harmonic is the loudest should co-incide exactly with the metal of the 12th fret.
+A very simple way to verify the intonation, is to play a 12th fret natural harmonic. The location on the string where the harmonic is the loudest should coincide exactly with the metal of the 12th fret.
 
 <h2 id="outro" class="internal-link">What's next?</h2>
 

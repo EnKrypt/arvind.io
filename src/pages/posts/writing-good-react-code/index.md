@@ -18,7 +18,7 @@ key: 'writing-good-react-code'
 
 React as of 2019 is the most popular library for the web.[^1][^2]
 
-One of it's major selling points is that it integrates quite seamlessly with good old Javascript, giving you a lot more freedom to write your code however you want. However this freedom also makes it very easy to write bad or messy code.
+One of its major selling points is that it integrates quite seamlessly with good old Javascript, giving you a lot more freedom to write your code however you want. However this freedom also makes it very easy to write bad or messy code.
 
 What counts as good code and what counts as bad code is perhaps the subject of a future blog post, but for now I want to list down a few helpful ideas that were not obvious to me when I first started writing in React four years ago.
 

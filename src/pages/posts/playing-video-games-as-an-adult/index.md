@@ -142,6 +142,7 @@ Alright, I think this post has had enough negativity. The way I enjoy video game
 
 Here's a short list in no particular order of video games I've played in recent years that I wholeheartedly recommend :
 
+-   [Outer Wilds](https://en.wikipedia.org/wiki/Outer_Wilds): Adventure, Puzzle, Space-flight.
 -   [The Witcher 3: Wild Hunt](https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt): Action, Adventure, Role-playing.
 -   [Inside](<https://en.wikipedia.org/wiki/Inside_(video_game)>): Horror, Platformer, Puzzle.
 -   [LISA](https://en.wikipedia.org/wiki/Lisa:_The_Painful_RPG): Platformer, Post-apocalyptic, Role-playing.
