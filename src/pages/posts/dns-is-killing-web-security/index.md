@@ -55,6 +55,8 @@ I run my own DNSCrypt resolver which should give you a latency of ~2ms if you're
 
 ##### I don't know how many actual people are relying on it currently (I keep no data, including logs or analytics), but if you are, and you're reading this, you're welcome. Two summers ago, when my server faced a couple hours of accidental downtime while I was gone for vacation, I was fairly surprised to find a bunch of emails asking about the resolver. Until that point, I had no idea anyone else was using it.
 
+**Update: [As of 28th May 2021, my DNSCrypt resolver is no longer up and running.](https://github.com/DNSCrypt/dnscrypt-resolvers/pull/500) If you were using my resolver, thanks for being a part of the journey.**
+
 If you insist on using DoT, [Stubby](https://github.com/getdnsapi/stubby) has a good reputation. It is identical to DNSCrypt in terms of setup, but it didn't really stick with me.
 
 I know I'm probably biased towards my own choice, but I hope I've convinced you why it's important to change traditional DNS as we know it and laid out some good options for you to do that. Which solution you pick past this point is up to you.
