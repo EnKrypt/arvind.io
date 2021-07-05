@@ -51,9 +51,9 @@ The adoption rate is slow, the support is still catching up, and installation ca
 
 Instead, I've been using [DNSCrypt](https://dnscrypt.info/) for the past couple years, and it's worked great. It's fairly customizable, can be made to filter out ads, and supports DoH (if you really need it).
 
-I run my own DNSCrypt resolver which should give you a latency of ~2ms if you're near Bangalore, India. It is on the [list of public resolvers](https://dnscrypt.info/public-servers) (search for `arvind-io`), so feel free to use it if you're in or around the region.
+~~I run my own DNSCrypt resolver which should give you a latency of ~2ms if you're near Bangalore, India. It is on the [list of public resolvers](https://dnscrypt.info/public-servers) (search for `arvind-io`), so feel free to use it if you're in or around the region.~~
 
-##### I don't know how many actual people are relying on it currently (I keep no data, including logs or analytics), but if you are, and you're reading this, you're welcome. Two summers ago, when my server faced a couple hours of accidental downtime while I was gone for vacation, I was fairly surprised to find a bunch of emails asking about the resolver. Until that point, I had no idea anyone else was using it.
+##### ~~I don't know how many actual people are relying on it currently (I keep no data, including logs or analytics), but if you are, and you're reading this, you're welcome. Two summers ago, when my server faced a couple hours of accidental downtime while I was gone for vacation, I was fairly surprised to find a bunch of emails asking about the resolver. Until that point, I had no idea anyone else was using it.~~
 
 **Update: [As of 28th May 2021, my DNSCrypt resolver is no longer up and running.](https://github.com/DNSCrypt/dnscrypt-resolvers/pull/500) If you were using my resolver, thanks for being a part of the journey.**
 

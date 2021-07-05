@@ -109,11 +109,11 @@ A trustworthy password manager in its entirety should run on infrastructure that
 
 _But it's fine! You can trust companies like 1Password and Bitwarden. They're completely secure and they'll never do anything bad with your data, right?_
 
-It's always good to remind yourself that companies exist to turn a profit. The track record shows that if compromising your data is a new avenue to do so, then that is what they will do. Avoiding cloud based services to store your passwords isn't paranoia, it's common sense.
+It's always good to remind yourself that companies exist to turn a profit. Caring about security or user privacy comes second, and being competent enough to enforce security or user privacy comes third.
 
-Who cares if company X is more trustworthy than company Y? A standalone open source password manager completely removes the question of trusting any company at all. Why not use one when you can do so for all for the pros and none of the cons?
+You shouldn't care if company X is more trustworthy than company Y. A standalone open source password manager completely removes the question of trusting any company at all. Avoiding cloud based services to store your passwords should be, in my opinion at least, common sense.
 
-##### You might think that a standalone or self-hosted solution shifts the security responsibility from the company to the user, but that isn't really true. Whatever liability exists has always existed. Most vulnerabilities or exploits targeting a local password manager can also be targeted at a cloud based password manager on the user's end in the exact same way. Offline databases are usually well encrypted and rarely targeted.
+##### You might think that a standalone or self-hosted solution shifts the security responsibility from the company to the user, but that isn't really true. Since cloud based password managers also have to at least store the password you are going to use in memory at some point, most vulnerabilities or exploits targeting a local password manager can also be targeted at a cloud based password manager on the user's end in similar ways.
 
 I took the effort to compare how some major password managers stand with respect to these two criteria.
 

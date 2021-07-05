@@ -27,13 +27,16 @@ It's not for nothing though. There are a lot of things given implicitly by your 
 
 But let's actually visualize this difference in cost. We're going to compare the cost for a basic 4 core CPU + 8 GB RAM machine.
 
-Home server cost: \
-$400 upfront for new computer parts ([PCPartPicker list](https://pcpartpicker.com/user/EnKrypt/saved/Q6QrrH)) \
+**Home server cost:** \
+$400 upfront for new computer parts
+
+##### At the time of writing this, [the PCPartPicker list I put together](https://pcpartpicker.com/user/EnKrypt/saved/Q6QrrH) shows a total cost of under $350.
+
 \+ $10 for electricity per month
 
-##### We're calculating electricity consumption at peak server load for the parts we picked out. Across most states in the US, the electricity cost comes up to below \$10.
+##### We're calculating electricity consumption at peak server load for the parts we picked out. Across most states in the US at the time of writing this, this cost comes up to below \$10 per month. I encourage you to try to do the math yourself and see how much it comes up to for your area. (Assume your PSU's rated wattage as a constant load in your calculations.)
 
-Cloud cost: \
+**Cloud cost:** \
 \$40 per month ([DigitalOcean fixed rate](https://www.digitalocean.com/pricing/))
 
 ![](./cost.png)
