@@ -8,9 +8,7 @@ class Template extends React.Component {
         super();
         // default state values
         this.state = {
-            firstLoad: false,
             theme: 'dark',
-            loading: true,
         };
     }
 
@@ -18,28 +16,19 @@ class Template extends React.Component {
         try {
             const storedState = JSON.parse(localStorage.getItem('state'));
             this.setBodyClass(`${this.state.theme}-bg`);
-            if (storedState) {
-                this.unsetFirstLoadHandler(() => {
-                    if (storedState.hasOwnProperty('theme')) {
-                        this.setState(
-                            {
-                                theme: storedState.theme,
-                            },
-                            () => {
-                                this.setBodyClass(`${storedState.theme}-bg`);
-                                this.doneLoading();
-                            }
-                        );
-                    } else {
-                        this.doneLoading();
+            if (storedState && storedState.hasOwnProperty('theme')) {
+                this.setState(
+                    {
+                        theme: storedState.theme,
+                    },
+                    () => {
+                        this.setBodyClass(`${storedState.theme}-bg`);
                     }
-                });
+                );
             } else {
                 this.pushState();
-                this.doneLoading();
             }
         } catch (e) {
-            this.doneLoading();
             if (e instanceof SyntaxError) {
                 // Something went wrong
                 console.warn(
@@ -54,12 +43,6 @@ class Template extends React.Component {
         this.pushState();
     }
 
-    /*
-     * There are a few unconventional lines of code here
-     * which are needed to make this website load even
-     * without Javascript. These include noscript tags
-     * and some conditional styling.
-     */
     render() {
         return (
             <>
@@ -68,14 +51,10 @@ class Template extends React.Component {
                     <noscript>
                         <DumbNavbar />
                     </noscript>
-                    {!this.state.loading && (
-                        <Navbar
-                            firstLoad={this.state.firstLoad}
-                            theme={this.state.theme}
-                            toggleTheme={this.toggleThemeHandler}
-                            unsetFirstLoad={this.unsetFirstLoadHandler}
-                        />
-                    )}
+                    <Navbar
+                        theme={this.state.theme}
+                        toggleTheme={this.toggleThemeHandler}
+                    />
                     {this.props.children}
                 </div>
             </>
@@ -97,21 +76,6 @@ class Template extends React.Component {
                 reload: true,
             });
         }
-    };
-
-    unsetFirstLoadHandler = callback => {
-        this.setState(
-            {
-                firstLoad: false,
-            },
-            callback
-        );
-    };
-
-    doneLoading = () => {
-        this.setState({
-            loading: false,
-        });
     };
 
     // A bit hacky, but only required for browsers in Mac for not looking

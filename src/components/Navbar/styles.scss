@@ -2,6 +2,8 @@
 
 #navbar {
     position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     height: 1.23em;
     width: 100%;
@@ -14,19 +16,7 @@
         color: $theme;
     }
 
-    #sitename,
-    #interim-one,
-    #interim-two,
-    #interim-three {
-        display: none;
-        width: 0;
-    }
-
-    #sitename,
-    #fullname,
-    #interim-one,
-    #interim-two,
-    #interim-three {
+    #fullname {
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
@@ -50,7 +40,9 @@
 }
 
 .dark #navbar {
-    background: $fulldark;
+    background-color: $fulldark;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/images/navbar-dark.jpg);
     box-shadow: 0px 5px 10px 0px $shadowdark;
 
     #lastname {
@@ -63,7 +55,12 @@
 }
 
 .light #navbar {
-    background: $fulllight;
+    background-color: $fulllight;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.56),
+            rgba(255, 255, 255, 0.56)
+        ),
+        url(/images/navbar-light.jpg);
     box-shadow: 0px 0px 10px 0px $shadowdark;
 
     #lastname {
@@ -75,27 +72,6 @@
     }
 }
 
-#navbar.firstload {
-    height: 100vh;
-    padding-top: calc(50vh - 0.75em);
-
-    #fullname {
-        display: none;
-        width: 0;
-    }
-
-    #sitename {
-        display: inline-block;
-        width: auto;
-    }
-
-    .togglesidebar,
-    #toggleTheme {
-        opacity: 0;
-        transition: 0.3s ease;
-    }
-}
-
 @media (max-width: 768px) {
     #navbar {
         font-size: 1.5em;
@@ -104,11 +80,4 @@
             right: 1.3em;
         }
     }
-}
-
-.particles-js-canvas-el {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
 }
