@@ -38,7 +38,7 @@ const StyledHeader = styled.div`
 
   .dark & {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(/images/navbar-dark.jpg);
+      url(/images/navbar-dark.webp);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
@@ -47,7 +47,7 @@ const StyledHeader = styled.div`
         rgba(255, 255, 255, 0.56),
         rgba(255, 255, 255, 0.56)
       ),
-      url(/images/navbar-light.jpg);
+      url(/images/navbar-light.webp);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
