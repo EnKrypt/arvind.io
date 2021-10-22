@@ -4,6 +4,7 @@ rm -rf ./.next/ ./out/
 next build
 next export
 cp ./.next/analyze/client.html ./out/bundle.html
+rm -rf ./out/_next/data
 rm -rf ../arvind.io-build/public/
 cp -r ./out ../arvind.io-build/public
 cd ../arvind.io-build
