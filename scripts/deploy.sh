@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rm -rf ./.next/ ./out/
-next build
+ANALYZE=true next build
 next export
 cp ./.next/analyze/client.html ./out/bundle.html
 rm -rf ./out/_next/data

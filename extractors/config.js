@@ -1,3 +1,5 @@
+import { promises as fs } from 'fs';
+
 const noConfig = (variable) => {
   console.error(
     `Required configuration variable '${variable}' is not set.\nTerminating.`
@@ -6,7 +8,14 @@ const noConfig = (variable) => {
 };
 
 const getConfig = async () => {
-  const env = await import('../../configurations/envs/arvind.io.config.json');
+  let env = {};
+  try {
+    env = JSON.parse(
+      await fs.readFile('../configurations/envs/arvind.io.config.json')
+    );
+  } catch (err) {
+    console.warn(err);
+  }
   // Set the corresponding configuration variables, or replace the values here.
   return {
     TITLE: env.title || process.env.TITLE || noConfig('title'), // Required
