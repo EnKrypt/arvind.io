@@ -1,0 +1,12 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7
+
+workflows:
+  lint:
+    jobs:
+      - node/run:
+          version: '16.11'
+          pkg-manager: yarn
+          yarn-run: lint

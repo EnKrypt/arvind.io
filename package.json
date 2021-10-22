@@ -1,58 +1,41 @@
 {
-    "name": "arvind.io",
-    "description": "I write code, make music, and study the skies. You can read about what I've been up to here, along with my thoughts and discoveries.",
-    "version": "1.0.0",
-    "private": true,
-    "author": "Arvind Kumar",
-    "dependencies": {
-        "disqus-react": "^1.0.5",
-        "dotenv-cli": "^1.4.0",
-        "font-awesome": "^4.7.0",
-        "gatsby": "^2.13.32",
-        "gatsby-plugin-fathom": "^1.1.0",
-        "gatsby-plugin-feed": "^2.3.0",
-        "gatsby-plugin-manifest": "^2.2.0",
-        "gatsby-plugin-react-helmet": "^3.1.0",
-        "gatsby-plugin-sass": "^2.1.0",
-        "gatsby-plugin-sharp": "^2.2.1",
-        "gatsby-remark-copy-linked-files": "^2.1.0",
-        "gatsby-remark-external-links": "^0.0.4",
-        "gatsby-remark-images": "^3.1.0",
-        "gatsby-remark-prismjs": "^3.3.0",
-        "gatsby-remark-responsive-iframe": "^2.2.0",
-        "gatsby-remark-smartypants": "^2.1.0",
-        "gatsby-source-filesystem": "^2.1.0",
-        "gatsby-transformer-remark": "^2.6.1",
-        "gatsby-transformer-sharp": "^2.2.0",
-        "lodash": "^4.17.11",
-        "node-sass": "^4.12.0",
-        "prismjs": "^1.16.0",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "react-helmet": "^5.2.1",
-        "reaptcha": "^1.4.0"
-    },
-    "devDependencies": {
-        "babel-eslint": "^8.2.6",
-        "eslint": "^4.19.1",
-        "eslint-plugin-import": "^2.17.3",
-        "eslint-plugin-react": "^7.7.0",
-        "prettier": "^1.19.0"
-    },
-    "homepage": "https://arvind.io",
-    "license": "MIT",
-    "main": "n/a",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/EnKrypt/arvind.io.git"
-    },
-    "scripts": {
-        "dev": "dotenv gatsby develop",
-        "clean": "rm -rf .cache/ public/",
-        "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-        "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-        "build": "rm -rf ./.cache/ ./public && dotenv gatsby build",
-        "start": "dotenv gatsby serve",
-        "deploy": "rm -rf ./.cache/ ./public/ && dotenv gatsby build && rm -rf ../arvind.io-build/public && cp -r ./public ../arvind.io-build && cd ../arvind.io-build && sh mergecomment.sh && git add . && git commit -m \"Generated production build\" && git push"
-    }
+  "name": "arvind.io",
+  "description": "I write code, make music, and study the skies. You can read about what I've been up to here, along with my thoughts and discoveries.",
+  "version": "2.0.0",
+  "private": true,
+  "author": "Arvind Kumar <arvind@enkrypt.in> (https://arvind.io)",
+  "homepage": "https://arvind.io",
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnKrypt/arvind.io.git"
+  },
+  "scripts": {
+    "build": "rm -rf ./.next/ ./out/ && next build && next export",
+    "clean": "rm -rf ./.next/ ./out/",
+    "dev": "sh scripts/dev.sh",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "sh scripts/deploy.sh"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "11.1.3-canary.90",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "11.1.3-canary.90",
+    "next-compose-plugins": "^2.2.1",
+    "next-plugin-preact": "^3.0.6",
+    "node-fetch": "^3.0.0",
+    "preact": "^10.5.15",
+    "preact-render-to-string": "^5.1.19",
+    "preact-ssr-prepass": "^1.2.0",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+    "react-ssr-prepass": "npm:preact-ssr-prepass",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.3-canary.90"
+  }
 }
