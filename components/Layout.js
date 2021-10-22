@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 import Header from './Header';
 
 const Layout = ({ config, fontFaces, seo = {}, children }) => (
@@ -94,8 +95,19 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
       defer
     ></script>
     <Header />
-    {children}
+    <Page>{children}</Page>
   </>
 );
+
+const Page = styled.div`
+  padding: 5.5em 2.5em 2.5em 2.5em;
+  width: 50em;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 4.5em 2.5em 2.5em 2.5em;
+  }
+`;
 
 export default Layout;
