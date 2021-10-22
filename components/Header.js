@@ -37,17 +37,39 @@ const StyledHeader = styled.div`
   z-index: 2;
 
   .dark & {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(/images/navbar-dark.webp);
+    background: linear-gradient(
+          135deg,
+          ${theme.colors.darkerAccent} 25%,
+          transparent 25%
+        ) -18px 0,
+      linear-gradient(225deg, ${theme.colors.darkerAccent} 25%, transparent 25%) -18px
+        0,
+      linear-gradient(315deg, ${theme.colors.darkerAccent} 25%, transparent 25%),
+      linear-gradient(45deg, ${theme.colors.darkerAccent} 25%, transparent 25%);
+    background-size: 36px 36px;
+    background-color: ${theme.colors.darkest};
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
   .light & {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.56),
-        rgba(255, 255, 255, 0.56)
+    background: linear-gradient(
+          135deg,
+          ${theme.colors.lighterAccent} 25%,
+          transparent 25%
+        ) -18px 0,
+      linear-gradient(
+          225deg,
+          ${theme.colors.lighterAccent} 25%,
+          transparent 25%
+        ) -18px 0,
+      linear-gradient(
+        315deg,
+        ${theme.colors.lighterAccent} 25%,
+        transparent 25%
       ),
-      url(/images/navbar-light.webp);
+      linear-gradient(45deg, ${theme.colors.lighterAccent} 25%, transparent 25%);
+    background-size: 36px 36px;
+    background-color: ${theme.colors.lightest};
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
@@ -65,7 +87,7 @@ const StyledHeader = styled.div`
     color: ${theme.colors.primary};
 
     &:hover {
-      color: ${theme.colors.accent};
+      color: ${theme.colors.darkAccent};
     }
   }
 
@@ -88,7 +110,7 @@ const StyledHeader = styled.div`
     right: 0;
     bottom: 0;
     border-radius: 34px;
-    background-color: ${theme.colors.invertedAccent};
+    background-color: ${theme.colors.lightAccent};
   }
 
   & .slider:before {
@@ -105,11 +127,11 @@ const StyledHeader = styled.div`
   }
 
   .dark & .slider {
-    background-color: ${theme.colors.accent};
+    background-color: ${theme.colors.darkAccent};
   }
 
   .dark & .slider:before {
-    background-color: ${theme.colors.accent};
+    background-color: ${theme.colors.darkAccent};
     height: 30px;
     width: 30px;
     bottom: 2px;
