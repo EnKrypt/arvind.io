@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 
 const Layout = ({ config, fontFaces, seo = {}, children }) => (
-  <>
+  <main>
     <Head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -96,7 +96,7 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
     ></script>
     <Header />
     <Page>{children}</Page>
-  </>
+  </main>
 );
 
 const Page = styled.div`

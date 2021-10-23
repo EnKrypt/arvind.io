@@ -2,11 +2,9 @@ import Layout from '../components/Layout';
 import { commonExtractor } from '../extractors';
 
 const Home = ({ config, fontFaces }) => (
-  <main>
-    <Layout config={config} fontFaces={fontFaces}>
-      Temporarily down due to maintenance
-    </Layout>
-  </main>
+  <Layout config={config} fontFaces={fontFaces}>
+    Temporarily down due to maintenance
+  </Layout>
 );
 
 export const getStaticProps = async (context) => {
