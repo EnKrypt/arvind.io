@@ -7,7 +7,7 @@ const theme = {
     primary: '#0094ff',
     darkAccent: '#005899',
     lightAccent: '#b2deff',
-    darkerAccent: '#001d33',
+    darkerAccent: '#001225',
     lighterAccent: '#e5f4ff',
     darkAlternate: '#3080a0',
     lightAlternate: '#60c0e0',
