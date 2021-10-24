@@ -90,8 +90,13 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
           if (storedState && storedState.hasOwnProperty('theme')) {
             document.body.className = storedState.theme;
           }
+          window.lazyLoadOptions = {};
         `
       }}
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"
       defer
     ></script>
     <Header />

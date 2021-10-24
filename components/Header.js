@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import withHydration from '../client/withHydration';
 import theme from '../theme';
-import MenuContent from './MenuContent';
 import MenuButton from './MenuButton';
+import MenuContent from './MenuContent';
 import ThemeChanger from './ThemeChanger';
 
 const HydratedThemeChanger = withHydration(ThemeChanger, 'ThemeChanger');
@@ -11,7 +11,7 @@ const HydratedMenuButton = withHydration(MenuButton, 'MenuButton');
 const Header = () => (
   <>
     <Sidebar id="sidebar">
-      <MenuContent />
+      <MenuContent sidebar={true} />
     </Sidebar>
     <StyledHeader>
       <LeftAlign>

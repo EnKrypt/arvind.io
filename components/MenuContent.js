@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import donateImage from '../public/images/donate.png?resize';
 import theme from '../theme';
 import { StyledLink } from './BlogPostComponents';
 import GitHub from './icons/GitHub';
@@ -7,7 +8,7 @@ import Logo from './icons/Logo';
 import Twitch from './icons/Twitch';
 import Twitter from './icons/Twitter';
 
-const MenuContent = () => (
+const MenuContent = ({ sidebar }) => (
   <>
     <StyledLogo />
     <StyledInfo>
@@ -94,7 +95,14 @@ const MenuContent = () => (
       rel="noopener noreferrer"
       href="https://www.buymeacoffee.com/EnKrypt"
     >
-      <img src="/images/donate.png" alt="Buy me a beer" />
+      <img
+        alt="Buy me a beer"
+        className="lazy"
+        src={donateImage.placeholder}
+        data-src={donateImage.src}
+        data-srcset={donateImage.srcSet}
+        data-sizes={sidebar ? '(max-width: 768px) 100vw, 288px' : '319px'}
+      />
     </DonateButton>
   </>
 );
@@ -158,6 +166,11 @@ const StyledGreenLink = styled(StyledLink)`
 const DonateButton = styled.a`
   display: block;
   margin-top: 2em;
+
+  & img {
+    width: 18em;
+    max-width: 319px;
+  }
 `;
 
 export default MenuContent;
