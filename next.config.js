@@ -40,9 +40,13 @@ module.exports = withPlugins(
           format: 'webp',
           placeholder: true
         },
-        imagesOutputPath: '../../static/images/',
+        imagesOutputPath:
+          process.env.NODE_ENV === 'development'
+            ? './static/images/'
+            : '../../static/images/',
         inlineImageLimit: -1,
-        optimizeImages: false
+        optimizeImages: false,
+        optimizeImagesInDev: true
       }
     ],
     [withPreact],

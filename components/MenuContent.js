@@ -101,7 +101,7 @@ const MenuContent = ({ sidebar }) => (
         src={donateImage.placeholder}
         data-src={donateImage.src}
         data-srcset={donateImage.srcSet}
-        data-sizes={sidebar ? '(max-width: 768px) 100vw, 288px' : '319px'}
+        data-sizes={sidebar ? '(max-width: 768px) 100vw, 256px' : '319px'}
       />
     </DonateButton>
   </>
@@ -168,7 +168,7 @@ const DonateButton = styled.a`
   margin-top: 2em;
 
   & img {
-    width: 18em;
+    width: 16em;
     max-width: 319px;
   }
 `;

@@ -42,14 +42,22 @@ const Sidebar = styled.div`
 
   .dark & {
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: ${theme.colors.dark};
   }
 
   .light & {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: ${theme.colors.light};
   }
 
   &.visible {
     left: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: calc(100% - 2.5em);
+    left: -100vw;
   }
 `;
 
@@ -109,16 +117,23 @@ const StyledHeader = styled.div`
     padding: 0 0.8em;
 
     & .switch {
-      transform: scale(0.85);
+      transform: scale(0.75);
     }
   }
 
   & .menu-icon {
     cursor: pointer;
     color: ${theme.colors.primary};
+    height: 24px;
+    width: 24px;
 
     &:hover {
       color: ${theme.colors.darkAccent};
+    }
+
+    @media (max-width: 768px) {
+      height: 20px;
+      width: 20px;
     }
   }
 

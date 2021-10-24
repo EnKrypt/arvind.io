@@ -15,6 +15,7 @@ const MenuButton = () => {
         <Cross
           className="menu-icon"
           onClick={() => {
+            document.documentElement.classList.remove('disable-scroll');
             document.getElementById('sidebar').classList.remove('visible');
             setDisplay(false);
           }}
@@ -25,6 +26,7 @@ const MenuButton = () => {
         <Bars
           className="menu-icon"
           onClick={() => {
+            document.documentElement.classList.add('disable-scroll');
             document.getElementById('sidebar').classList.add('visible');
             setDisplay(true);
           }}
