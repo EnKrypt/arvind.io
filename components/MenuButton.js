@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import Bars from './icons/Bars';
 import Cross from './icons/Cross';
 
-const Menu = () => {
+const MenuButton = () => {
   const [hydrated, setHydrated] = useState(false);
   const [display, setDisplay] = useState(false);
   useEffect(() => {
@@ -15,6 +15,7 @@ const Menu = () => {
         <Cross
           className="menu-icon"
           onClick={() => {
+            document.getElementById('sidebar').classList.remove('visible');
             setDisplay(false);
           }}
         />
@@ -24,6 +25,7 @@ const Menu = () => {
         <Bars
           className="menu-icon"
           onClick={() => {
+            document.getElementById('sidebar').classList.add('visible');
             setDisplay(true);
           }}
         />
@@ -38,4 +40,4 @@ const Menu = () => {
   }
 };
 
-export default Menu;
+export default MenuButton;

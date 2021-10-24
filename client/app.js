@@ -15,6 +15,6 @@ selectivelyHydrateWhenVisible('ThemeChanger', () =>
   import('../components/ThemeChanger')
 );
 
-selectivelyHydrateWhenVisible('Menu', () =>
-  import('../components/Menu')
+selectivelyHydrateWhenVisible('MenuButton', () =>
+  import('../components/MenuButton')
 );

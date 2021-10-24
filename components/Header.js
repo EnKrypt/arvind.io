@@ -1,26 +1,57 @@
 import styled from 'styled-components';
 import withHydration from '../client/withHydration';
 import theme from '../theme';
-import Menu from './Menu';
+import MenuContent from './MenuContent';
+import MenuButton from './MenuButton';
 import ThemeChanger from './ThemeChanger';
 
 const HydratedThemeChanger = withHydration(ThemeChanger, 'ThemeChanger');
-const HydratedMenu = withHydration(Menu, 'Menu');
+const HydratedMenuButton = withHydration(MenuButton, 'MenuButton');
 
 const Header = () => (
-  <StyledHeader>
-    <LeftAlign>
-      <HydratedMenu />
-    </LeftAlign>
-    <a href="/">
-      <FirstName>arvind </FirstName>
-      <span>kumar</span>
-    </a>
-    <RightAlign>
-      <HydratedThemeChanger />
-    </RightAlign>
-  </StyledHeader>
+  <>
+    <Sidebar id="sidebar">
+      <MenuContent />
+    </Sidebar>
+    <StyledHeader>
+      <LeftAlign>
+        <HydratedMenuButton />
+      </LeftAlign>
+      <a href="/">
+        <FirstName>arvind </FirstName>
+        <span>kumar</span>
+      </a>
+      <RightAlign>
+        <HydratedThemeChanger />
+      </RightAlign>
+    </StyledHeader>
+  </>
 );
+
+const Sidebar = styled.div`
+  padding: 3em 0;
+  width: 18em;
+  height: calc(100% - 3.5em);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: -18em;
+  overflow-y: auto;
+  transition: 0.25s ease;
+  z-index: 1;
+
+  .dark & {
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .light & {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &.visible {
+    left: 0;
+  }
+`;
 
 const StyledHeader = styled.div`
   position: fixed;
