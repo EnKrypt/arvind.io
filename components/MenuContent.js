@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import donateImage from '../public/images/donate.png?resize';
+import authorImage from '../public/images/dp.jpg?resize';
 import theme from '../theme';
 import { StyledLink } from './BlogPostComponents';
 import GitHub from './icons/GitHub';
@@ -10,7 +11,16 @@ import Twitter from './icons/Twitter';
 
 const MenuContent = ({ sidebar }) => (
   <>
-    <StyledLogo />
+    <LogoAndPicture>
+      <StyledLogo />
+      <AuthorImage
+        alt="Arvind Kumar"
+        className="lazy"
+        src={authorImage.placeholder}
+        data-srcset={authorImage.srcSet}
+        data-sizes={sidebar ? '120px' : '162px'}
+      />
+    </LogoAndPicture>
     <StyledInfo>
       Hi, I&apos;m Arvind Kumar.
       <br />
@@ -91,6 +101,7 @@ const MenuContent = ({ sidebar }) => (
       </StyledLink>
     </MenuItem>
     <DonateButton
+      sidebar={sidebar}
       target="_blank"
       rel="noopener noreferrer"
       href="https://www.buymeacoffee.com/EnKrypt"
@@ -99,27 +110,43 @@ const MenuContent = ({ sidebar }) => (
         alt="Buy me a beer"
         className="lazy"
         src={donateImage.placeholder}
-        data-src={donateImage.src}
         data-srcset={donateImage.srcSet}
-        data-sizes={sidebar ? '(max-width: 768px) 100vw, 256px' : '319px'}
+        data-sizes={sidebar ? '256px' : '319px'}
       />
     </DonateButton>
   </>
 );
 
-const StyledLogo = styled(Logo)`
+const LogoAndPicture = styled.div`
   width: 7.5em;
-  height: 9em;
-  margin: 0 auto;
+  height: 7.5em;
+  position: relative;
+  margin: 0.75em auto;
+`;
+
+const StyledLogo = styled(Logo)`
+  opacity: 1;
+  transition: 0.2s;
+
+  .dark & {
+    background-color: ${theme.colors.dark};
+  }
+
+  .light & {
+    background-color: ${theme.colors.light};
+  }
 
   &:hover {
-    background-image: url(/images/dp.jpg);
-    background-size: cover;
-
-    & g {
-      visibility: hidden;
-    }
+    opacity: 0;
   }
+`;
+
+const AuthorImage = styled.img`
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 10em;
+  z-index: -1;
 `;
 
 const StyledInfo = styled.div`
@@ -168,8 +195,7 @@ const DonateButton = styled.a`
   margin-top: 2em;
 
   & img {
-    width: 16em;
-    max-width: 319px;
+    width: ${({ sidebar }) => (sidebar ? '16em' : '319px')};
   }
 `;
 

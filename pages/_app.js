@@ -4,6 +4,7 @@ import theme from '../theme';
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    scrollbar-width: thin;
   }
 
   html,
@@ -40,14 +41,12 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  ::-webkit-scrollbar-track,
   ::-webkit-scrollbar-thumb {
     border-radius: 10em;
   }
 
   ::-webkit-scrollbar {
     width: 5px;
-    height: 5px;
   }
 
   .dark ::-webkit-scrollbar-thumb {
@@ -56,6 +55,14 @@ const GlobalStyle = createGlobalStyle`
 
   .light ::-webkit-scrollbar-thumb {
     background-color: ${theme.colors.darkgray};
+  }
+
+  *.dark, .dark * {
+    scrollbar-color: ${theme.colors.lightgray};
+  }
+
+  *.light, .light * {
+    scrollbar-color: ${theme.colors.darkgray};
   }
 `;
 
