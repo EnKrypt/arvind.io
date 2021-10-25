@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color);
   }
 
   html,
@@ -19,11 +20,13 @@ const GlobalStyle = createGlobalStyle`
   body.dark {
     background-color: ${theme.colors.dark};
     color: ${theme.colors.light};
+    --scrollbar-color: ${theme.colors.lightgray};
   }
 
   body.light {
     background-color: ${theme.colors.light};
     color: ${theme.colors.dark};
+    --scrollbar-color: ${theme.colors.darkgray};
   }
 
   a {
@@ -43,26 +46,11 @@ const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar-thumb {
     border-radius: 10em;
+    background-color: var(--scrollbar-color);
   }
 
   ::-webkit-scrollbar {
     width: 5px;
-  }
-
-  .dark ::-webkit-scrollbar-thumb {
-    background-color: ${theme.colors.lightgray};
-  }
-
-  .light ::-webkit-scrollbar-thumb {
-    background-color: ${theme.colors.darkgray};
-  }
-
-  *.dark, .dark * {
-    scrollbar-color: ${theme.colors.lightgray};
-  }
-
-  *.light, .light * {
-    scrollbar-color: ${theme.colors.darkgray};
   }
 `;
 
