@@ -137,6 +137,10 @@ const StyledHeader = styled.div`
     }
   }
 
+  & .hydration-target {
+    display: flex;
+  }
+
   // Styles related to theme changer
   & .switch {
     position: relative;
