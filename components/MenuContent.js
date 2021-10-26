@@ -111,7 +111,7 @@ const MenuContent = ({ sidebar }) => (
         className="lazy"
         src={donateImage.placeholder}
         data-srcset={donateImage.srcSet}
-        data-sizes={sidebar ? '256px' : '319px'}
+        data-sizes="240px"
       />
     </DonateButton>
   </>
@@ -195,7 +195,7 @@ const DonateButton = styled.a`
   margin-top: 2em;
 
   & img {
-    width: ${({ sidebar }) => (sidebar ? '16em' : '319px')};
+    width: ${({ sidebar }) => (sidebar ? '15em' : '240px')};
   }
 `;
 

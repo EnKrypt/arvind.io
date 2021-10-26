@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     scrollbar-width: thin;
-    scrollbar-color: var(--scrollbar-color);
+    scrollbar-color: ${theme.colors.gray} transparent;
   }
 
   html,
@@ -20,13 +20,11 @@ const GlobalStyle = createGlobalStyle`
   body.dark {
     background-color: ${theme.colors.dark};
     color: ${theme.colors.light};
-    --scrollbar-color: ${theme.colors.lightgray};
   }
 
   body.light {
     background-color: ${theme.colors.light};
     color: ${theme.colors.dark};
-    --scrollbar-color: ${theme.colors.darkgray};
   }
 
   a {
@@ -46,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar-thumb {
     border-radius: 10em;
-    background-color: var(--scrollbar-color);
+    background-color: ${theme.colors.gray};
   }
 
   ::-webkit-scrollbar {
