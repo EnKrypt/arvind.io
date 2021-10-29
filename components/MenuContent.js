@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import donateImage from '../public/images/donate.png?resize';
 import authorImage from '../public/images/dp.jpg?resize';
 import theme from '../theme';
-import { StyledLink } from './BlogPostComponents';
+import { StyledLink } from './Atoms';
 import GitHub from './icons/GitHub';
 import Keybase from './icons/Keybase';
 import Logo from './icons/Logo';

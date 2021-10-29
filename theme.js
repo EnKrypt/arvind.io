@@ -15,10 +15,11 @@ const theme = {
     light: '#e6e6e6',
     darkest: '#000000',
     lightest: '#ffffff',
-    gray: '#606060',
+    gray: '#787878',
     darkgray: '#303030',
     lightgray: '#dadada',
-    green: '#00c060'
+    green: '#00a050',
+    red: '#c04050'
   }
 };
 

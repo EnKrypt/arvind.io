@@ -18,3 +18,7 @@ selectivelyHydrateWhenVisible('ThemeChanger', () =>
 selectivelyHydrateWhenVisible('MenuButton', () =>
   import('../components/MenuButton')
 );
+
+selectivelyHydrateWhenVisible('HireAvailability', () =>
+  import('../components/HireAvailability')
+);

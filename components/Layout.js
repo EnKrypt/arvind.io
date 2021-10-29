@@ -106,7 +106,7 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
 
 const Page = styled.div`
   padding: 5.5em 2.5em 2.5em 2.5em;
-  width: 50em;
+  max-width: 55em;
   margin: 0 auto;
 
   @media (max-width: 768px) {
