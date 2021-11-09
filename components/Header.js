@@ -121,6 +121,11 @@ const StyledHeader = styled.div`
     }
   }
 
+  && a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   & .menu-icon {
     cursor: pointer;
     color: ${theme.colors.primary};

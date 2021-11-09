@@ -112,6 +112,7 @@ const Page = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 4.5em 2.5em 2.5em 2.5em;
+    font-size: 0.8em;
   }
 `;
 

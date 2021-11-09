@@ -20,16 +20,19 @@ const GlobalStyle = createGlobalStyle`
   body.dark {
     background-color: ${theme.colors.dark};
     color: ${theme.colors.light};
+
+    a {
+      color: ${theme.colors.lightAlternate};
+    }
   }
 
   body.light {
     background-color: ${theme.colors.light};
     color: ${theme.colors.dark};
-  }
 
-  a {
-    text-decoration: none;
-    color: inherit;
+    a {
+      color: ${theme.colors.darkAlternate};
+    }
   }
 
   .hydration-target {

@@ -20,7 +20,15 @@ const HireAvailability = () => {
           and will be able to pick up new projects immediately. If you are in
           need of my services, we should get in touch to discuss your
           requirements. Use the form below or
-          <a href="mailto:mail@arvind.io"> email me</a>.
+          <a
+            href="mailto:mail@arvind.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            email me
+          </a>
+          .
         </div>
       </>
     );
@@ -35,7 +43,15 @@ const HireAvailability = () => {
           you are in need of my services, we should get in touch so I can take
           you on as my next client as soon as I am available. Use the form below
           or
-          <a href="mailto:mail@arvind.io"> email me</a>.
+          <a
+            href="mailto:mail@arvind.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            email me
+          </a>
+          .
         </div>
       </>
     );

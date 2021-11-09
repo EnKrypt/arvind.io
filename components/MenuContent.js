@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import donateImage from '../public/images/donate.png?resize';
 import authorImage from '../public/images/dp.jpg?resize';
 import theme from '../theme';
-import { StyledLink } from './Atoms';
 import GitHub from './icons/GitHub';
 import Keybase from './icons/Keybase';
 import Logo from './icons/Logo';
@@ -28,7 +27,10 @@ const MenuContent = ({ sidebar }) => (
       <br />
       If you&apos;d like to get in touch,
       <br />
-      <StyledLink href="mailto:mail@arvind.io">send me an email</StyledLink>.
+      <a href="mailto:mail@arvind.io" target="_blank" rel="noopener noreferrer">
+        send me an email
+      </a>
+      .
     </StyledInfo>
     <SocialLinks>
       <a
@@ -61,44 +63,29 @@ const MenuContent = ({ sidebar }) => (
       </a>
     </SocialLinks>
     <MenuItem className="alt">
-      <StyledLink underline={false} href="/">
-        Home
-      </StyledLink>
+      <a href="/">Home</a>
     </MenuItem>
     <MenuItem>
-      <StyledGreenLink underline={false} href="/hire">
-        Hire me
-      </StyledGreenLink>
+      <StyledGreenLink href="/hire">Hire me</StyledGreenLink>
     </MenuItem>
     <MenuItem className="alt">
-      <StyledLink
-        target="_blank"
-        rel="noopener noreferrer"
-        underline={false}
-        href="/resume.pdf"
-      >
+      <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
         Resume
-      </StyledLink>
+      </a>
     </MenuItem>
     <MenuItem>
-      <StyledLink
-        target="_blank"
-        rel="noopener noreferrer"
-        underline={false}
-        href="/rss.xml"
-      >
+      <a target="_blank" rel="noopener noreferrer" href="/rss.xml">
         RSS Feed
-      </StyledLink>
+      </a>
     </MenuItem>
     <MenuItem className="alt">
-      <StyledLink
+      <a
         target="_blank"
         rel="noopener noreferrer"
-        underline={false}
         href="https://github.com/EnKrypt/arvind.io"
       >
         Source
-      </StyledLink>
+      </a>
     </MenuItem>
     <DonateButton
       sidebar={sidebar}
@@ -158,6 +145,10 @@ const SocialLinks = styled.div`
   justify-content: space-evenly;
   padding-bottom: 2em;
 
+  && a {
+    color: inherit;
+  }
+
   & svg {
     height: 1.5em;
   }
@@ -166,6 +157,10 @@ const SocialLinks = styled.div`
 const MenuItem = styled.div`
   padding: 0.25em;
   font-size: 1.1em;
+
+  & a {
+    text-decoration: none;
+  }
 
   .dark &.alt {
     background-color: ${theme.colors.darkgray};
@@ -184,7 +179,7 @@ const MenuItem = styled.div`
   }
 `;
 
-const StyledGreenLink = styled(StyledLink)`
+const StyledGreenLink = styled.a`
   && {
     color: ${theme.colors.green};
   }
