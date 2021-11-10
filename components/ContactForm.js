@@ -14,7 +14,7 @@ const clearInfoTimeout = () => {
 };
 
 const ContactForm = () => {
-  const captcha = useRef(null);
+  const captchaRef = useRef(null);
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const messageRef = useRef(null);
@@ -84,8 +84,8 @@ const ContactForm = () => {
             className={loading ? 'disabled' : undefined}
             onClick={() => {
               if (!loading) {
-                if (captcha && captcha.execute) {
-                  captcha.execute();
+                if (captchaRef.current && captchaRef.current.execute) {
+                  captchaRef.current.execute();
                 } else {
                   showError();
                 }
@@ -95,7 +95,7 @@ const ContactForm = () => {
             Submit
           </button>
           <Reaptcha
-            ref={captcha}
+            ref={captchaRef}
             sitekey="6LeWOCEUAAAAAPVh4ObNT7avzud3Ifsr2Tsx3HLX"
             size="invisible"
             onVerify={(token) => {
@@ -108,9 +108,9 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify({
                   recaptchaToken: token,
-                  name: nameRef ? nameRef.value : '',
-                  email: emailRef ? emailRef.value : '',
-                  message: messageRef ? messageRef.value : ''
+                  name: nameRef.current ? nameRef.current.value : '',
+                  email: emailRef.current ? emailRef.current.value : '',
+                  message: messageRef.current ? messageRef.current.value : ''
                 })
               })
                 .then((response) => response.json())
@@ -119,10 +119,14 @@ const ContactForm = () => {
                     showError(response.message);
                   } else {
                     showSuccess(response.message);
-                    if (nameRef && emailRef && messageRef) {
-                      nameRef.value = '';
-                      emailRef.value = '';
-                      messageRef.value = '';
+                    if (
+                      nameRef.current &&
+                      emailRef.current &&
+                      messageRef.current
+                    ) {
+                      nameRef.current.value = '';
+                      emailRef.current.value = '';
+                      messageRef.current.value = '';
                     }
                   }
                   setLoading(false);
@@ -131,7 +135,7 @@ const ContactForm = () => {
                   showError();
                   setLoading(false);
                 });
-              captcha.reset();
+              captchaRef.current.reset();
             }}
           />
           <div className="recaptcha-disclaimer">
