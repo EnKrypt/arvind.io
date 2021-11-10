@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import withHydration from '../client/withHydration';
+import ContactForm from '../components/ContactForm';
 import HireAvailability from '../components/HireAvailability';
 import Layout from '../components/Layout';
 import { commonExtractor } from '../extractors';
@@ -15,6 +16,8 @@ const HydratedHireAvailability = withHydration(
   HireAvailability,
   'HireAvailability'
 );
+
+const HydratedContactForm = withHydration(ContactForm, 'ContactForm');
 
 const Hire = ({ config, fontFaces }) => (
   <Layout config={config} fontFaces={fontFaces} seo={{ title: 'Hire me' }}>
@@ -71,23 +74,12 @@ const Hire = ({ config, fontFaces }) => (
       <Para>
         If you&apos;re someone who&apos;s just not sure where to get started
         with all the coding mess, you can still get in touch to understand and
-        discuss your situation better. If necessary, I can provide abstract
-        insights and pointers, and educate you about healthy industry standards
-        and common pitfalls. You will not be charged unless you want
-        consultation to specifically architect your business solution.
+        discuss your situation better. I can provide abstract insights and
+        pointers, and educate you about healthy industry standards and common
+        pitfalls. You will not be charged unless you want consultation to
+        specifically architect your business solution.
       </Para>
-      <Para>
-        Use this form to fill out your requirements or other details, and
-        I&apos;ll get back to you with a quote (or answer) at no charge. You can
-        also just email me at{' '}
-        <a
-          href="mailto:mail@arvind.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          mail@arvind.io
-        </a>
-      </Para>
+      <HydratedContactForm />
       <ClientsPara>
         Some of my past local clients from my own city. I enjoy serving the
         Bangalore ambition.
@@ -174,6 +166,129 @@ const HirePage = styled.div`
   & .unavailable {
     color: ${theme.colors.red};
   }
+
+  & .nocontact {
+    color: ${theme.colors.red};
+    padding: 4em 1em 5em 1em;
+  }
+
+  & .contact {
+    padding: 1em 0 6em 0;
+    font-size: 0.85em;
+  }
+
+  & .contact .contact-para {
+    padding-bottom: 2em;
+  }
+
+  & .contact .form {
+    max-width: 33em;
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+
+  & .contact label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  & .contact input,
+  & .contact textarea,
+  & .contact button {
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.4em;
+    margin-bottom: 1.5em;
+    border-radius: 0.25em;
+    line-height: 1.5;
+    font-family: inherit;
+  }
+
+  & .contact button {
+    background-color: ${theme.colors.primary};
+    margin: 2em auto;
+    width: 75%;
+    transition: 0.1s;
+  }
+
+  & .contact button.disabled {
+    background-color: ${theme.colors.gray};
+    cursor: default;
+  }
+
+  & .contact button:hover {
+    background-color: ${theme.colors.darkAccent};
+  }
+
+  & .contact button:active {
+    background-color: ${theme.colors.darkAlternate};
+  }
+
+  & .contact .recaptcha-disclaimer {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  & .contact .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    bottom: -10em;
+    right: 0;
+    transition: 0.25s ease;
+    z-index: 1;
+  }
+
+  & .contact .info.visible {
+    bottom: 0;
+  }
+
+  & .contact .info.success {
+    background-color: ${theme.colors.green};
+  }
+
+  & .contact .info.failure {
+    background-color: ${theme.colors.red};
+  }
+
+  & .contact .info-text {
+    flex: 1;
+    text-align: center;
+    margin-left: calc(1em + 24px);
+  }
+
+  & .contact .info-cross {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .dark & .contact input,
+  .dark & .contact textarea {
+    background: ${theme.colors.darkest};
+    color: ${theme.colors.light};
+  }
+
+  .dark & .contact button {
+    color: ${theme.colors.darkest};
+  }
+
+  .light & .contact input,
+  .light & .contact textarea {
+    background: ${theme.colors.lightest};
+    color: ${theme.colors.dark};
+  }
+
+  .light & .contact button {
+    color: ${theme.colors.lightest};
+  }
 `;
 
 const Para = styled.div`
@@ -199,7 +314,6 @@ const DomainTitle = styled.div`
 `;
 
 const ClientsPara = styled.div`
-  padding: 4em 0 0 0;
   text-align: center;
 `;
 
@@ -219,6 +333,14 @@ const ClientsGallery = styled.div`
 
   & img:hover {
     filter: grayscale(0);
+  }
+
+  .dark & img {
+    box-shadow: 0 0 20px 0 #000000;
+  }
+
+  .light & img {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
   }
 
   @media (max-width: 768px) {

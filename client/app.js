@@ -22,3 +22,7 @@ selectivelyHydrateWhenVisible('MenuButton', () =>
 selectivelyHydrateWhenVisible('HireAvailability', () =>
   import('../components/HireAvailability')
 );
+
+selectivelyHydrateWhenVisible('ContactForm', () =>
+  import('../components/ContactForm')
+);

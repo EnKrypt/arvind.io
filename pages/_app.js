@@ -39,6 +39,10 @@ const GlobalStyle = createGlobalStyle`
     display: contents;
   }
 
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
+
   @media (max-width: 768px) {
     .disable-scroll {
       overflow: hidden;

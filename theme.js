@@ -19,7 +19,7 @@ const theme = {
     darkgray: '#303030',
     lightgray: '#dadada',
     green: '#00a050',
-    red: '#c04050'
+    red: '#c05060'
   }
 };
 
