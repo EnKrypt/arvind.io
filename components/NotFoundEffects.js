@@ -23,26 +23,27 @@ const NotFoundEffects = ({ notFoundGifs }) => {
           <img
             className="not-found-image"
             src={`/images/404/${gif}`}
+            key={gif}
             alt="404 Gif"
           />
         ) : (
-          <div data-text="404" className="glitch">
+          <div data-text="4o4" className="glitch">
             <span
               className={['glitch-before', stopGlitching ? 'hide' : '']
                 .join(' ')
                 .trim()}
             >
-              <span className="primary">4</span>0
+              <span className="primary">4</span>o
               <span className="primary">4</span>
             </span>
-            <span className="primary">4</span>0
+            <span className="primary">4</span>o
             <span className="primary">4</span>
             <span
               className={['glitch-after', stopGlitching ? 'hide' : '']
                 .join(' ')
                 .trim()}
             >
-              <span className="primary">4</span>0
+              <span className="primary">4</span>o
               <span className="primary">4</span>
             </span>
           </div>
