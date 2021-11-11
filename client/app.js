@@ -26,3 +26,7 @@ selectivelyHydrateWhenVisible('HireAvailability', () =>
 selectivelyHydrateWhenVisible('ContactForm', () =>
   import('../components/ContactForm')
 );
+
+selectivelyHydrateWhenVisible('NotFoundEffects', () =>
+  import('../components/NotFoundEffects')
+);
