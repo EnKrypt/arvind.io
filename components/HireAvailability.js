@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'preact/hooks';
 
-const HireAvailability = () => {
+const HireAvailability = ({ endpoint }) => {
   const [status, setStatus] = useState('');
   useEffect(() => {
-    // TODO: Change to /api/available
-    fetch('https://arvind.io/api/available')
+    fetch(`${endpoint}/api/available`)
       .then((response) => response.json())
       .then((availability) => {
         setStatus(availability.message);

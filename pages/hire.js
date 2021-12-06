@@ -38,7 +38,7 @@ const Hire = ({ config, fontFaces }) => (
         instead.
       </Subtext>
       <Para>
-        <HydratedHireAvailability />
+        <HydratedHireAvailability endpoint={config.URL} />
       </Para>
       <Para>
         I have experience developing and deploying diverse tech solutions at
@@ -79,7 +79,7 @@ const Hire = ({ config, fontFaces }) => (
         pitfalls. You will not be charged unless you want consultation to
         specifically architect your business solution.
       </Para>
-      <HydratedContactForm />
+      <HydratedContactForm endpoint={config.URL} />
       <ClientsPara>
         Some of my past local clients from my own city. I enjoy serving the
         Bangalore ambition.

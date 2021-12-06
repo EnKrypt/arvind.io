@@ -13,7 +13,7 @@ const clearInfoTimeout = () => {
   }
 };
 
-const ContactForm = () => {
+const ContactForm = ({ endpoint }) => {
   const captchaRef = useRef(null);
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -100,8 +100,7 @@ const ContactForm = () => {
             size="invisible"
             onVerify={(token) => {
               setLoading(true);
-              // TODO: Change to /api/client-form
-              fetch('https://arvind.io/api/client-form', {
+              fetch(`${endpoint}/api/client-form`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
