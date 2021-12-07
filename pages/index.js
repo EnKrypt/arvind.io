@@ -1,18 +1,20 @@
 import Layout from '../components/Layout';
-import { commonExtractor } from '../extractors';
+import { blogPostListExtractor, commonExtractor } from '../extractors';
 
-const Home = ({ config, fontFaces }) => (
+const Home = ({ config, fontFaces, blogPostList }) => (
   <Layout config={config} fontFaces={fontFaces}>
-    Temporarily down due to maintenance
+    <pre>{JSON.stringify(blogPostList, null, 4)}</pre>
   </Layout>
 );
 
 export const getStaticProps = async (context) => {
   const { config, fontFaces } = await commonExtractor();
+  const { blogPostList } = await blogPostListExtractor(1, '');
   return {
     props: {
       config,
-      fontFaces
+      fontFaces,
+      blogPostList
     }
   };
 };

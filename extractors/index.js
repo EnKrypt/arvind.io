@@ -1,8 +1,16 @@
 import getNotFoundGifs from './404gifs';
+import getBlogPostList from './blogPostList';
 import getConfig from './config';
 import getFontFacesToInject from './fonts';
+import {
+  getNumberOfPages,
+  getUniqueTagPages,
+  getUniqueTags
+} from './pathGenerators';
 
 // Build time data fetching is put here under various extractors
+
+const postsInAPage = 5;
 
 export const commonExtractor = async () => {
   const config = await getConfig();
@@ -13,4 +21,24 @@ export const commonExtractor = async () => {
 export const notFoundPageExtractor = async () => {
   const notFoundGifs = await getNotFoundGifs();
   return { notFoundGifs };
+};
+
+export const blogPostListExtractor = async (page, tag) => {
+  const blogPostList = await getBlogPostList(page, tag, postsInAPage);
+  return { blogPostList };
+};
+
+export const numberOfPagesExtractor = async () => {
+  const numberOfPages = await getNumberOfPages(postsInAPage);
+  return { numberOfPages };
+};
+
+export const uniqueTagsExtractor = async () => {
+  const uniqueTags = await getUniqueTags();
+  return { uniqueTags };
+};
+
+export const uniqueTagPagesExtractor = async () => {
+  const uniqueTagPages = await getUniqueTagPages(postsInAPage);
+  return { uniqueTagPages };
 };

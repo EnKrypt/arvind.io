@@ -8,7 +8,7 @@ const HireAvailability = ({ endpoint }) => {
       .then((availability) => {
         setStatus(availability.message);
       });
-  }, []);
+  }, [endpoint]);
 
   if (status === 'available') {
     return (

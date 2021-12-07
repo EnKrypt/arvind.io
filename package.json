@@ -25,7 +25,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "next-plugin-preact": "^3.0.6",
-    "node-fetch": "^3.0.0",
+    "node-fetch": "^2.6.6",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
     "preact-ssr-prepass": "^1.2.0",
@@ -33,9 +33,13 @@
     "react-dom": "npm:@preact/compat",
     "react-ssr-prepass": "npm:preact-ssr-prepass",
     "reaptcha": "^1.7.3",
+    "remark-frontmatter": "^4.0.1",
+    "remark-parse": "^10.0.1",
     "responsive-loader": "^2.3.0",
     "sharp": "^0.29.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "unified": "^10.1.1",
+    "yaml": "^1.10.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
