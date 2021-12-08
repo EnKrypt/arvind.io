@@ -17,7 +17,7 @@ const MenuPage = styled.div`
   padding-top: 1em;
 `;
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async () => {
   const { config, fontFaces } = await commonExtractor();
   return {
     props: {

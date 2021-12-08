@@ -231,7 +231,7 @@ const NotFoundCode = styled.div`
   font-size: 1.25em;
 `;
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async () => {
   const { config, fontFaces } = await commonExtractor();
   const { notFoundGifs } = await notFoundPageExtractor();
   return {

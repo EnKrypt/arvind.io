@@ -5,8 +5,16 @@ import {
   numberOfPagesExtractor
 } from '../../extractors';
 
-const Page = ({ config, fontFaces, blogPostList, page }) => (
+const Page = ({
+  config,
+  fontFaces,
+  blogPostList,
+  page,
+  prevPage,
+  nextPage
+}) => (
   <Layout config={config} fontFaces={fontFaces} seo={{ title: `Page ${page}` }}>
+    <pre>{JSON.stringify({ prevPage, nextPage })}</pre>
     <pre>{JSON.stringify(blogPostList, null, 4)}</pre>
   </Layout>
 );
@@ -25,6 +33,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const page = Number(params.page);
+  const { numberOfPages } = await numberOfPagesExtractor();
   const { config, fontFaces } = await commonExtractor();
   const { blogPostList } = await blogPostListExtractor(page);
   return {
@@ -32,7 +41,9 @@ export const getStaticProps = async ({ params }) => {
       config,
       fontFaces,
       blogPostList,
-      page
+      page,
+      prevPage: true,
+      nextPage: page < numberOfPages
     }
   };
 };
