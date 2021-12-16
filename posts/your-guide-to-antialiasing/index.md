@@ -51,7 +51,7 @@ Designed to succeed MSAA, it adds more and better coverage sampling in order to 
 
 ---
 
-### [FXAA](https://en.wikipedia.org/wiki/Fast_approximate_anti-aliasing) or [MLAA](http://www.hardocp.com/article/2011/07/18/nvidias_new_fxaa_antialiasing_technology/4)
+### [FXAA](https://en.wikipedia.org/wiki/Fast_approximate_anti-aliasing) or [MLAA](http://www.hardocp.com/article/2011/07/18/nvidias_new_fxaa_antialiasing_technology/4)
 
 FX stands for 'fast approximation'. ML for 'morphological'.
 FXAA is by Nvidia (but also used on other environments due to its popularity), MLAA is by AMD.

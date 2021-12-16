@@ -1,14 +1,17 @@
 import Layout from '../components/Layout';
+import PostListing from '../components/PostListing';
 import {
   blogPostListExtractor,
   commonExtractor,
   numberOfPagesExtractor
 } from '../extractors';
 
-const Home = ({ config, fontFaces, blogPostList, prevPage, nextPage }) => (
+const Home = ({ config, fontFaces, blogPostList, nextPage }) => (
   <Layout config={config} fontFaces={fontFaces}>
-    <pre>{JSON.stringify({ prevPage, nextPage })}</pre>
-    <pre>{JSON.stringify(blogPostList, null, 4)}</pre>
+    <PostListing
+      posts={blogPostList}
+      nextPage={nextPage ? '/page/2' : undefined}
+    />
   </Layout>
 );
 
@@ -21,7 +24,6 @@ export const getStaticProps = async () => {
       config,
       fontFaces,
       blogPostList,
-      prevPage: false,
       nextPage: numberOfPages > 1
     }
   };

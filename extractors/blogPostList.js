@@ -75,10 +75,11 @@ const getExcerpt = (tree) => {
     return excerpt;
   }
   return excerpt
-    .substring(0, limit)
+    .substring(0, limit + 1)
     .split(' ')
     .slice(0, -1)
     .join(' ')
+    .replace(/\,$|\.$|\;$/, '') // Remove trailing punctuation
     .concat('...');
 };
 
@@ -92,10 +93,16 @@ const traverseTreeForText = (tree, excerpt, limit) => {
         limit
       );
     } else if (node.type === 'text' && node.value) {
+      // Remove citations from the text node
+      const text = node.value.replace(/\[\^\d+\]/g, '').trim();
       if (modifiedExcerpt) {
-        modifiedExcerpt = modifiedExcerpt.concat(' ', node.value);
+        // If the text starts with punctuation, don't join it with a space
+        modifiedExcerpt = modifiedExcerpt.concat(
+          [',', '.', ';', '!', '?'].includes(text.charAt(0)) ? '' : ' ',
+          text
+        );
       } else {
-        modifiedExcerpt = node.value;
+        modifiedExcerpt = text;
       }
     }
     if (modifiedExcerpt.length > limit) {

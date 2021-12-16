@@ -272,7 +272,7 @@ const HirePage = styled.div`
 
   .dark & .contact input,
   .dark & .contact textarea {
-    background: ${theme.colors.darkest};
+    background-color: ${theme.colors.darkest};
     color: ${theme.colors.light};
   }
 
@@ -282,7 +282,7 @@ const HirePage = styled.div`
 
   .light & .contact input,
   .light & .contact textarea {
-    background: ${theme.colors.lightest};
+    background-color: ${theme.colors.lightest};
     color: ${theme.colors.dark};
   }
 

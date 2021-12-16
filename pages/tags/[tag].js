@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import PostListing from '../../components/PostListing';
 import {
   blogPostListExtractor,
   commonExtractor,
@@ -6,10 +7,12 @@ import {
   uniqueTagsExtractor
 } from '../../extractors';
 
-const Tag = ({ config, fontFaces, blogPostList, tag, prevPage, nextPage }) => (
+const Tag = ({ config, fontFaces, blogPostList, tag, nextPage }) => (
   <Layout config={config} fontFaces={fontFaces} seo={{ title: `Tag: ${tag}` }}>
-    <pre>{JSON.stringify({ prevPage, nextPage })}</pre>
-    <pre>{JSON.stringify(blogPostList, null, 4)}</pre>
+    <PostListing
+      posts={blogPostList}
+      nextPage={nextPage ? `/tags/${tag}/page/2` : undefined}
+    />
   </Layout>
 );
 
@@ -35,7 +38,6 @@ export const getStaticProps = async ({ params }) => {
       fontFaces,
       blogPostList,
       tag,
-      prevPage: false,
       nextPage: numberOfPages > 1
     }
   };

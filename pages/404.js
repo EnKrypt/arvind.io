@@ -181,14 +181,14 @@ const NotFoundPage = styled.div`
   .dark & .glitch-after,
   .dark & .glitch-before {
     color: ${theme.colors.light};
-    background: ${theme.colors.dark};
+    background-color: ${theme.colors.dark};
   }
 
   .light & .glitch,
   .light & .glitch-after,
   .light & .glitch-before {
     color: ${theme.colors.dark};
-    background: ${theme.colors.light};
+    background-color: ${theme.colors.light};
   }
 
   & .not-found-options {

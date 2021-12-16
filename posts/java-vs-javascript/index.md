@@ -40,7 +40,7 @@ Also useful to note is that Java has its own core set of libraries, and virtual 
 -   For standalone apps - If you just want to create a command line or GUI application on the go, to run natively, Java is a good bet. In fact, you can't make Android apps without Java.
 -   Browser Applets - Although Java applets are becoming rarer and old, sometimes they are used to extend the functionality of the limited power that web browsers have over your system.
 -   Embedded devices - Java was originally written with portability in mind, such that it can easily be made to run in embedded projects due to its scalability.
--   Drivers - *Java-like* languages like C or C++ are often used to develop software to make hardware work, although you might want to use a language different from Java for this purpose.
+-   Drivers - *Java-like* languages like C or C++ are often used to develop software to make hardware work, although you might want to use a language different from Java for this purpose.
 
 ### The JavaScript mindset
 
