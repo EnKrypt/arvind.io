@@ -42,6 +42,19 @@ const StyledPostMatter = styled.div`
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+
+    & img {
+      width: 256px;
+      margin-bottom: 1em;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -66,6 +79,7 @@ const Tags = styled.div`
   padding: 2.4em 0 1.2em 0;
   display: flex;
   gap: 0.3em;
+  flex-wrap: wrap;
 `;
 
 const Tag = styled.div`
