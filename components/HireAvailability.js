@@ -12,7 +12,7 @@ const HireAvailability = ({ endpoint }) => {
 
   if (status === 'available') {
     return (
-      <>
+      <div>
         <div className="available">I am currently available!</div>
         <div className="available">
           This means I am not catering to another client&apos;s needs at present
@@ -29,11 +29,11 @@ const HireAvailability = ({ endpoint }) => {
           </a>
           .
         </div>
-      </>
+      </div>
     );
-  } else if (status === 'unavailable') {
+  } else {
     return (
-      <>
+      <div>
         <div className="unavailable">I am currently unavailable!</div>
         <div className="unavailable">
           This means I am at present either involved with another client, or I
@@ -52,10 +52,8 @@ const HireAvailability = ({ endpoint }) => {
           </a>
           .
         </div>
-      </>
+      </div>
     );
-  } else {
-    return <span></span>;
   }
 };
 
