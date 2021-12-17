@@ -1,11 +1,18 @@
 import styled from 'styled-components';
+import withHydration from '../client/withHydration';
 import theme from '../theme';
 import Clock from './icons/Clock';
+import PostImage from './PostImage';
 
-const PostMatter = ({ matter }) => {
+const HydratedPostImage = withHydration(PostImage, 'PostImage');
+
+const PostMatter = ({ matter, post }) => {
   const postImage = require(`../public/images/previews/${matter.key}.png?resize`);
   return (
-    <StyledPostMatter>
+    <StyledPostMatter
+      className={post ? 'post zoom' : ''}
+      id={`matter-${matter.key}`}
+    >
       <div>
         <Title>
           <a href={`/posts/${matter.key}`}>{matter.title}</a>
@@ -21,13 +28,7 @@ const PostMatter = ({ matter }) => {
           ))}
         </Tags>
       </div>
-      <img
-        alt="Article Preview"
-        className="lazy"
-        src={postImage.placeholder}
-        data-srcset={postImage.srcSet}
-        data-sizes="(max-width: 768px) 256px, 192px"
-      />
+      <HydratedPostImage image={postImage} post={post} slug={matter.key} />
     </StyledPostMatter>
   );
 };
@@ -44,6 +45,23 @@ const StyledPostMatter = styled.div`
     border-radius: 0.2em;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
+    cursor: zoom-in;
+  }
+
+  &.zoom {
+    flex-direction: column;
+  }
+
+  &.zoom img {
+    cursor: zoom-out;
+    width: 560px;
+    height: 294px;
+    margin-bottom: 2em;
+  }
+
+  &.post.zoom img {
+    width: 720px;
+    height: 378px;
   }
 
   @media (max-width: 768px) {
@@ -53,10 +71,18 @@ const StyledPostMatter = styled.div`
       width: 100%;
     }
 
-    & img {
+    & img,
+    &.zoom img {
       width: 256px;
       height: 134px;
       margin-bottom: 1em;
+      cursor: default;
+    }
+
+    &&.post img {
+      width: calc(100vw - 64px);
+      height: unset;
+      aspect-ratio: 1200 / 630;
     }
   }
 `;

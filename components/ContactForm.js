@@ -158,7 +158,9 @@ const ContactForm = ({ endpoint }) => {
           </div>
         </div>
         <div
-          className={['info', displayInfo ? 'visible' : '', infoType].join(' ')}
+          className={['info', infoType, displayInfo ? 'visible' : '']
+            .join(' ')
+            .trim()}
         >
           <div className="info-text">{infoText}</div>
           <Cross

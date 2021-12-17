@@ -30,3 +30,7 @@ selectivelyHydrateWhenVisible('ContactForm', () =>
 selectivelyHydrateWhenVisible('NotFoundEffects', () =>
   import('../components/NotFoundEffects')
 );
+
+selectivelyHydrateWhenVisible('PostImage', () =>
+  import('../components/PostImage')
+);

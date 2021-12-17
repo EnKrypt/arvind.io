@@ -17,7 +17,7 @@ const Post = ({ config, fontFaces, post, prevPost, nextPost }) => (
       image: `/images/previews/${post.frontmatter.key}.png`
     }}
   >
-    <PostMatter matter={post.frontmatter} />
+    <PostMatter matter={post.frontmatter} post={true} />
     <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
   </Layout>
 );
