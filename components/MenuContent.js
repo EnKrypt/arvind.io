@@ -190,7 +190,8 @@ const DonateButton = styled.a`
   margin-top: 2em;
 
   & img {
-    width: ${({ sidebar }) => (sidebar ? '15em' : '240px')};
+    width: 240px;
+    height: 64.5px;
   }
 `;
 

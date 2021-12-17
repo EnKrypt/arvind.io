@@ -7,7 +7,9 @@ const PostMatter = ({ matter }) => {
   return (
     <StyledPostMatter>
       <div>
-        <Title>{matter.title}</Title>
+        <Title>
+          <a href={`/posts/${matter.key}`}>{matter.title}</a>
+        </Title>
         <PublishedOn>
           <Clock /> Published on {matter.formattedDate}
         </PublishedOn>
@@ -38,6 +40,7 @@ const StyledPostMatter = styled.div`
 
   & img {
     width: 192px;
+    height: 101px;
     border-radius: 0.2em;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
@@ -52,15 +55,20 @@ const StyledPostMatter = styled.div`
 
     & img {
       width: 256px;
+      height: 134px;
       margin-bottom: 1em;
     }
   }
 `;
 
 const Title = styled.div`
-  color: ${theme.colors.primary};
   font-size: 2.25em;
   padding: 0.3em 0;
+
+  && a {
+    color: ${theme.colors.primary};
+    text-decoration: none;
+  }
 `;
 
 const PublishedOn = styled.div`

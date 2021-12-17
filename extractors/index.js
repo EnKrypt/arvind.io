@@ -1,5 +1,6 @@
 import getNotFoundGifs from './404gifs';
-import getBlogPostList from './blogPostList';
+import getBlogPostList, { getBlogPostSlugs } from './blogPostList';
+import getBlogPost from './blogPost';
 import getConfig from './config';
 import getFontFacesToInject from './fonts';
 import {
@@ -28,6 +29,11 @@ export const blogPostListExtractor = async (page, tag) => {
   return { blogPostList };
 };
 
+export const blogPostSlugsExtractor = async () => {
+  const blogPostSlugs = await getBlogPostSlugs();
+  return { blogPostSlugs };
+};
+
 export const numberOfPagesExtractor = async () => {
   const numberOfPages = await getNumberOfPages(postsInAPage);
   return { numberOfPages };
@@ -41,4 +47,8 @@ export const uniqueTagsExtractor = async () => {
 export const uniqueTagPagesExtractor = async () => {
   const uniqueTagPages = await getUniqueTagPages(postsInAPage);
   return { uniqueTagPages };
+};
+
+export const blogPostExtractor = async (slug) => {
+  return await getBlogPost(slug);
 };

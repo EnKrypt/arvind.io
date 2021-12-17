@@ -4,8 +4,12 @@ import remarkParse from 'remark-parse';
 import { unified } from 'unified';
 import YAML from 'yaml';
 
+export const getBlogPostSlugs = async () => {
+  return await fs.readdir('./posts');
+};
+
 const getBlogPostList = async (page = 1, tag = '', postsInAPage) => {
-  const folders = await fs.readdir('./posts');
+  const folders = await getBlogPostSlugs();
   const posts = await Promise.all(
     folders.map(async (folder) => {
       const tree = await getPostTree(folder);
@@ -61,7 +65,7 @@ export const getFrontmatter = (tree) => {
   }
 };
 
-const getExcerpt = (tree) => {
+export const getExcerpt = (tree) => {
   const limit = 300; // Excerpt should not be more than 300 characters
   const excerpt = traverseTreeForText(tree, '', limit);
   /* We passed `limit` to the above recursive function so that it knows

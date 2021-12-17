@@ -1,13 +1,12 @@
-import { promises as fs } from 'fs';
-import { getFrontmatter, getPostTree } from './blogPostList';
+import { getBlogPostSlugs, getFrontmatter, getPostTree } from './blogPostList';
 
 export const getNumberOfPages = async (postsInAPage) => {
-  const folders = await fs.readdir('./posts');
+  const folders = await getBlogPostSlugs();
   return Math.ceil(folders.length / postsInAPage);
 };
 
 export const getUniqueTags = async () => {
-  const folders = await fs.readdir('./posts');
+  const folders = await getBlogPostSlugs();
   return [
     ...new Set(
       (
@@ -23,7 +22,7 @@ export const getUniqueTags = async () => {
 };
 
 export const getUniqueTagPages = async (postsInAPage) => {
-  const folders = await fs.readdir('./posts');
+  const folders = await getBlogPostSlugs();
   const tagOccurrences = (
     await Promise.all(
       folders.map(async (folder) => {

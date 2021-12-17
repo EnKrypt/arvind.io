@@ -326,6 +326,7 @@ const ClientsGallery = styled.div`
 
   & img {
     width: 300px;
+    height: 100.5px;
     border-radius: 0.2em;
     filter: grayscale(100%);
     transition: 0.2s ease;
@@ -348,6 +349,7 @@ const ClientsGallery = styled.div`
 
     & img {
       width: 220px;
+      height: 73px;
     }
   }
 `;
