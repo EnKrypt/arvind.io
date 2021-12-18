@@ -1,3 +1,3 @@
 #!/bin/sh
 
-NODE_ENV=development next dev
+NODE_ENV=development next-remote-watch ./posts
