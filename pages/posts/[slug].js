@@ -26,6 +26,18 @@ const PostContent = styled.div`
   font-family: 'EB Garamond';
   font-size: 1.5em;
   text-align: justify;
+
+  & img {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    & img {
+      width: calc(100vw - 64px);
+    }
+  }
 `;
 
 export const getStaticPaths = async () => {

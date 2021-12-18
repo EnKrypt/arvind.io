@@ -51,6 +51,9 @@ const getPostHTML = async (folder) => {
       .use(remarkParse)
       .use(remarkFrontmatter)
       .use(remarkRehype, { allowDangerousHtml: true })
+      .use(() => (tree) => {
+        traverseTreeForImages(folder, tree.children);
+      })
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(
         await fs.readFile(`./posts/${folder}/index.md`, {
@@ -58,6 +61,40 @@ const getPostHTML = async (folder) => {
         })
       )
   ).value;
+};
+
+const traverseTreeForImages = (folder, tree) => {
+  for (const node of tree) {
+    if (node.children && node.children.length > 0) {
+      traverseTreeForImages(folder, node.children);
+    } else if (
+      node.type === 'element' &&
+      node.tagName === 'img' &&
+      node.properties &&
+      node.properties.src &&
+      node.properties.src.startsWith('./') &&
+      (node.properties.src.endsWith('.png') ||
+        node.properties.src.endsWith('.jpg'))
+    ) {
+      let image = {};
+      if (node.properties.src.endsWith('.jpg')) {
+        image = require(`../posts/${folder}/${node.properties.src.substring(
+          2,
+          node.properties.src.length - 4
+        )}.jpg?resize`);
+      } else if (node.properties.src.endsWith('.png')) {
+        image = require(`../posts/${folder}/${node.properties.src.substring(
+          2,
+          node.properties.src.length - 4
+        )}.png?resize`);
+      }
+      node.properties.class = 'lazy';
+      node.properties.src = image.placeholder || image.src;
+      node.properties['data-srcset'] = image.srcSet;
+      node.properties.sizes = '(max-width: 768px) calc(100vw - 64px), 650px';
+    }
+  }
+  return;
 };
 
 export default getBlogPost;

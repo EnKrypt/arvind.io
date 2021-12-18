@@ -27,3 +27,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Next.js image generation taking a shit in development mode
+/static/

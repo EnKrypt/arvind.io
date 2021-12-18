@@ -34,19 +34,21 @@ module.exports = withPlugins(
       {
         responsive: {
           adapter: require('responsive-loader/sharp'),
-          min: 64,
-          max: 1920,
-          steps: 30,
-          format: 'webp',
-          placeholder: true
+          ...(process.env.NODE_ENV !== 'development' && {
+            format: 'webp',
+            placeholder: true,
+            min: 64,
+            max: 1920,
+            steps: 30
+          })
         },
         imagesOutputPath:
           process.env.NODE_ENV === 'development'
-            ? './static/images/'
+            ? '../static/images/'
             : '../../static/images/',
         inlineImageLimit: -1,
         optimizeImages: false,
-        optimizeImagesInDev: true
+        optimizeImagesInDev: false
       }
     ],
     [withPreact],
