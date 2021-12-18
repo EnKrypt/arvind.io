@@ -15,7 +15,7 @@ const MenuContent = ({ sidebar }) => (
       <AuthorImage
         alt="Arvind Kumar"
         className="lazy"
-        src={authorImage.placeholder}
+        src={authorImage.placeholder || authorImage.src}
         data-srcset={authorImage.srcSet}
         data-sizes={sidebar ? '120px' : '162px'}
       />
@@ -96,7 +96,7 @@ const MenuContent = ({ sidebar }) => (
       <img
         alt="Buy me a beer"
         className="lazy"
-        src={donateImage.placeholder}
+        src={donateImage.placeholder || donateImage.src}
         data-srcset={donateImage.srcSet}
         data-sizes="240px"
       />

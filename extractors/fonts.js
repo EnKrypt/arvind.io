@@ -8,7 +8,7 @@ const getFontFacesToInject = async () =>
         .split(' ')
         .join(
           '+'
-        )}:ital,wght@0,400;0,500;1,400;1,500&family=${theme.fonts.primary
+        )}:ital,wght@0,400;0,700;1,400;1,700&family=${theme.fonts.primary
         .split(' ')
         .join('+')}:wght@300;400&display=swap`,
       {

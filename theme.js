@@ -19,7 +19,9 @@ const theme = {
     darkgray: '#303030',
     lightgray: '#dadada',
     green: '#00a050',
-    red: '#c05060'
+    red: '#c05060',
+    orange: '#c07000',
+    cyan: '#069086'
   }
 };
 

@@ -6,6 +6,7 @@ import {
   blogPostSlugsExtractor,
   commonExtractor
 } from '../../extractors';
+import theme from '../../theme';
 
 const Post = ({ config, fontFaces, post, prevPost, nextPost }) => (
   <Layout
@@ -27,10 +28,30 @@ const PostContent = styled.div`
   font-size: 1.5em;
   text-align: justify;
 
-  & img {
-    display: block;
-    width: 650px;
-    margin: 0 auto;
+  & {
+    img {
+      display: block;
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 1.4em;
+    }
+
+    h5 {
+      color: ${theme.colors.gray};
+      font-size: 0.7em;
+      font-weight: 400;
+    }
+
+    .choice-a {
+      color: ${theme.colors.orange};
+    }
+
+    .choice-b {
+      color: ${theme.colors.cyan};
+    }
   }
 
   @media (max-width: 768px) {

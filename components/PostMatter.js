@@ -95,6 +95,11 @@ const Title = styled.div`
     color: ${theme.colors.primary};
     text-decoration: none;
   }
+
+  .post & a {
+    pointer-events: none;
+    cursor: default;
+  }
 `;
 
 const PublishedOn = styled.div`

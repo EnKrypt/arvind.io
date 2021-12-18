@@ -7,7 +7,7 @@ const PostImage = ({ image, post, slug }) => {
       alt="Article Preview"
       className="lazy"
       id={`img-${slug}`}
-      src={image.placeholder}
+      src={image.placeholder || image.src}
       data-srcset={image.srcSet}
       data-sizes={
         post

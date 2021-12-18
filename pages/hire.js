@@ -89,7 +89,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="Crio"
             className="lazy"
-            src={crioImage.placeholder}
+            src={crioImage.placeholder || crioImage.src}
             data-srcset={crioImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />
@@ -98,7 +98,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="Ideogram"
             className="lazy"
-            src={ideogramImage.placeholder}
+            src={ideogramImage.placeholder || ideogramImage.src}
             data-srcset={ideogramImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />
@@ -107,7 +107,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="Zysk Technologies"
             className="lazy"
-            src={zyskImage.placeholder}
+            src={zyskImage.placeholder || zyskImage.src}
             data-srcset={zyskImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />
@@ -120,7 +120,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="OutreachCircle"
             className="lazy"
-            src={outreachcircleImage.placeholder}
+            src={outreachcircleImage.placeholder || outreachcircleImage.src}
             data-srcset={outreachcircleImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />
@@ -133,7 +133,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="Geektrust"
             className="lazy"
-            src={geektrustImage.placeholder}
+            src={geektrustImage.placeholder || geektrustImage.src}
             data-srcset={geektrustImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />
@@ -146,7 +146,7 @@ const Hire = ({ config, fontFaces }) => (
           <img
             alt="Pickcel"
             className="lazy"
-            src={pickcelImage.placeholder}
+            src={pickcelImage.placeholder || pickcelImage.src}
             data-srcset={pickcelImage.srcSet}
             data-sizes="(max-width: 768px) 220px, 300px"
           />

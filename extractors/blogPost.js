@@ -3,6 +3,7 @@ import rehypeStringify from 'rehype-stringify';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import remarkSmartypants from 'remark-smartypants';
 import { unified } from 'unified';
 import {
   getBlogPostSlugs,
@@ -50,6 +51,7 @@ const getPostHTML = async (folder) => {
     await unified()
       .use(remarkParse)
       .use(remarkFrontmatter)
+      .use(remarkSmartypants)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(() => (tree) => {
         traverseTreeForImages(folder, tree.children);
