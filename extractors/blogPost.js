@@ -1,7 +1,9 @@
 import { promises as fs } from 'fs';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeMinify from 'rehype-preset-minify';
 import rehypeStringify from 'rehype-stringify';
 import remarkFrontmatter from 'remark-frontmatter';
+import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkSmartypants from 'remark-smartypants';
@@ -52,12 +54,14 @@ const getPostHTML = async (folder) => {
     await unified()
       .use(remarkParse)
       .use(remarkFrontmatter)
+      .use(remarkGfm)
       .use(remarkSmartypants)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeExternalLinks)
       .use(() => (tree) => {
         traverseTreeForImages(folder, tree.children);
       })
+      .use(rehypeMinify)
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(
         await fs.readFile(`./posts/${folder}/index.md`, {

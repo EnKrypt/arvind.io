@@ -44,6 +44,76 @@ const PostContent = styled.div`
       font-weight: 400;
     }
 
+    .index {
+      width: 30em;
+      font-family: 'Signika';
+      font-size: 0.8em;
+      padding: 0.5em;
+      margin: 2.5em auto;
+      border-radius: 0.5em;
+      text-align: left;
+    }
+
+    .index-title {
+      text-align: center;
+      padding-bottom: 0.25em;
+      border-bottom: solid 1px ${theme.colors.gray};
+    }
+
+    .index a {
+      text-decoration: none;
+      color: ${theme.colors.primary};
+    }
+
+    .dark & .index {
+      background-color: ${theme.colors.darkgray};
+    }
+
+    .light & .index {
+      background-color: ${theme.colors.lightgray};
+    }
+
+    sup a[id^='user-content-fnref-'] {
+      padding: 3.6em 0.1em 0.1em 0.1em;
+      margin-top: -3.5em;
+      font-size: 0.9em;
+    }
+    sup a[id^='user-content-fnref-']:before {
+      content: '[';
+    }
+
+    sup a[id^='user-content-fnref-']:after {
+      content: ']';
+    }
+
+    .footnotes {
+      font-size: 0.8em;
+    }
+
+    .footnotes h2 {
+      font-size: 0;
+      border-bottom: solid 1px ${theme.colors.gray};
+    }
+
+    .footnotes ol {
+      padding: 0;
+    }
+
+    .footnotes li {
+      padding-top: 3.5em;
+      margin-top: -3.5em;
+      list-style-type: none;
+    }
+
+    .footnotes li p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+    }
+
     .choice-a {
       color: ${theme.colors.orange};
     }
@@ -55,6 +125,10 @@ const PostContent = styled.div`
     @media (max-width: 768px) {
       & img {
         max-width: calc(100vw - 64px);
+      }
+
+      .index {
+        width: 100%;
       }
     }
   }
