@@ -54,7 +54,7 @@ const ContactForm = ({ endpoint }) => {
           <a
             href="mailto:mail@arvind.io"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
           >
             mail@arvind.io
           </a>
@@ -141,7 +141,7 @@ const ContactForm = ({ endpoint }) => {
             This page is protected by reCAPTCHA and the Google{' '}
             <a
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               href="https://policies.google.com/privacy"
             >
               Privacy Policy
@@ -149,7 +149,7 @@ const ContactForm = ({ endpoint }) => {
             and{' '}
             <a
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               href="https://policies.google.com/terms"
             >
               Terms of Service
@@ -182,7 +182,7 @@ const ContactForm = ({ endpoint }) => {
         <a
           href="mailto:mail@arvind.io"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
         >
           mail@arvind.io
         </a>

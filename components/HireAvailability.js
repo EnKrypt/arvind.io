@@ -22,7 +22,7 @@ const HireAvailability = ({ endpoint }) => {
           <a
             href="mailto:mail@arvind.io"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
           >
             {' '}
             email me
@@ -45,7 +45,7 @@ const HireAvailability = ({ endpoint }) => {
           <a
             href="mailto:mail@arvind.io"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
           >
             {' '}
             email me

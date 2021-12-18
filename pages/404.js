@@ -23,7 +23,7 @@ const NotFound = ({ config, fontFaces, notFoundGifs }) => (
           <a
             href="mailto:mail@arvind.io"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
           >
             mail@arvind.io
           </a>{' '}

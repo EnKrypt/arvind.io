@@ -31,7 +31,7 @@ const Hire = ({ config, fontFaces }) => (
         <a
           href="mailto:mail@arvind.io"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
         >
           writing me a mail
         </a>{' '}
@@ -85,7 +85,7 @@ const Hire = ({ config, fontFaces }) => (
         Bangalore ambition.
       </ClientsPara>
       <ClientsGallery>
-        <a href="https://crio.do/" target="_blank" rel="noopener noreferrer">
+        <a href="https://crio.do/" target="_blank" rel="nofollow noopener noreferrer">
           <img
             alt="Crio"
             className="lazy"
@@ -94,7 +94,7 @@ const Hire = ({ config, fontFaces }) => (
             data-sizes="(max-width: 768px) 220px, 300px"
           />
         </a>
-        <a href="https://mallik.in/" target="_blank" rel="noopener noreferrer">
+        <a href="https://mallik.in/" target="_blank" rel="nofollow noopener noreferrer">
           <img
             alt="Ideogram"
             className="lazy"
@@ -103,7 +103,7 @@ const Hire = ({ config, fontFaces }) => (
             data-sizes="(max-width: 768px) 220px, 300px"
           />
         </a>
-        <a href="https://zysk.in/" target="_blank" rel="noopener noreferrer">
+        <a href="https://zysk.in/" target="_blank" rel="nofollow noopener noreferrer">
           <img
             alt="Zysk Technologies"
             className="lazy"
@@ -115,7 +115,7 @@ const Hire = ({ config, fontFaces }) => (
         <a
           href="https://client.outreachcircle.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
         >
           <img
             alt="OutreachCircle"
@@ -128,7 +128,7 @@ const Hire = ({ config, fontFaces }) => (
         <a
           href="https://www.geektrust.in/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
         >
           <img
             alt="Geektrust"
@@ -141,7 +141,7 @@ const Hire = ({ config, fontFaces }) => (
         <a
           href="https://www.pickcel.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
         >
           <img
             alt="Pickcel"

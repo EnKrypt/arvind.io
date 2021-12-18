@@ -1,4 +1,5 @@
 import { promises as fs } from 'fs';
+import rehypeExternalLinks from 'rehype-external-links';
 import rehypeStringify from 'rehype-stringify';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkParse from 'remark-parse';
@@ -53,6 +54,7 @@ const getPostHTML = async (folder) => {
       .use(remarkFrontmatter)
       .use(remarkSmartypants)
       .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeExternalLinks)
       .use(() => (tree) => {
         traverseTreeForImages(folder, tree.children);
       })

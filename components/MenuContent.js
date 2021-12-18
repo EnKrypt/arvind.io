@@ -27,7 +27,7 @@ const MenuContent = ({ sidebar }) => (
       <br />
       If you&apos;d like to get in touch,
       <br />
-      <a href="mailto:mail@arvind.io" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:mail@arvind.io" target="_blank" rel="nofollow noopener noreferrer">
         send me an email
       </a>
       .
@@ -36,28 +36,28 @@ const MenuContent = ({ sidebar }) => (
       <a
         href="https://twitter.com/TheEnKrypt"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         <Twitter />
       </a>
       <a
         href="https://github.com/EnKrypt"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         <GitHub />
       </a>
       <a
         href="https://www.twitch.tv/enkryptontwitch"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         <Twitch />
       </a>
       <a
         href="https://keybase.io/enkrypt"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         <Keybase />
       </a>
@@ -69,19 +69,19 @@ const MenuContent = ({ sidebar }) => (
       <StyledGreenLink href="/hire">Hire me</StyledGreenLink>
     </MenuItem>
     <MenuItem className="alt">
-      <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
+      <a target="_blank" rel="nofollow noopener noreferrer" href="/resume.pdf">
         Resume
       </a>
     </MenuItem>
     <MenuItem>
-      <a target="_blank" rel="noopener noreferrer" href="/rss.xml">
+      <a target="_blank" rel="nofollow noopener noreferrer" href="/rss.xml">
         RSS Feed
       </a>
     </MenuItem>
     <MenuItem className="alt">
       <a
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         href="https://github.com/EnKrypt/arvind.io"
       >
         Source
@@ -90,7 +90,7 @@ const MenuContent = ({ sidebar }) => (
     <DonateButton
       sidebar={sidebar}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="nofollow noopener noreferrer"
       href="https://www.buymeacoffee.com/EnKrypt"
     >
       <img
