@@ -92,10 +92,19 @@ const traverseTreeForImages = (folder, tree) => {
           node.properties.src.length - 4
         )}.png?resize`);
       }
+      const width = image.images[image.images.length - 1].width;
+      const height = image.images[image.images.length - 1].height;
+      node.properties.style = `width: ${Math.min(
+        650,
+        width
+      )}px; aspect-ratio: ${width} / ${height};`;
       node.properties.class = 'lazy';
       node.properties.src = image.placeholder || image.src;
       node.properties['data-srcset'] = image.srcSet;
-      node.properties.sizes = '(max-width: 768px) calc(100vw - 64px), 650px';
+      node.properties.sizes = `(max-width: 768px) min(${width}px, calc(100vw - 64px)), ${Math.min(
+        650,
+        width
+      )}px`;
     }
   }
   return;

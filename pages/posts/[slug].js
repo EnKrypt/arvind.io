@@ -31,7 +31,6 @@ const PostContent = styled.div`
   & {
     img {
       display: block;
-      width: 650px;
       margin: 0 auto;
     }
 
@@ -52,11 +51,11 @@ const PostContent = styled.div`
     .choice-b {
       color: ${theme.colors.cyan};
     }
-  }
 
-  @media (max-width: 768px) {
-    & img {
-      width: calc(100vw - 64px);
+    @media (max-width: 768px) {
+      & img {
+        max-width: calc(100vw - 64px);
+      }
     }
   }
 `;
