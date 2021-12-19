@@ -9,7 +9,7 @@ On September 1996, progressive rock band Tool released a track as part of their 
 
 The track in question is called 'Forty Six & 2'
 
-<iframe class="embed-video" src="https://www.youtube.com/embed/GIuZUCpm9hc" width="600" height="340"></iframe>
+<iframe class="embed" src="https://www.youtube.com/embed/GIuZUCpm9hc"></iframe>
 
 Why the '& 2'? Why is it part of the track's name and what does it mean?
 
@@ -19,7 +19,7 @@ But this is just a song, and songs are meant to be abstract. Let's look at a dif
 
 Here GrandMaster Ben Finegold analyzes a chess match (Nakamura vs Shabalov in 2005 Foxwoods Open) in a Middlegame tactics class. Watch from 12:43 to 14:10.
 
-<iframe class="embed-video" src="https://www.youtube.com/embed/_ijunCGyTmI?start=763&end=850" width="600" height="340"></iframe>
+<iframe class="embed" src="https://www.youtube.com/embed/_ijunCGyTmI?start=763&end=850"></iframe>
 
 The concept of "two" seems to have powerful meaning and applications even in chess: a strategy game almost as old as history.
 

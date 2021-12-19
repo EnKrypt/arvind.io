@@ -44,6 +44,12 @@ const PostContent = styled.div`
       font-weight: 400;
     }
 
+    .embed {
+      width: 100%;
+      border: none;
+      aspect-ratio: 16 / 9;
+    }
+
     .index {
       width: 30em;
       font-family: 'Signika';

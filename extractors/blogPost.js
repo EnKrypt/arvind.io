@@ -59,7 +59,7 @@ const getPostHTML = async (folder) => {
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeExternalLinks)
       .use(() => (tree) => {
-        traverseTreeForImages(folder, tree.children);
+        traverseTreeForMedia(folder, tree.children);
       })
       .use(rehypeMinify)
       .use(rehypeStringify, { allowDangerousHtml: true })
@@ -71,10 +71,10 @@ const getPostHTML = async (folder) => {
   ).value;
 };
 
-const traverseTreeForImages = (folder, tree) => {
+const traverseTreeForMedia = (folder, tree) => {
   for (const node of tree) {
     if (node.children && node.children.length > 0) {
-      traverseTreeForImages(folder, node.children);
+      traverseTreeForMedia(folder, node.children);
     } else if (
       node.type === 'element' &&
       node.tagName === 'img' &&
@@ -109,6 +109,35 @@ const traverseTreeForImages = (folder, tree) => {
         650,
         width
       )}px`;
+    } else if (
+      node.type === 'element' &&
+      node.tagName === 'img' &&
+      node.properties &&
+      node.properties.src &&
+      node.properties.src.startsWith('./') &&
+      (node.properties.src.endsWith('.webm') ||
+        node.properties.src.endsWith('.webm'))
+    ) {
+      const video = require(`../posts/${folder}/${node.properties.src.substring(
+        2,
+        node.properties.src.length - 5
+      )}.webm`);
+      node.tagName = 'video';
+      node.properties = { controls: true, class: 'embed' };
+      node.children = [
+        {
+          type: 'element',
+          tagName: 'source',
+          properties: {
+            src: `/_next/static/chunks/${video.match(/[^\/]+$/)[0]}`,
+            type: 'video/webm'
+          }
+        },
+        {
+          type: 'text',
+          value: "Sorry, your browser doesn't support embedded videos."
+        }
+      ];
     }
   }
   return;

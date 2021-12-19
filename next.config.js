@@ -11,6 +11,16 @@ const nextConfig = {
     disableStaticImages: true
   },
   webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      test: /\.(webm)$/,
+      type: 'asset/resource',
+      generator: {
+        filename:
+          process.env.NODE_ENV === 'development'
+            ? '../static/chunks/[name].[hash][ext]'
+            : '../../static/chunks/[name].[hash][ext]'
+      }
+    });
     if (isServer || process.env.NODE_ENV === 'development') {
       return config;
     }

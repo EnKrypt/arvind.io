@@ -87,10 +87,7 @@ A lot of games today are still stuck appealing to those teenagers of yore, tryin
 
 Remember the [Assassin's Creed franchise](https://en.wikipedia.org/wiki/Assassin%27s_Creed)? The first few games were almost era defining. After its success, Ubisoft went on to create their own graphics engine for the series and they've been shoehorning long drawn out disconnected stories since. I tried to give some of their new games a shot, but imagine my surprise to discover a glitch infested mess instead :
 
-<video controls>
-    <source src="./acu.webm" type="video/webm">
-    Sorry, your browser doesn't support embedded videos.
-</video>
+![](./acu.webm)
 
 The "impressive graphics engine" doesn't catch your attention anymore now, does it?
 
@@ -142,17 +139,17 @@ Alright, I think this post has had enough negativity. The way I enjoy video game
 
 Here's a short list in no particular order of video games I've played in recent years that I wholeheartedly recommend :
 
--   [Outer Wilds](https://en.wikipedia.org/wiki/Outer_Wilds): Adventure, Puzzle, Space-flight.
--   [The Witcher 3: Wild Hunt](https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt): Action, Adventure, Role-playing.
--   [Inside](<https://en.wikipedia.org/wiki/Inside_(video_game)>): Horror, Platformer, Puzzle.
--   [LISA](https://en.wikipedia.org/wiki/Lisa:_The_Painful_RPG): Platformer, Post-apocalyptic, Role-playing.
--   [Counter-Strike: Global Offensive](https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive): Competitive, First-person Shooter, Multiplayer.
--   [Hitman 2](<https://en.wikipedia.org/wiki/Hitman_2_(2018_video_game)>): Action, Episodic, Stealth.
--   [Minecraft](https://en.wikipedia.org/wiki/Minecraft): Sandbox, Survival, Voxel.
--   [Life is Strange](https://en.wikipedia.org/wiki/Life_Is_Strange): Adventure, Episodic, Young-adult.
--   [Orwell](<https://en.wikipedia.org/wiki/Orwell_(video_game)>): Episodic, Simulation, Text-based.
--   [The Elder Scrolls V: Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim): Medieval, Open World, Role-playing.
--   [Kerbal Space Program](https://en.wikipedia.org/wiki/Kerbal_Space_Program): Sandbox, Space-flight, Simulation.
+- [Outer Wilds](https://en.wikipedia.org/wiki/Outer_Wilds): Adventure, Puzzle, Space-flight.
+- [The Witcher 3: Wild Hunt](https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt): Action, Adventure, Role-playing.
+- [Inside](<https://en.wikipedia.org/wiki/Inside_(video_game)>): Horror, Platformer, Puzzle.
+- [LISA](https://en.wikipedia.org/wiki/Lisa:_The_Painful_RPG): Platformer, Post-apocalyptic, Role-playing.
+- [Counter-Strike: Global Offensive](https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive): Competitive, First-person Shooter, Multiplayer.
+- [Hitman 2](<https://en.wikipedia.org/wiki/Hitman_2_(2018_video_game)>): Action, Episodic, Stealth.
+- [Minecraft](https://en.wikipedia.org/wiki/Minecraft): Sandbox, Survival, Voxel.
+- [Life is Strange](https://en.wikipedia.org/wiki/Life_Is_Strange): Adventure, Episodic, Young-adult.
+- [Orwell](<https://en.wikipedia.org/wiki/Orwell_(video_game)>): Episodic, Simulation, Text-based.
+- [The Elder Scrolls V: Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim): Medieval, Open World, Role-playing.
+- [Kerbal Space Program](https://en.wikipedia.org/wiki/Kerbal_Space_Program): Sandbox, Space-flight, Simulation.
 
 As for video game companies, not all the big ones are horrible even if I do think most of them are.
 
