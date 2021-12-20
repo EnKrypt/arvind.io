@@ -48,9 +48,9 @@ const getBlogPost = async (slug) => {
   };
   return {
     post,
-    prevPost: postIndex === 0 ? false : posts[postIndex - 1].frontmatter,
-    nextPost:
-      postIndex === posts.length - 1 ? false : posts[postIndex + 1].frontmatter
+    prevPost:
+      postIndex === posts.length - 1 ? false : posts[postIndex + 1].frontmatter,
+    nextPost: postIndex === 0 ? false : posts[postIndex - 1].frontmatter
   };
 };
 
