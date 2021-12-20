@@ -1,4 +1,6 @@
+import rehypePrism from '@mapbox/rehype-prism';
 import { promises as fs } from 'fs';
+import { JSDOM } from 'jsdom';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeMinify from 'rehype-preset-minify';
 import rehypeStringify from 'rehype-stringify';
@@ -8,6 +10,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkSmartypants from 'remark-smartypants';
 import { unified } from 'unified';
+import theme from '../theme';
 import {
   getBlogPostSlugs,
   getExcerpt,
@@ -36,10 +39,12 @@ const getBlogPost = async (slug) => {
     );
     process.exit(1);
   }
+  const html = await getPostHTML(slug);
   const post = {
     frontmatter: posts[postIndex].frontmatter,
     excerpt: getExcerpt(posts[postIndex].tree),
-    html: await getPostHTML(slug)
+    html,
+    styles: getPostContentStyles(html)
   };
   return {
     post,
@@ -58,6 +63,7 @@ const getPostHTML = async (folder) => {
       .use(remarkSmartypants)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeExternalLinks)
+      .use(rehypePrism)
       .use(() => (tree) => {
         traverseTreeForMedia(folder, tree.children);
       })
@@ -142,5 +148,238 @@ const traverseTreeForMedia = (folder, tree) => {
   }
   return;
 };
+
+const getPostContentStyles = (html) => {
+  let styles = '';
+  const dom = new JSDOM(html);
+  if (dom.window.document.querySelector('img')) {
+    styles = styles.concat(css`
+      .content img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .content img {
+          max-width: calc(100vw - 64px);
+        }
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('h2')) {
+    styles = styles.concat(css`
+      .content h2 {
+        font-size: 1.4em;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('h5')) {
+    styles = styles.concat(css`
+      .content h5 {
+        color: ${theme.colors.gray};
+        font-size: 0.7em;
+        font-weight: 400;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('.embed')) {
+    styles = styles.concat(css`
+      .content .embed {
+        width: 100%;
+        border: none;
+        aspect-ratio: 16 / 9;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('.index')) {
+    styles = styles.concat(css`
+      .content .index {
+        width: 30em;
+        font-family: 'Signika';
+        font-size: 0.8em;
+        padding: 0.5em;
+        margin: 2.5em auto;
+        border-radius: 0.5em;
+        text-align: left;
+      }
+
+      .content .index-title {
+        text-align: center;
+        padding-bottom: 0.25em;
+        border-bottom: solid 1px ${theme.colors.gray};
+      }
+
+      .content .index a {
+        text-decoration: none;
+        color: ${theme.colors.primary};
+      }
+
+      .dark .content .index {
+        background-color: ${theme.colors.darkgray};
+      }
+
+      .light .content .index {
+        background-color: ${theme.colors.lightgray};
+      }
+
+      @media (max-width: 768px) {
+        .content .index {
+          width: 100%;
+        }
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('.footnotes')) {
+    styles = styles.concat(css`
+      .content sup a[id^='user-content-fnref-'] {
+        padding: 3.6em 0.1em 0.1em 0.1em;
+        margin-top: -3.5em;
+        font-size: 0.9em;
+      }
+
+      .content sup a[id^='user-content-fnref-']:before {
+        content: '[';
+      }
+
+      .content sup a[id^='user-content-fnref-']:after {
+        content: ']';
+      }
+
+      .content .footnotes {
+        font-size: 0.8em;
+      }
+
+      .content .footnotes h2 {
+        font-size: 0;
+        border-bottom: solid 1px ${theme.colors.gray};
+      }
+
+      .content .footnotes ol {
+        padding: 0;
+      }
+
+      .content .footnotes li {
+        padding-top: 3.5em;
+        margin-top: -3.5em;
+        list-style-type: none;
+      }
+
+      .content .footnotes li p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('.choice-a')) {
+    styles = styles.concat(css`
+      .content .choice-a {
+        color: ${theme.colors.orange};
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('.choice-b')) {
+    styles = styles.concat(css`
+      .content .choice-b {
+        color: ${theme.colors.cyan};
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('code')) {
+    styles = styles.concat(css`
+      @import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css');
+      .content code {
+        font-family: 'Hack';
+        font-size: 0.7em;
+        padding: 0.2em 0.4em;
+        border-radius: 0.2em;
+      }
+
+      .dark .content code {
+        background-color: ${theme.colors.darkgray};
+      }
+
+      .light .content code {
+        background-color: ${theme.colors.lightgray};
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('pre > code')) {
+    styles = styles.concat(css`
+      .content pre code {
+        display: block;
+        padding: 0.5em;
+        overflow-x: auto;
+      }
+
+      .dark .content code .token.punctuation {
+        color: #f0c040;
+      }
+
+      .dark .content code .token.class-name {
+        color: #50c0f0;
+      }
+
+      .dark .content code .token.keyword {
+        color: #f05080;
+      }
+
+      .dark .content code .token.operator {
+        color: #f09040;
+      }
+
+      .dark .content code .token.boolean {
+        color: #b090f0;
+      }
+
+      .dark .content code .token.attr-name,
+      .dark .content code .token.function {
+        color: #80c000;
+      }
+
+      .dark .content code .token.comment {
+        color: #909090;
+      }
+
+      .light .content code .token.punctuation {
+        color: #a09000;
+      }
+
+      .light .content code .token.class-name {
+        color: #1080a0;
+      }
+
+      .light .content code .token.keyword {
+        color: #a01060;
+      }
+
+      .light .content code .token.operator {
+        color: #b07040;
+      }
+
+      .light .content code .token.boolean {
+        color: #a070c0;
+      }
+
+      .light .content code .token.attr-name,
+      .light .content code .token.function {
+        color: #60a000;
+      }
+
+      .light .content code .token.comment {
+        color: #909090;
+      }
+    `);
+  }
+  return styles.replace(/\s+/g, ' ');
+};
+
+// This is a trick to make the editor apply css syntax highlighting to the string
+// literals above when you have the vscode-styled-components extension installed.
+// Felt good to have figured this out spontaneously. https://i.giphy.com/media/yGLA1z4KSOPxFIDTJx/giphy.webp
+const css = String.raw;
 
 export default getBlogPost;

@@ -20,7 +20,9 @@
     "deploy": "sh scripts/deploy.sh"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.8.0",
     "@next/bundle-analyzer": "11.1.3-canary.97",
+    "jsdom": "^19.0.0",
     "next": "11.1.3-canary.97",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
