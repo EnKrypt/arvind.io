@@ -34,3 +34,12 @@ selectivelyHydrateWhenVisible('NotFoundEffects', () =>
 selectivelyHydrateWhenVisible('PostImage', () =>
   import('../components/PostImage')
 );
+
+// Easter egg clue
+console.log(
+  `%cNo deaths were planned. You don't remember, I see.\nAt zero I stand, but I'm not sure of thee.`,
+  `color: #0094ff;`
+);
+/*
+ *  https://i.imgur.com/6vbAVMf.png
+ */

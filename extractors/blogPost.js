@@ -194,7 +194,8 @@ const getPostContentStyles = (html) => {
   if (dom.window.document.querySelector('.index')) {
     styles = styles.concat(css`
       .content .index {
-        width: 30em;
+        max-width: 30em;
+        width: max-content;
         font-family: 'Signika';
         font-size: 0.8em;
         padding: 0.5em;
@@ -207,6 +208,10 @@ const getPostContentStyles = (html) => {
         text-align: center;
         padding-bottom: 0.25em;
         border-bottom: solid 1px ${theme.colors.gray};
+      }
+
+      .content .index ul {
+        padding-right: 1em;
       }
 
       .content .index a {
@@ -224,7 +229,7 @@ const getPostContentStyles = (html) => {
 
       @media (max-width: 768px) {
         .content .index {
-          width: 100%;
+          max-width: 100%;
         }
       }
     `);
@@ -271,6 +276,41 @@ const getPostContentStyles = (html) => {
         gap: 1em;
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('blockquote')) {
+    styles = styles.concat(css`
+      .content blockquote {
+        font-style: italic;
+        color: ${theme.colors.brown};
+        border-left: 10px solid;
+        margin: 1em;
+        padding: 0.5em;
+        quotes: '\201C''\201D''\2018''\2019';
+      }
+
+      .content blockquote p {
+        display: inline;
+      }
+
+      .content blockquote:before {
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('table')) {
+    styles = styles.concat(css`
+      .content th {
+        text-align: center;
+      }
+
+      .content td {
+        padding: 0em 0.5em;
       }
     `);
   }

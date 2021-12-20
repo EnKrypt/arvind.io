@@ -13,7 +13,7 @@ const PostMatter = ({ matter, post }) => {
       className={post ? 'post zoom' : ''}
       id={`matter-${matter.key}`}
     >
-      <div>
+      <PostInfo>
         <Title>
           <a href={`/posts/${matter.key}`}>{matter.title}</a>
         </Title>
@@ -27,7 +27,7 @@ const PostMatter = ({ matter, post }) => {
             </Tag>
           ))}
         </Tags>
-      </div>
+      </PostInfo>
       <HydratedPostImage image={postImage} post={post} slug={matter.key} />
     </StyledPostMatter>
   );
@@ -85,6 +85,10 @@ const StyledPostMatter = styled.div`
       aspect-ratio: 1200 / 630;
     }
   }
+`;
+
+const PostInfo = styled.div`
+  width: 100%;
 `;
 
 const Title = styled.div`
