@@ -54,7 +54,7 @@ const getBlogPost = async (slug) => {
   };
 };
 
-const getPostHTML = async (folder) => {
+export const getPostHTML = async (folder, skipSrcSet) => {
   return (
     await unified()
       .use(remarkParse)
@@ -65,7 +65,7 @@ const getPostHTML = async (folder) => {
       .use(rehypeExternalLinks)
       .use(rehypePrism)
       .use(() => (tree) => {
-        traverseTreeForMedia(folder, tree.children);
+        traverseTreeForMedia(folder, tree.children, skipSrcSet);
       })
       .use(rehypeMinify)
       .use(rehypeStringify, { allowDangerousHtml: true })
@@ -77,10 +77,10 @@ const getPostHTML = async (folder) => {
   ).value;
 };
 
-const traverseTreeForMedia = (folder, tree) => {
+const traverseTreeForMedia = (folder, tree, skipSrcSet) => {
   for (const node of tree) {
     if (node.children && node.children.length > 0) {
-      traverseTreeForMedia(folder, node.children);
+      traverseTreeForMedia(folder, node.children, skipSrcSet);
     } else if (
       node.type === 'element' &&
       node.tagName === 'img' &&
@@ -102,19 +102,24 @@ const traverseTreeForMedia = (folder, tree) => {
           node.properties.src.length - 4
         )}.png?resize`);
       }
-      const width = image.images[image.images.length - 1].width;
-      const height = image.images[image.images.length - 1].height;
-      node.properties.style = `width: ${Math.min(
-        650,
-        width
-      )}px; aspect-ratio: ${width} / ${height};`;
-      node.properties.class = 'lazy';
-      node.properties.src = image.placeholder || image.src;
-      node.properties['data-srcset'] = image.srcSet;
-      node.properties.sizes = `(max-width: 768px) min(${width}px, calc(100vw - 64px)), ${Math.min(
-        650,
-        width
-      )}px`;
+      if (skipSrcSet) {
+        node.properties.src =
+          image.images[image.images.length - 1].path || image.src;
+      } else {
+        const width = image.images[image.images.length - 1].width;
+        const height = image.images[image.images.length - 1].height;
+        node.properties.style = `width: ${Math.min(
+          650,
+          width
+        )}px; aspect-ratio: ${width} / ${height};`;
+        node.properties.class = 'lazy';
+        node.properties.src = image.placeholder || image.src;
+        node.properties['data-srcset'] = image.srcSet;
+        node.properties.sizes = `(max-width: 768px) min(${width}px, calc(100vw - 64px)), ${Math.min(
+          650,
+          width
+        )}px`;
+      }
     } else if (
       node.type === 'element' &&
       node.tagName === 'img' &&

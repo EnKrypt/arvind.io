@@ -28,5 +28,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Generated feeds
+/public/rss.xml
+/public/atom.xml
+
 # Next.js image generation taking a shit in development mode
 /static/

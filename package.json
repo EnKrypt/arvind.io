@@ -12,8 +12,8 @@
     "url": "git+https://github.com/EnKrypt/arvind.io.git"
   },
   "scripts": {
-    "build": "rm -rf ./.next/ ./out/ && next build && next export",
-    "clean": "rm -rf ./.next/ ./out/ ./static",
+    "build": "rm -f ./public/rss.xml ./public/atom.xml && rm -rf ./.next/ ./out/ && next build && next export",
+    "clean": "rm -f ./public/rss.xml ./public/atom.xml && rm -rf ./.next/ ./out/ ./static",
     "dev": "sh scripts/dev.sh",
     "start": "next start",
     "lint": "next lint",
@@ -22,6 +22,7 @@
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@next/bundle-analyzer": "11.1.3-canary.97",
+    "feed": "^4.2.2",
     "jsdom": "^19.0.0",
     "next": "11.1.3-canary.97",
     "next-compose-plugins": "^2.2.1",

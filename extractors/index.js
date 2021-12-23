@@ -1,7 +1,8 @@
 import getNotFoundGifs from './404gifs';
-import getBlogPostList, { getBlogPostSlugs } from './blogPostList';
 import getBlogPost from './blogPost';
+import getBlogPostList, { getBlogPostSlugs } from './blogPostList';
 import getConfig from './config';
+import generateFeed from './feed';
 import getFontFacesToInject from './fonts';
 import {
   getNumberOfPages,
@@ -51,4 +52,10 @@ export const uniqueTagPagesExtractor = async () => {
 
 export const blogPostExtractor = async (slug) => {
   return await getBlogPost(slug);
+};
+
+// Standalone generators
+
+export const feedGenerator = async () => {
+  return await generateFeed();
 };

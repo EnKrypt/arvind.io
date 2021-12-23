@@ -27,7 +27,11 @@ const MenuContent = ({ sidebar }) => (
       <br />
       If you&apos;d like to get in touch,
       <br />
-      <a href="mailto:mail@arvind.io" target="_blank" rel="nofollow noopener noreferrer">
+      <a
+        href="mailto:mail@arvind.io"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
         send me an email
       </a>
       .
@@ -74,8 +78,11 @@ const MenuContent = ({ sidebar }) => (
       </a>
     </MenuItem>
     <MenuItem>
+      <a target="_blank" rel="nofollow noopener noreferrer" href="/atom.xml">
+        Atom
+      </a>{' | '}
       <a target="_blank" rel="nofollow noopener noreferrer" href="/rss.xml">
-        RSS Feed
+        RSS
       </a>
     </MenuItem>
     <MenuItem className="alt">
