@@ -29,21 +29,21 @@ The concept of the number '2' can be used abstractly to represent many ideas: **
 
 Moreover, almost any field of study or expertise makes use of powers of two in some implementation of its theory.
 
--   Let's take computers:
+- Let's take computers:
 
-    According to IEC, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
+  According to IEC, one kilobyte represents 1000 bytes.[^2] Yet, convention (and convenience) has made this standard very unused. Even today we use the older measure in casual conversation, which is that one kilobyte represents **1024** bytes, one megabyte represents **1024** kilobytes and so on. Powers of two.
 
-    There is an official term by IEC for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
+  There is an official term by IEC for 1024 bytes. It's called a kibibyte. But when was the last time you heard someone use that term out loud? Computer memory began as groups of two states, and then we continued to group in twos for convenience, and that led to our current tendency to talk about digital memory as powers of two.
 
--   Let's take music theory:
+- Let's take music theory:
 
-    Do you know what a **demisemihemidemisemiquaver** is?
+  Do you know what a **demisemihemidemisemiquaver** is?
 
-    It's an actual term in music theory. It represents the two hundred fifty-sixth note.[^3]
+  It's an actual term in music theory. It represents the two hundred fifty-sixth note.[^3]
 
-    Why does this exist? The time interval within a bar or a measure gets divided by 2 every time we want to add a note between two already existing contiguous notes. As you keep dividing, we eventually get 128th notes, 256th notes, 512th notes, and so on in powers of two.
+  Why does this exist? The time interval within a bar or a measure gets divided by 2 every time we want to add a note between two already existing contiguous notes. As you keep dividing, we eventually get 128th notes, 256th notes, 512th notes, and so on in powers of two.
 
-    I normally use this concept to illustrate that knowing music theory is a means to an end, and understanding the idea behind a 256th note is enough and you don't need to learn the demifuckinghemisemi whatever formal term exists for it. However, once again we see that the power of two remains ever present in a field that has nothing to do with math.
+  I normally use this concept to illustrate that knowing music theory is a means to an end, and understanding the idea behind a 256th note is enough and you don't need to learn the demifuckinghemisemi whatever formal term exists for it. However, once again we see that the power of two remains ever present in a field that has nothing to do with math.
 
 The fact that we chose the decimal system is actually completely arbitrary.
 

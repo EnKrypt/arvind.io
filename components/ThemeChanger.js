@@ -5,6 +5,11 @@ const ThemeChanger = () => {
     setTheme(newTheme);
     document.body.className = newTheme;
     localStorage.setItem('state', JSON.stringify({ theme: newTheme }));
+    if (window.DISQUS) {
+      window.DISQUS.reset({
+        reload: true
+      });
+    }
   };
 
   const [theme, setTheme] = useState('');

@@ -28,11 +28,11 @@ Setting the action and intonation on your guitar is incredibly important. If you
 
 Since you're here, there's a good chance you already know why you need to make these adjustments, but here's a small summary anyway :
 
--   Setting the action will :
-    -   Make your playing much more comfortable
-    -   Possibly eliminate fret buzz
--   Setting the intonation will :
-    -   Make your guitar sound in tune as you play on higher frets
+- Setting the action will :
+  - Make your playing much more comfortable
+  - Possibly eliminate fret buzz
+- Setting the intonation will :
+  - Make your guitar sound in tune as you play on higher frets
 
 These adjustments should be made immediately after buying a new guitar. If for some reason you haven't, or like me you just didn't know about it until much later, feel free to do it now as you're reading this post. This is something that can be done on every kind of guitar including bass guitars and acoustic guitars, so you really have no excuse.
 

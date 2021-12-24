@@ -3,6 +3,7 @@ title: Writing good React code
 tags: ['guide', 'programming', 'react', 'technology']
 date: '2019-07-23T00:00:00.000Z'
 key: 'writing-good-react-code'
+disqusID: '1574cd4b-c3ec-51be-83b6-f5cfdce6c758'
 ---
 
 <div class="index">
@@ -32,8 +33,8 @@ The trick is to find the balance in between the two extremes, where components t
 
 When deciding if something should be split into its own component, ask yourself this :
 
--   Is it likely to be re-used?
--   Does it clearly help reduce the complexity of the parent component?
+- Is it likely to be re-used?
+- Does it clearly help reduce the complexity of the parent component?
 
 If the answer to either is yes, then it absolutely should be its own component.
 
@@ -68,9 +69,9 @@ and then within the component's `render()` method, display the children :
 
 ```jsx
 class Button extends React.Component {
-    render() {
-        return <div>{this.props.children}</div>;
-    }
+  render() {
+    return <div>{this.props.children}</div>;
+  }
 }
 ```
 
@@ -86,10 +87,10 @@ Any other attribute that doesn't need to re-render or change something on the UI
 
 ```jsx
 class Card extends React.Component {
-    state = {
-        visible: true, // Should trigger a re-render on being changed
-    };
-    wasHiddenBefore = false; // Not UI related, so it doesn't belong in state
+  state = {
+    visible: true // Should trigger a re-render on being changed
+  };
+  wasHiddenBefore = false; // Not UI related, so it doesn't belong in state
 }
 ```
 

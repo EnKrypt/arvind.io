@@ -37,10 +37,10 @@ Also useful to note is that Java has its own core set of libraries, and virtual 
 
 **Where to use Java :**
 
--   For standalone apps - If you just want to create a command line or GUI application on the go, to run natively, Java is a good bet. In fact, you can't make Android apps without Java.
--   Browser Applets - Although Java applets are becoming rarer and old, sometimes they are used to extend the functionality of the limited power that web browsers have over your system.
--   Embedded devices - Java was originally written with portability in mind, such that it can easily be made to run in embedded projects due to its scalability.
--   Drivers - *Java-like* languages like C or C++ are often used to develop software to make hardware work, although you might want to use a language different from Java for this purpose.
+- For standalone apps - If you just want to create a command line or GUI application on the go, to run natively, Java is a good bet. In fact, you can't make Android apps without Java.
+- Browser Applets - Although Java applets are becoming rarer and old, sometimes they are used to extend the functionality of the limited power that web browsers have over your system.
+- Embedded devices - Java was originally written with portability in mind, such that it can easily be made to run in embedded projects due to its scalability.
+- Drivers - _Java-like_ languages like C or C++ are often used to develop software to make hardware work, although you might want to use a language different from Java for this purpose.
 
 ### The JavaScript mindset
 
@@ -52,9 +52,9 @@ Also useful to note is that as a scripting language, JavaScript has come a long 
 
 **Where to use JavaScript :**
 
--   For anything web related - JavaScript is used primarily in browsers to make web pages dynamic and functional with client side scripting. There are a lot of libraries like JQuery and AngularJS that can use be used to boost its capabilities.
--   For backend or server side - With Node.js, JavaScript can also work on the server end. You can either cater to web pages with server side scripting, or just make a different desktop app altogether. Node Package Manager (npm) will help you get all sorts of libraries so you don't have to re-invent the wheel.
--   For light computation - There exist several JavaScript engines out there, so whether you're using [V8](https://en.wikipedia.org/wiki/Chrome_V8), [Rhino](<https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)>), or [Spidermonkey](https://en.wikipedia.org/wiki/SpiderMonkey), you can just run some code off of them in your browser console, or node terminal to quickly get some work done like basic or dynamic math.
+- For anything web related - JavaScript is used primarily in browsers to make web pages dynamic and functional with client side scripting. There are a lot of libraries like JQuery and AngularJS that can use be used to boost its capabilities.
+- For backend or server side - With Node.js, JavaScript can also work on the server end. You can either cater to web pages with server side scripting, or just make a different desktop app altogether. Node Package Manager (npm) will help you get all sorts of libraries so you don't have to re-invent the wheel.
+- For light computation - There exist several JavaScript engines out there, so whether you're using [V8](https://en.wikipedia.org/wiki/Chrome_V8), [Rhino](<https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)>), or [Spidermonkey](https://en.wikipedia.org/wiki/SpiderMonkey), you can just run some code off of them in your browser console, or node terminal to quickly get some work done like basic or dynamic math.
 
 By now you should know the difference between Java and JavaScript, not just in syntax and code, but also in usability and application. You should know which type of language to choose for your next project, and hopefully what you learnt in this post will make your project more successful.
 

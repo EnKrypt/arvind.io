@@ -3,6 +3,7 @@ title: We need to do something about DNS
 tags: ['dns', 'rant', 'security', 'technology']
 date: '2019-09-10T00:00:00.000Z'
 key: 'dns-is-killing-web-security'
+disqusID: 'f1344e56-9e7a-5e86-a4e0-7d68d129e4e2'
 ---
 
 The way DNS works right now is pretty bad. It can (and probably already does) single handedly compromise the security of your web traffic.

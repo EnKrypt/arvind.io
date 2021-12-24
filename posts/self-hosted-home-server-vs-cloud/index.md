@@ -3,6 +3,7 @@ title: The self-hosted dilemma - Home server or the cloud?
 tags: ['comparison', 'guide', 'self-hosted', 'technology']
 date: '2020-07-03T00:00:00.000Z'
 key: 'self-hosted-home-server-vs-cloud'
+disqusID: '9f2e2f79-0776-522d-95e5-b66320ccc819'
 ---
 
 It's a tale as old as time. You've discovered the joys of self-hosting. You've fallen in love with open source. You've stumbled across the self-hosted community and can't stop installing random software that you'll barely use yourself. You're not sure how what started out as "just a hobby", ended up with you down this rabbit hole that your spouse probably thinks is worse than a drug habit. Whatever the case, it's now a done deal. This is now a commitment you enjoy.

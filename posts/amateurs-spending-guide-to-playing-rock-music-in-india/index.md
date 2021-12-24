@@ -3,6 +3,7 @@ title: An amateur rock musician's guide to buying instruments in India
 tags: ['finance', 'guide', 'india', 'music']
 date: '2019-03-01T00:00:00.000Z'
 key: 'amateurs-spending-guide-to-playing-rock-music-in-india'
+disqusID: '5a24c984-ad8b-5a95-960c-db230b833885'
 ---
 
 <div class="index">
@@ -43,30 +44,30 @@ The deeper you dive into your hobby and the more specific your requirements get,
 
 <h2 id="general-rules" class="internal-link">General Buying Rules</h2>
 
--   Buying second hand is almost always the way to go
+- Buying second hand is almost always the way to go
 
-    ![](./newvsused.png)
+  ![](./newvsused.png)
 
-    This is a valuable life skill in general. Buying used will give you really good deals. Learn to negotiate well and test what you're buying thoroughly before making your purchase. \
-    Personally I've found [OLX](https://www.olx.in/musical-instruments/) to be a good source for listings. Many instruments I play today are because of some really good deals I've found there. \
-    Posting on sites like reddit or facebook may also get you somewhere. I've found that my city has a very active facebook group for buying and exchanging instruments and equipment, but your mileage may vary. \
-    The second hand market in India for music isn't as fast moving however, so depending on how specific and rare the thing you're looking for is, you may have to wait weeks or months till you find a good deal.
+  This is a valuable life skill in general. Buying used will give you really good deals. Learn to negotiate well and test what you're buying thoroughly before making your purchase. \
+  Personally I've found [OLX](https://www.olx.in/musical-instruments/) to be a good source for listings. Many instruments I play today are because of some really good deals I've found there. \
+  Posting on sites like reddit or facebook may also get you somewhere. I've found that my city has a very active facebook group for buying and exchanging instruments and equipment, but your mileage may vary. \
+  The second hand market in India for music isn't as fast moving however, so depending on how specific and rare the thing you're looking for is, you may have to wait weeks or months till you find a good deal.
 
--   If you can't wait for good second hand deals, going to a store and buying is better than buying online
+- If you can't wait for good second hand deals, going to a store and buying is better than buying online
 
-    Instruments will sound very different when you hear them being played on a Youtube video vs in your room. Buying from a store lets you hear what it sounds like in person before buying, which you cannot do online. \
-    Most stores also do price matching, i.e if you can show them a reputable online marketplace selling the same item for a lower price, they will drop their price down to match it.
+  Instruments will sound very different when you hear them being played on a Youtube video vs in your room. Buying from a store lets you hear what it sounds like in person before buying, which you cannot do online. \
+  Most stores also do price matching, i.e if you can show them a reputable online marketplace selling the same item for a lower price, they will drop their price down to match it.
 
--   If you're a beginner, have an experienced friend with you when you're buying
+- If you're a beginner, have an experienced friend with you when you're buying
 
-    This might be an obvious point, but it's important nonetheless so you don't get ripped off at a store. He or she can also tell you if an online purchase is worth it, and help inspect the instrument to make sure it's in good condition when it arrives.
+  This might be an obvious point, but it's important nonetheless so you don't get ripped off at a store. He or she can also tell you if an online purchase is worth it, and help inspect the instrument to make sure it's in good condition when it arrives.
 
-    If you don't have such a friend, I encourage you to ask around a bit. Most musicians are likely eager to help you (if you're taking the help of someone you don't know well, be careful; but also make sure you at least buy them lunch for their effort). I took a friend with me to buy my first guitar and I've helped many buy their own too. Had those purchases been made alone, I doubt things would have gone as well.
+  If you don't have such a friend, I encourage you to ask around a bit. Most musicians are likely eager to help you (if you're taking the help of someone you don't know well, be careful; but also make sure you at least buy them lunch for their effort). I took a friend with me to buy my first guitar and I've helped many buy their own too. Had those purchases been made alone, I doubt things would have gone as well.
 
--   Do your research and watch out for the cheap 'entry level' stuff that you know is low quality
+- Do your research and watch out for the cheap 'entry level' stuff that you know is low quality
 
-    The prices might be very tempting, but playing on bad instruments will tend to demotivate you or limit you from advancing further, which means you will either waste your time and money, or end up spending more anyway if and when you have to upgrade. \
-    If your justification is that you just want a trial or you're on a super low budget, either borrow from a friend, or sign up for classes and use what's available in the institute. Those are both better options.
+  The prices might be very tempting, but playing on bad instruments will tend to demotivate you or limit you from advancing further, which means you will either waste your time and money, or end up spending more anyway if and when you have to upgrade. \
+  If your justification is that you just want a trial or you're on a super low budget, either borrow from a friend, or sign up for classes and use what's available in the institute. Those are both better options.
 
 <h3 id="rules-guitar" class="internal-link">Guitars</h3>
 
@@ -93,18 +94,18 @@ If you're feeling adventurous, you can try buying lesser known brands from AliEx
 
 Note to beginners: If you plan to play any of these instruments live, it is important to have a tuner, and in the case of an electric guitar or a bass, a reasonably long good quality cable.
 
--   Stay away from :
+- Stay away from :
 
-    -   Knockoff Indian brands like 'Fendar', 'Givson' or 'Yemaha'. This is not a joke, these companies exist and they sell actual guitars of very questionable quality.
-    -   Second hand guitars that show signs of neglect or damage. Wood (and electronics) don't mix well with exposure to water or heat.
-    -   Low quality 10 watt practice amps that come bundled with electric guitars as a set, and are manufactured by the same company.
+  - Knockoff Indian brands like 'Fendar', 'Givson' or 'Yemaha'. This is not a joke, these companies exist and they sell actual guitars of very questionable quality.
+  - Second hand guitars that show signs of neglect or damage. Wood (and electronics) don't mix well with exposure to water or heat.
+  - Low quality 10 watt practice amps that come bundled with electric guitars as a set, and are manufactured by the same company.
 
--   If you're still confused, here are some good beginner examples to start with :
+- If you're still confused, here are some good beginner examples to start with :
 
-    -   **Acoustic**: Fender SA105, Yamaha F310, Ibanez MD39C, Cort AD810, etc.
-    -   **Electric**: Fender Squier Bullet Strat, Cort X1 or X100, ESP LTD M-10, Ibanez GRX20, Epiphone Les Paul Special, etc.
-    -   **Bass**: Yamaha TRBX174, Ibanez GSR200 or GSR320, ESP LTD B-10, etc.
-    -   **Processor**: Zoom G1on or G1Xon, Vox SL2G.
+  - **Acoustic**: Fender SA105, Yamaha F310, Ibanez MD39C, Cort AD810, etc.
+  - **Electric**: Fender Squier Bullet Strat, Cort X1 or X100, ESP LTD M-10, Ibanez GRX20, Epiphone Les Paul Special, etc.
+  - **Bass**: Yamaha TRBX174, Ibanez GSR200 or GSR320, ESP LTD B-10, etc.
+  - **Processor**: Zoom G1on or G1Xon, Vox SL2G.
 
 <h3 id="rules-drums" class="internal-link">Drums</h3>
 
@@ -123,37 +124,37 @@ They're not bad for recording or practicing, but you're probably not going to ta
 
 **Acoustic Drum Kits** are no joke to buy and maintain. I would recommend against buying those particular kits that come with shells, hardware and cymbals all as a set, because they usually skimp out on one or more of those units, and the ones that don't will cost you more than if you bought them separately (some manufacturers will give you shells plus hardware in the set without the cymbals, and those might be fine). I'll split them further into different sections for readability.
 
--   **Shells** are not as hard to acquire, but they aren't always cheap either. If you buy good ones, you'll have the advantage of them coming with decent drum heads to start playing with. While a lot of drummers would say that you can make cheap shells sound amazing by just changing heads and tuning, there are some differences you should research about. While negligible, Maple vs Poplar wood has some effect on tone for eg, and the entry level compared to more expensive shells from Pearl, Tama or Mapex will sound different.
+- **Shells** are not as hard to acquire, but they aren't always cheap either. If you buy good ones, you'll have the advantage of them coming with decent drum heads to start playing with. While a lot of drummers would say that you can make cheap shells sound amazing by just changing heads and tuning, there are some differences you should research about. While negligible, Maple vs Poplar wood has some effect on tone for eg, and the entry level compared to more expensive shells from Pearl, Tama or Mapex will sound different.
 
--   **Drum heads**: Buy Evans, Remo, or Aquarian. Research to figure out whether you want coated, hydraulic, double ply, etc.
+- **Drum heads**: Buy Evans, Remo, or Aquarian. Research to figure out whether you want coated, hydraulic, double ply, etc.
 
--   **Hardware**: You don't necessarily have to go for the expensive stuff, but don't cheap out either, else you'll get cymbal stands that are shaky and fall, or boom arms that won't take the weight of the cymbal. If you're confident enough, you could even try DIY for hardware. Low quality bass pedals will limit you from playing fast and strain your feet out faster, so I'd recommend prioritizing your hardware budget there first.
+- **Hardware**: You don't necessarily have to go for the expensive stuff, but don't cheap out either, else you'll get cymbal stands that are shaky and fall, or boom arms that won't take the weight of the cymbal. If you're confident enough, you could even try DIY for hardware. Low quality bass pedals will limit you from playing fast and strain your feet out faster, so I'd recommend prioritizing your hardware budget there first.
 
--   **Cymbals** are an absolute nightmare to buy as an Indian drummer (Apart from the shitty brass ones that I will pretend do not exist). They're ridiculously expensive to buy new, and given how few people are buying in the first place, you'd go for months at a time before finding a good deal on a used one.
+- **Cymbals** are an absolute nightmare to buy as an Indian drummer (Apart from the shitty brass ones that I will pretend do not exist). They're ridiculously expensive to buy new, and given how few people are buying in the first place, you'd go for months at a time before finding a good deal on a used one.
 
-    I've done the math and figured out that it would actually be cheaper to fly to a different country, buy a single high end cymbal there and bring it back. This price difference becomes smaller as the cymbal gets cheaper, but believe it or not, people I know who play drums but also have to go abroad often for reasons, end up doing just this.
+  I've done the math and figured out that it would actually be cheaper to fly to a different country, buy a single high end cymbal there and bring it back. This price difference becomes smaller as the cymbal gets cheaper, but believe it or not, people I know who play drums but also have to go abroad often for reasons, end up doing just this.
 
-    ![](./cheaper.jpg)
+  ![](./cheaper.jpg)
 
-    That might not be a realistic solution for people like you or me however, so it might be a worthwhile investment to network with professional musicians just so you can be there when a drummer upgrades and wants to sell his older stuff. If you don't want to wait so long to find a used deal, look up the prices online (Bajaao and Amazon are good sources), and ask a nearby store if they would price match. It might be a good idea to discuss this over a call first because most stores don't keep cymbals in stock (except the brass ones, but we're still pretending those don't exist), and you wouldn't want to waste a trip.
+  That might not be a realistic solution for people like you or me however, so it might be a worthwhile investment to network with professional musicians just so you can be there when a drummer upgrades and wants to sell his older stuff. If you don't want to wait so long to find a used deal, look up the prices online (Bajaao and Amazon are good sources), and ask a nearby store if they would price match. It might be a good idea to discuss this over a call first because most stores don't keep cymbals in stock (except the brass ones, but we're still pretending those don't exist), and you wouldn't want to waste a trip.
 
--   Stay away from :
+- Stay away from :
 
-    -   Cheap or local manufacturers like Chancellor, Jinbao, Havana, etc.
-    -   Any kind of brass cymbal. These are usually the cheapest, have a very yellow color compared to bronze cymbals, sound like you're hitting trash can lids, and every major brand has one targeted at 'beginners'. These include :
+  - Cheap or local manufacturers like Chancellor, Jinbao, Havana, etc.
+  - Any kind of brass cymbal. These are usually the cheapest, have a very yellow color compared to bronze cymbals, sound like you're hitting trash can lids, and every major brand has one targeted at 'beginners'. These include :
 
-        -   Zildjian: Planet Z series
-        -   Sabian: sbr series and solar series
-        -   Meinl: HCS series and BCS series
-        -   Paiste: PST3 series and 101 series
-        -   (_Above are the ones you should **not** buy_)
+    - Zildjian: Planet Z series
+    - Sabian: sbr series and solar series
+    - Meinl: HCS series and BCS series
+    - Paiste: PST3 series and 101 series
+    - (_Above are the ones you should **not** buy_)
 
-    -   Entry level sets (even from well known brands) such as Mapex Tornado, Pearl Roadshow or Tama Rhythm Mate. You might be able to make them work if you plan on some modification, but if you're going to play them as is, the quality deficit will become obvious soon.
+  - Entry level sets (even from well known brands) such as Mapex Tornado, Pearl Roadshow or Tama Rhythm Mate. You might be able to make them work if you plan on some modification, but if you're going to play them as is, the quality deficit will become obvious soon.
 
--   If you're still confused, here are some good beginner examples to start with :
+- If you're still confused, here are some good beginner examples to start with :
 
-    -   **Sets or shells**: Tama Imperialstar, Pearl Export or Export Exx, Mapex Voyager, etc.
-    -   **Cymbals**: Zildjian ZBT or ZXT, Sabian B8, Paiste PST5, Meinl MCS, etc.
+  - **Sets or shells**: Tama Imperialstar, Pearl Export or Export Exx, Mapex Voyager, etc.
+  - **Cymbals**: Zildjian ZBT or ZXT, Sabian B8, Paiste PST5, Meinl MCS, etc.
 
 <h2 id="outlet-reviews" class="internal-link">Outlet Reviews</h2>
 
@@ -165,71 +166,71 @@ Of course, keep in mind that these are all just my opinions based on my experien
 
 <h3 id="outlet-websites" class="internal-link">Websites</h2>
 
--   [OLX](https://www.olx.in/musical-instruments/)
+- [OLX](https://www.olx.in/musical-instruments/)
 
-    As per my knowledge, I would say that OLX hosts one of the country's fastest moving reliable second hand listings for music related items. Once I learnt how to properly deal and negotiate with sellers, I managed to get a lot of amazing deals on things I use today, and not just for music.
+  As per my knowledge, I would say that OLX hosts one of the country's fastest moving reliable second hand listings for music related items. Once I learnt how to properly deal and negotiate with sellers, I managed to get a lot of amazing deals on things I use today, and not just for music.
 
-    **A Success Story**: This one time, I managed to buy an Ibanez GSR200 bass guitar (with a strap and a surprisingly good gig bag), a Marshall MG10 amplifier (the one I still use to practice), and a 7.5m Fender instrument cable for 10k INR total.
+  **A Success Story**: This one time, I managed to buy an Ibanez GSR200 bass guitar (with a strap and a surprisingly good gig bag), a Marshall MG10 amplifier (the one I still use to practice), and a 7.5m Fender instrument cable for 10k INR total.
 
-    ##### This remains to this day, one of the best deals I've ever gotten organically without summoning any influence. Maybe these items were stolen, or maybe the seller was just desperate to get rid of it, or maybe both. I have no idea what the real story is.
+  ##### This remains to this day, one of the best deals I've ever gotten organically without summoning any influence. Maybe these items were stolen, or maybe the seller was just desperate to get rid of it, or maybe both. I have no idea what the real story is.
 
--   [Amazon](https://www.amazon.in/Musical-Instruments/b?ie=UTF8&node=3677697031)
+- [Amazon](https://www.amazon.in/Musical-Instruments/b?ie=UTF8&node=3677697031)
 
-    Everything on Amazon is more expensive than it should be. The prices are even more hiked up on the Amazon Global Store which might turn out to be the only place where an item you're trying to buy is available.
+  Everything on Amazon is more expensive than it should be. The prices are even more hiked up on the Amazon Global Store which might turn out to be the only place where an item you're trying to buy is available.
 
-    Amazon's return policy however really makes up for it. They almost always side with the buyer on a dispute and has saved my ass many times. If I really wanted to buy something, and I was very worried about its warranty, or the condition it would arrive in, I wouldn't mind paying Amazon's slightly higher price for it.
+  Amazon's return policy however really makes up for it. They almost always side with the buyer on a dispute and has saved my ass many times. If I really wanted to buy something, and I was very worried about its warranty, or the condition it would arrive in, I wouldn't mind paying Amazon's slightly higher price for it.
 
-    **A Neutral Story**: More than a year ago, I bought a set of Wuhan cymbals from the Amazon Global Store for [roughly 35k INR](https://i.imgur.com/UrseTwT.png). However, they arrived in poor condition. The bag was torn and all the cymbals except the crash had a considerable number of dinks and minor cracks along the outer edge. I initiated a return and after a couple weeks got the entire amount back.
+  **A Neutral Story**: More than a year ago, I bought a set of Wuhan cymbals from the Amazon Global Store for [roughly 35k INR](https://i.imgur.com/UrseTwT.png). However, they arrived in poor condition. The bag was torn and all the cymbals except the crash had a considerable number of dinks and minor cracks along the outer edge. I initiated a return and after a couple weeks got the entire amount back.
 
--   [Bajaao](https://bajaao.com)
+- [Bajaao](https://bajaao.com)
 
-    I have mixed experiences with Bajaao. They've done a lot of things wrong, but they've also done a few things right.
+  I have mixed experiences with Bajaao. They've done a lot of things wrong, but they've also done a few things right.
 
-    Speaking to a product specialist is always nice. While I'm not sure about their experience or background, they do seem to know what they're talking about and they're not interested in price gouging you. They won't mind recommending a cheaper item if it fits your need which is cool and they also tend to give a discount at the end of a call which is better than the ones you'd find on their webpage.
+  Speaking to a product specialist is always nice. While I'm not sure about their experience or background, they do seem to know what they're talking about and they're not interested in price gouging you. They won't mind recommending a cheaper item if it fits your need which is cool and they also tend to give a discount at the end of a call which is better than the ones you'd find on their webpage.
 
-    Now my biggest issue is how their items seem to be perpetually out of stock. It beats the point of having a website to sell goods when majority of the items listed can't even be sold.
+  Now my biggest issue is how their items seem to be perpetually out of stock. It beats the point of having a website to sell goods when majority of the items listed can't even be sold.
 
-    Depending on the item and category, their prices can range anywhere from 'reasonable' to 'I can buy a house for cheaper'. Their expensive stuff seem to be even more expensive, and even the discounts don't do the pricing any justice.
+  Depending on the item and category, their prices can range anywhere from 'reasonable' to 'I can buy a house for cheaper'. Their expensive stuff seem to be even more expensive, and even the discounts don't do the pricing any justice.
 
-    While they do honor their return policy, their 10 day window to report a bad purchase is way too short. A lot of items that are mechanical in nature go bust after months of use, and not everyone has the time to open and test their purchases right after they arrive.
+  While they do honor their return policy, their 10 day window to report a bad purchase is way too short. A lot of items that are mechanical in nature go bust after months of use, and not everyone has the time to open and test their purchases right after they arrive.
 
-    Also, what is up with being able to submit multiple reviews for the same item and have them all be visible? Or worse, why can't you edit or delete submitted reviews? Please fix this, Bajaao. I'm going to assume this was just an oversight because I refuse to believe your dev team is this incompetent.
+  Also, what is up with being able to submit multiple reviews for the same item and have them all be visible? Or worse, why can't you edit or delete submitted reviews? Please fix this, Bajaao. I'm going to assume this was just an oversight because I refuse to believe your dev team is this incompetent.
 
-    **Not A Success Story**: Bought a B8X 16" crash cymbal which had a defect that looked like it was inked on by QA and was actually not even meant to ship. I did get a refund in the end after some back and forth, but it calls into the question how they decide on quality when selling their stuff.
+  **Not A Success Story**: Bought a B8X 16" crash cymbal which had a defect that looked like it was inked on by QA and was actually not even meant to ship. I did get a refund in the end after some back and forth, but it calls into the question how they decide on quality when selling their stuff.
 
-    ![](./cymbal.jpg)
+  ![](./cymbal.jpg)
 
 <h3 id="outlet-stores" class="internal-link">Physical Stores</h2>
 
--   [Reynold's](https://www.reynoldonline.com/)
+- [Reynold's](https://www.reynoldonline.com/)
 
-    Oh what a confused bunch these guys are. They have three branches in my city but only one of them seems to have a clue about what they're selling.
+  Oh what a confused bunch these guys are. They have three branches in my city but only one of them seems to have a clue about what they're selling.
 
-    I've bought a good number of guitar pedals, a double bass pedal, some cymbals and your everyday stands, strings and cables from these guys. While they used to give some really good discounts, it seems they've set their mind against it as of a year ago. On my last couple visits, the guys there flat out refused to give me a discount despite identifying me as a regular customer. \
-    I wonder if it was worth it, because it doesn't really hurt me. My other musician friends and I just took the bulk of our business elsewhere.
+  I've bought a good number of guitar pedals, a double bass pedal, some cymbals and your everyday stands, strings and cables from these guys. While they used to give some really good discounts, it seems they've set their mind against it as of a year ago. On my last couple visits, the guys there flat out refused to give me a discount despite identifying me as a regular customer. \
+  I wonder if it was worth it, because it doesn't really hurt me. My other musician friends and I just took the bulk of our business elsewhere.
 
-    They still do price matching last I checked however, so that's good. Although remember to keep yourself informed beforehand, because if you simply ask for a price, they absolutely will give you a much higher quote in the hope that you're not aware of competing prices.
+  They still do price matching last I checked however, so that's good. Although remember to keep yourself informed beforehand, because if you simply ask for a price, they absolutely will give you a much higher quote in the hope that you're not aware of competing prices.
 
-    **Not A Success Story**: Called up one of their branches to ask about whether they had the "Shure SM57 microphone" (verbatim) in stock. Despite that, the first two people asked me to describe what kind of amplifier that was, and the third person told me that they don't keep recording equipment in stock.
+  **Not A Success Story**: Called up one of their branches to ask about whether they had the "Shure SM57 microphone" (verbatim) in stock. Despite that, the first two people asked me to describe what kind of amplifier that was, and the third person told me that they don't keep recording equipment in stock.
 
-    I found that exchange particularly funny because they had a banner for Shure microphones right outside their store.
+  I found that exchange particularly funny because they had a banner for Shure microphones right outside their store.
 
-    ![](./reynolds.jpg)
+  ![](./reynolds.jpg)
 
--   [Music House](http://musichouse.co.in/)
+- [Music House](http://musichouse.co.in/)
 
-    I'm not sure if Music House exists in other cities, but if you ever find one, try your best to avoid it.
+  I'm not sure if Music House exists in other cities, but if you ever find one, try your best to avoid it.
 
-    If you must buy from a store, I recommend you go to Reynold's (see above) or Furtados (I've heard they're decent, but I don't go there much because they never seem to have what I want in stock).
+  If you must buy from a store, I recommend you go to Reynold's (see above) or Furtados (I've heard they're decent, but I don't go there much because they never seem to have what I want in stock).
 
-    Yes, Music House is indeed that bad. If you want more proof, just look at their reviews. \
-    Don't get tempted by their cheap prices. They're cheap because they reflect the quality of what you'd be buying. I bought a couple pairs of local branded drum sticks from them, and none of them lasted more than two months.
+  Yes, Music House is indeed that bad. If you want more proof, just look at their reviews. \
+  Don't get tempted by their cheap prices. They're cheap because they reflect the quality of what you'd be buying. I bought a couple pairs of local branded drum sticks from them, and none of them lasted more than two months.
 
-    **A Very Sad Story**: Back when I had no clue about guitar maintenance, much less how to solder and de-solder the electronics within it, I gave them a bass guitar to repair. They returned the bass guitar in a playable, but very poor condition. On inspection, it turned out they actually stole some potentiometers and other parts, and the parts they did leave in, they soldered completely wrong. They charged us 1k INR for this privilege.
+  **A Very Sad Story**: Back when I had no clue about guitar maintenance, much less how to solder and de-solder the electronics within it, I gave them a bass guitar to repair. They returned the bass guitar in a playable, but very poor condition. On inspection, it turned out they actually stole some potentiometers and other parts, and the parts they did leave in, they soldered completely wrong. They charged us 1k INR for this privilege.
 
-    Now maybe I'm biased. To be fair, the violin my brother bought from them 2 years ago is still going good, but all my bad experiences are enough to make sure I never step into their store again.
+  Now maybe I'm biased. To be fair, the violin my brother bought from them 2 years ago is still going good, but all my bad experiences are enough to make sure I never step into their store again.
 
-    ##### However, it did inspire me to buy a solder gun and learn how to use it, which is a skill that I ended up putting into use many times since.
+  ##### However, it did inspire me to buy a solder gun and learn how to use it, which is a skill that I ended up putting into use many times since.
 
 <h2 id="outro" class="internal-link">In Closing</h2>
 

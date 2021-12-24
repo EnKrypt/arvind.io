@@ -3,6 +3,7 @@ title: The great race to surrender our privacy
 tags: ['privacy', 'psa', 'rant', 'technology']
 date: '2019-08-27T00:00:00.000Z'
 key: 'the-great-race-to-surrender-our-privacy'
+disqusID: '08d9cbde-0e6b-5776-9ff2-3d925e153ee4'
 ---
 
 > Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say. ~ Edward Snowden[^1]
@@ -25,9 +26,9 @@ This is just one (poorly written) example. I'm all for catching terrorists and p
 
 Now, before the conversation at our table derailed back to whether or not MacBooks are stupid, and how the partition of India didn't exactly happen like how we would've liked it, I realized a couple things based on our conversation :
 
--   You can't have perfect data privacy unless you go off the grid, which none of us wanted to do.
--   As a result someone somewhere has a profile on you, pieced together by your online fingerprint.
--   That profile with all its data is probably worth some money.
+- You can't have perfect data privacy unless you go off the grid, which none of us wanted to do.
+- As a result someone somewhere has a profile on you, pieced together by your online fingerprint.
+- That profile with all its data is probably worth some money.
 
 _Ok, Arvind. What's next? Are you going to tell us that the moon landing was faked too?._
 

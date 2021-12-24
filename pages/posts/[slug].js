@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import withHydration from '../../client/withHydration';
+import Comments from '../../components/Comments';
 import Left from '../../components/icons/Left';
 import Right from '../../components/icons/Right';
 import Layout from '../../components/Layout';
@@ -9,6 +11,8 @@ import {
   commonExtractor
 } from '../../extractors';
 import theme from '../../theme';
+
+const HydratedComments = withHydration(Comments, 'Comments');
 
 const Post = ({ config, fontFaces, post, prevPost, nextPost }) => {
   const previousPostImage = prevPost
@@ -81,6 +85,14 @@ const Post = ({ config, fontFaces, post, prevPost, nextPost }) => {
           <div />
         )}
       </RelatedPosts>
+      <StyledComments>
+        <HydratedComments
+          shortname={config.DISQUSSHORTNAME}
+          url={`${config.URL}/posts/${post.frontmatter.key}`}
+          id={post.frontmatter.disqusID || post.frontmatter.key}
+          title={post.frontmatter.title}
+        />
+      </StyledComments>
     </Layout>
   );
 };
@@ -151,6 +163,19 @@ const RelatedPostDirection = styled.div`
 
   .right & {
     justify-content: flex-end;
+  }
+`;
+
+const StyledComments = styled.div`
+  & .comments {
+    padding: 2em 0;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  & .nojs {
+    color: ${theme.colors.red};
   }
 `;
 
