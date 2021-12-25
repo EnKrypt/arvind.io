@@ -1,26 +1,60 @@
 import { hydrate } from 'preact';
 import { lazy, Suspense } from 'preact/compat';
 
-const selectivelyHydrateWhenVisible = (componentName, lazyImportFunction) => {
+const selectivelyHydrate = (
+  scriptElement,
+  hydrationTarget,
+  lazyImportFunction
+) => {
+  const props = JSON.parse(scriptElement.innerHTML);
+  const Component = lazy(lazyImportFunction);
+  hydrate(
+    <Suspense fallback={<></>}>
+      <Component {...props} />
+    </Suspense>,
+    hydrationTarget
+  );
+};
+
+export const selectivelyHydrateWhenVisible = (
+  componentName,
+  lazyImportFunction
+) => {
   document
     .querySelectorAll(`script[data-component-name="${componentName}"]`)
     .forEach((element) => {
-      const hydrationTargetContainer = element.nextElementSibling;
+      const hydrationTarget = element.nextElementSibling;
       const observer = new IntersectionObserver((entries, observer) => {
         if (entries[0].isIntersecting) {
-          observer.unobserve(hydrationTargetContainer.firstChild);
-          const props = JSON.parse(element.innerHTML);
-          const Component = lazy(lazyImportFunction);
-          hydrate(
-            <Suspense fallback={<></>}>
-              <Component {...props} />
-            </Suspense>,
-            hydrationTargetContainer
-          );
+          observer.unobserve(hydrationTarget.firstChild);
+          selectivelyHydrate(element, hydrationTarget, lazyImportFunction);
         }
-      }, {});
-      observer.observe(hydrationTargetContainer.firstChild);
+      });
+      observer.observe(hydrationTarget.firstChild);
     });
 };
 
-export default selectivelyHydrateWhenVisible;
+export const selectivelyHydrateWhenTargetInvisible = (
+  componentName,
+  lazyImportFunction,
+  target
+) => {
+  const scriptElements = document.querySelectorAll(
+    `script[data-component-name="${componentName}"]`
+  );
+  if (scriptElements.length) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      if (!entries[0].isIntersecting) {
+        observer.unobserve(target);
+        scriptElements.forEach((element) => {
+          selectivelyHydrate(
+            element,
+            element.nextElementSibling,
+            lazyImportFunction
+          );
+        });
+      }
+    });
+    observer.observe(target);
+  }
+};

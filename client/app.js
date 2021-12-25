@@ -9,7 +9,10 @@
  * the component name is used to identify the hydration targets.
  */
 
-import selectivelyHydrateWhenVisible from './selectivelyHydrateWhenVisible';
+import {
+  selectivelyHydrateWhenVisible,
+  selectivelyHydrateWhenTargetInvisible
+} from './selectivelyHydrateWhenVisible';
 
 selectivelyHydrateWhenVisible('ThemeChanger', () =>
   import('../components/ThemeChanger')
@@ -35,13 +38,15 @@ selectivelyHydrateWhenVisible('PostImage', () =>
   import('../components/PostImage')
 );
 
-selectivelyHydrateWhenVisible('Comments', () =>
-  import('../components/Comments')
+selectivelyHydrateWhenTargetInvisible(
+  'Comments',
+  () => import('../components/Comments'),
+  document.getElementsByClassName('post')[0]
 );
 
 // Easter egg clue
 console.log(
-  `%cNo deaths were planned. You don't remember, I see.\nAt zero I stand, but I'm not sure of thee.`,
+  `%cYou found this text! Well done, but will you ascend?.\nFind the source and begin your quest if you intend.`,
   `color: #0094ff;`
 );
 /*
