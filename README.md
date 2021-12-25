@@ -28,10 +28,12 @@ This project is not intended to be repurposed. \
 - `/tags/<tag>/page/<index>` : Blog Post Index/List having particular tag at page
 - `/hire` : Client landing page for contract work
 - `/menu` : Static page with Sidebar links (for when someone browses without Javascript)
+- `/_next/` : Assets required by frontend (JS chunks, minified images, etc)
 - `/manifest/` : PWA manifests, favicons
 - `/images/` : Picture related assets
 - `/resume.pdf` : Resume document
-- `/rss.xml` : RSS Feed for blog posts
+- `/rss.xml` : RSS feed for blog posts
+- `/atom.xml` : Atom feed for blog posts
 - `/bundle.html` : Webpack bundle analyzer output for client side JS bundle
 - `/robots.txt` : For web crawlers
 - `/keybase.txt` : Proof of domain ownership on [my keybase profile](https://keybase.io/enkrypt)

@@ -2,7 +2,7 @@
 
 rm -f ./public/rss.xml ./public/atom.xml
 rm -rf ./.next/ ./out/ ./static/
-ANALYZE=true next build
+ANALYZE=true ANALYTICS=true next build
 next export
 cp ./.next/analyze/client.html ./out/bundle.html
 rm -rf ./out/_next/data
