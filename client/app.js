@@ -12,7 +12,7 @@
 import {
   selectivelyHydrateWhenVisible,
   selectivelyHydrateWhenTargetInvisible
-} from './selectivelyHydrateWhenVisible';
+} from './selectivelyHydrate';
 
 selectivelyHydrateWhenVisible('ThemeChanger', () =>
   import('../components/ThemeChanger')

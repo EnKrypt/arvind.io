@@ -39,7 +39,7 @@ const Post = ({ config, fontFaces, post, prevPost, nextPost }) => {
       />
       <RelatedPosts>
         {prevPost ? (
-          <RelatedPost>
+          <RelatedPost hasSibling={nextPost ? true : false}>
             <a href={`/posts/${prevPost.key}`}>
               <img
                 alt="Previous Article"
@@ -62,7 +62,7 @@ const Post = ({ config, fontFaces, post, prevPost, nextPost }) => {
           <div />
         )}
         {nextPost ? (
-          <RelatedPost>
+          <RelatedPost hasSibling={prevPost ? true : false}>
             <a href={`/posts/${nextPost.key}`}>
               <img
                 alt="Next Article"
@@ -112,7 +112,6 @@ const RelatedPosts = styled.div`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 2em;
   }
 `;
 
@@ -143,6 +142,17 @@ const RelatedPost = styled.div`
   & svg {
     height: 1.2em;
   }
+
+  ${(props) =>
+    props.hasSibling
+      ? `
+      @media (max-width: 768px) {
+        &:last-of-type {
+          margin-bottom: 2em;
+        }
+      }
+    `
+      : ''}
 `;
 
 const RelatedPostText = styled.div`
