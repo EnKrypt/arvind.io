@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     overscroll-behavior: contain;
     font-family: '${theme.fonts.primary}';
+    text-size-adjust: none;
   }
 
   body.dark {
