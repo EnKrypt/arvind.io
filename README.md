@@ -1,11 +1,7 @@
-# [<p align="center"><img src="https://raw.githubusercontent.com/EnKrypt/arvind.io/next/public/images/preview.png" width="300" /></p>](https://arvind.io)
+# [<p align="center"><img src="https://raw.githubusercontent.com/EnKrypt/arvind.io/master/public/images/preview.png" width="300" /></p>](https://arvind.io)
 
 [![License](https://img.shields.io/github/license/EnKrypt/arvind.io.svg)](https://raw.githubusercontent.com/EnKrypt/arvind.io/master/LICENSE)
-![Build-master](https://img.shields.io/circleci/build/github/EnKrypt/arvind.io/next.svg)
-
-<!---
-TODO: Replace next branch with master
--->
+![Build-master](https://img.shields.io/circleci/build/github/EnKrypt/arvind.io/master.svg)
 
 ## [arvind.io](https://arvind.io)
 

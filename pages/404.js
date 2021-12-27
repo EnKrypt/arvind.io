@@ -10,8 +10,6 @@ const HydratedNotFoundEffects = withHydration(
   'NotFoundEffects'
 );
 
-// TODO: Change 404 path in caddyfile for arvind.io
-
 const NotFound = ({ config, fontFaces, notFoundGifs }) => (
   <Layout config={config} fontFaces={fontFaces} seo={{ title: 'Not Found' }}>
     <NotFoundPage>
