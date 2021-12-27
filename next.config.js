@@ -10,6 +10,7 @@ const nextConfig = {
   images: {
     disableStaticImages: true
   },
+  trailingSlash: true,
   webpack: (config, { isServer }) => {
     config.module.rules.push({
       test: /\.(webm)$/,
