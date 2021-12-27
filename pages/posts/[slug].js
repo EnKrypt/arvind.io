@@ -101,6 +101,10 @@ const PostContent = styled.div`
   font-family: 'EB Garamond';
   font-size: 1.5em;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1.4em;
+  }
 `;
 
 const RelatedPosts = styled.div`

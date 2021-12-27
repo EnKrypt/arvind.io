@@ -57,6 +57,10 @@ const Excerpt = styled.div`
   font-family: 'EB Garamond';
   font-size: 1.5em;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1.4em;
+  }
 `;
 
 export default PostListing;

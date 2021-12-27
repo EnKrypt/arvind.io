@@ -335,7 +335,13 @@ const getPostContentStyles = (html) => {
   }
   if (dom.window.document.querySelector('code')) {
     styles = styles.concat(css`
-      @import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css');
+      @font-face {
+        font-family: 'Hack';
+        src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular-subset.woff2?sha=3114f1256') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+      }
+
       .content code {
         font-family: 'Hack';
         font-size: 0.7em;
