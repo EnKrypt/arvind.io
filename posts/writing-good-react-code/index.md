@@ -61,13 +61,13 @@ Components like `ButtonText` or `CardText` (for our simple non-dynamic card) wou
 
 Take rendering the text inside `Button` for example. Ideally, you would want to pass the text as children (not as a prop) to the `Button` component from the parent directly, as such :
 
-```jsx
+```jsx showLineNumbers
 <Button>Card text goes here</Button>
 ```
 
 and then within the component's `render()` method, display the children :
 
-```jsx
+```jsx showLineNumbers
 class Button extends React.Component {
   render() {
     return <div>{this.props.children}</div>;
@@ -85,7 +85,7 @@ Only those properties which should trigger a re-render on being changed via `set
 
 Any other attribute that doesn't need to re-render or change something on the UI, does not belong in state. Consider declaring it as a simple class property instead.
 
-```jsx
+```jsx showLineNumbers
 class Card extends React.Component {
   state = {
     visible: true // Should trigger a re-render on being changed
@@ -94,13 +94,7 @@ class Card extends React.Component {
 }
 ```
 
-With that out of the way, we should talk about the elephant in the room.
-
-![](./php.png)
-
-Oh God no, not you. Jesus Christ, talk about having traumatizing flashbacks.
-
-I'm talking about **State Management**.
+With that out of the way, we should talk about **State Management**.
 
 [Redux](https://github.com/reduxjs/redux), for example is a very popular library for state management.
 
@@ -137,31 +131,31 @@ There's a thin line between code being readable, and too verbose.
 
 You might think that conditional renders are best handled outside JSX for the sake of readability like so :
 
-```jsx
+```jsx showLineNumbers
 render() {
-    let extra;
-    if (this.props.newUser) {
-        extra = <PromotionalOffers />
-    }
-    return (
-        <>
-            <Content />
-            {extra}
-        </>
-    );
+  let extra;
+  if (this.props.newUser) {
+    extra = <PromotionalOffers />
+  }
+  return (
+    <>
+      <Content />
+      {extra}
+    </>
+  );
 }
 ```
 
 But I'd argue that the following code is just as readable if not more, and definitely tidier.
 
-```jsx
+```jsx showLineNumbers
 render() {
-    return (
-        <>
-            <Content />
-            { this.props.newUser && <PromotionalOffers /> }
-        </>
-    )
+  return (
+    <>
+      <Content />
+      { this.props.newUser && <PromotionalOffers /> }
+    </>
+  )
 }
 ```
 

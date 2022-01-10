@@ -1,8 +1,8 @@
-import rehypePrism from '@mapbox/rehype-prism';
 import { promises as fs } from 'fs';
 import { JSDOM } from 'jsdom';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeMinify from 'rehype-preset-minify';
+import rehypePrism from 'rehype-prism-plus';
 import rehypeStringify from 'rehype-stringify';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkGfm from 'remark-gfm';
@@ -333,11 +333,20 @@ const getPostContentStyles = (html) => {
       }
     `);
   }
+  if (dom.window.document.querySelector('.internal-link')) {
+    styles = styles.concat(css`
+      .content .internal-link {
+        padding-top: 2.5em;
+        margin-top: -2.5em;
+      }
+    `);
+  }
   if (dom.window.document.querySelector('code')) {
     styles = styles.concat(css`
       @font-face {
         font-family: 'Hack';
-        src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular-subset.woff2?sha=3114f1256') format('woff2');
+        src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular-subset.woff2?sha=3114f1256')
+          format('woff2');
         font-weight: 400;
         font-style: normal;
       }
@@ -362,66 +371,81 @@ const getPostContentStyles = (html) => {
     styles = styles.concat(css`
       .content pre code {
         display: block;
-        padding: 0.5em;
         overflow-x: auto;
+        font-size: 0.6em;
+        padding: 0.75em;
       }
 
-      .dark .content code .token.punctuation {
-        color: #f0c040;
+      .content pre code.code-highlight {
+        padding: 0.5em 0;
+        color: #f8f8f2;
+        border-radius: 0.75em;
+        background-color: #272822;
       }
 
-      .dark .content code .token.class-name {
-        color: #50c0f0;
+      .content code .code-line {
+        display: block;
+        padding: 0.25em 1em;
+        border-left: solid 5px #404030;
+        white-space: pre-wrap;
+        text-align: left;
       }
 
-      .dark .content code .token.keyword {
-        color: #f05080;
+      .content code .code-line.line-number {
+        padding-left: 3em;
       }
 
-      .dark .content code .token.operator {
-        color: #f09040;
+      .content code .code-line.code-line:hover {
+        background-color: #363634;
       }
 
-      .dark .content code .token.boolean {
-        color: #b090f0;
+      .content code .code-line.highlight-line {
+        border-left: solid 5px #a09080;
+        background-color: #404030;
       }
 
-      .dark .content code .token.attr-name,
-      .dark .content code .token.function {
-        color: #80c000;
+      .content code .line-number::before {
+        content: attr(line);
+        width: 1.75em;
+        display: inline-block;
+        text-align: right;
+        padding-right: 1em;
+        color: #747474;
+        margin-left: -3em;
       }
 
-      .dark .content code .token.comment {
-        color: #909090;
+      .content code .token.punctuation {
+        color: #ffb51d;
       }
 
-      .light .content code .token.punctuation {
-        color: #a09000;
+      .content code .token.attr-name,
+      .content code .token.class-name {
+        color: #a6e22e;
       }
 
-      .light .content code .token.class-name {
-        color: #1080a0;
+      .content code .token.keyword {
+        color: #66d9ef;
       }
 
-      .light .content code .token.keyword {
-        color: #a01060;
+      .content code .token.number,
+      .content code .token.boolean {
+        color: #ae81ff;
       }
 
-      .light .content code .token.operator {
-        color: #b07040;
+      .content code .token.string {
+        color: #e6db74;
       }
 
-      .light .content code .token.boolean {
-        color: #a070c0;
+      .content code .token.operator,
+      .content code .token.ip-address,
+      .content code .token.function {
+        color: #f92672;
       }
 
-      .light .content code .token.attr-name,
-      .light .content code .token.function {
-        color: #60a000;
-      }
-
-      .light .content code .token.comment {
-        color: #909090;
+      .content code .token.date,
+      .content code .token.time,
+      .content code .token.comment {
+        color: #85816e;
       }
     `);
   }
