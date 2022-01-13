@@ -134,7 +134,7 @@ const traverseTreeForMedia = (folder, tree, skipSrcSet) => {
         node.properties.src.length - 5
       )}.webm`);
       node.tagName = 'video';
-      node.properties = { controls: true, class: 'embed' };
+      node.properties = { controls: true, class: 'embed media' };
       node.children = [
         {
           type: 'element',
@@ -190,8 +190,15 @@ const getPostContentStyles = (html) => {
   if (dom.window.document.querySelector('.embed')) {
     styles = styles.concat(css`
       .content .embed {
-        width: 100%;
+        display: block;
         border: none;
+        border-radius: 0.4em;
+        margin: 1em auto;
+        width: 100%;
+        max-width: 30em;
+      }
+
+      .content .embed.media {
         aspect-ratio: 16 / 9;
       }
     `);
