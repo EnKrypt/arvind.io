@@ -1,7 +1,7 @@
 ---
 title: Using Fail2ban to protect exposed services
 tags: ['guide', 'security', 'self-hosted', 'technology']
-date: '2022-01-13T00:00:00.000Z'
+date: '2022-01-15T00:00:00.000Z'
 key: 'using-fail2ban-to-protect-exposed-services'
 ---
 
@@ -19,36 +19,36 @@ key: 'using-fail2ban-to-protect-exposed-services'
 
 Fail2ban is a software application that protects you from brute-force attacks.[^1]
 
-The most common use-case is to protect your server's publicly exposed SSH service from being an easy target for spam and attacks.[^2] If that is your only goal, you might find it quicker to follow the steps from [this article by Linode](https://www.linode.com/docs/guides/how-to-use-fail2ban-for-ssh-brute-force-protection/) for example.
+The most common use-case is to protect your server's publicly exposed SSH service from being an easy target.[^2] If that is your only goal, you might find it quicker to follow the steps from [this article by Linode](https://www.linode.com/docs/guides/how-to-use-fail2ban-for-ssh-brute-force-protection/) for example.
 
 In this guide however, we are going to dive a bit deeper. We are going to learn how Fail2ban works and then use that knowledge to protect any arbitrary service of our choosing.
 
-This means we won't be limited by protecting only those services that Fail2ban supports out-of-the-box, and by the time you're done with this guide, you should be able to configure Fail2ban yourself and provide protection for any exposed service that you desire, including SSH.
+This means we won't be limited by only what Fail2ban supports out-of-the-box, and by the time you're done with this guide, you should be able to configure Fail2ban yourself to protect any service that you desire, including SSH.
 
 <h2 id="problem" class="internal-link">The challenges involved</h2>
 
 The need to expose your server to the outside world can be unavoidable at times.
 
-Maybe you're running a game server for some non-tech savvy friends; maybe you self-host a website on your old desktop and can't pay for a CDN; maybe you want to share your media server with your grandparents without spending an entire evening trying to explain what a VPN is.
+Maybe you're running a game server for some non-tech savvy friends; maybe you self-host a website on your old desktop and can't afford a CDN; maybe you want to share your media server with your grandparents without spending an entire evening trying to explain what a VPN is.
 
 Whatever the case may be, any exposed service has the following main issues:
 
-- There could be a vulnerability in the service which can then be exploited by an attacker. This vulnerability might not even be documented yet.[^3]
-- There is a security risk. For a service protected by a password or key, attackers might repeatedly attempt to gain access and could eventually succeed if the security is poor or if they get enough attempts.[^4]
-- Processing the traffic from an attacker wastes network and CPU resources. With enough traffic, there is a risk of a [DoS attack](https://en.wikipedia.org/wiki/Denial-of-service_attack).
+1. There could be a vulnerability in the service which can then be exploited by an attacker. This vulnerability might not even be documented yet.[^3]
+2. There is a security risk. For a service protected by a password or key, attackers might repeatedly attempt to gain access and could eventually succeed if the security is poor or if they get enough attempts.[^4]
+3. Processing the traffic from an attacker wastes network and CPU resources. With enough traffic, there is a risk of a [DoS attack](https://en.wikipedia.org/wiki/Denial-of-service_attack).
 
-Vulnerable software needs to be updated or patched. We can't do anything about vulnerabilities that aren't yet documented and the extent of security for a protected service is specific to it, so for this guide we assume that it is up to par.
-
-We want to focus on a solution that slows down a brute force attack and also prevents a DoS attack. There are some general pitfalls associated with what we are trying to do:
+Points numbered 2 and 3 are our focus here. We want a solution that prevents a DoS attack, thereby also slowing down a brute force attack. There are some general pitfalls associated with what we are trying to do:
 
 - Attempting to block malicious traffic from attackers in an over-aggressive manner might end up blocking legitimate traffic from genuine users (including yourself).
 - If we only block traffic that show patterns of failed attempts to gain access, a smart attacker could still spam normal traffic unrelated to authorization attempts (such as connect/disconnect events) and trigger a DoS attack.
 
 <iframe class="embed" src="https://www.redditmedia.com/r/linuxadmin/comments/bji7lb/question_why_do_people_recommend_fail2ban_for_ssh/em8ckw5/?depth=1&amp;showmore=false&amp;embed=true&amp;showmedia=false" style="height: 158px;"></iframe>
 
+##### Your service itself needs to have reasonable security either built-in, or configured. Fail2ban is not a substitute for good security practices and at best will only compliment it. If your service is secured with a weak passphrase for example, Fail2ban will not help.
+
 <h2 id="solution" class="internal-link">How does Fail2ban solve this?</h2>
 
-Fail2ban listens to application logs and checks each incoming log entry against a list of patterns. You can then tell Fail2ban after how many pattern matches in a specific interval of time should it ban the remote source by adding a temporary firewall rule.
+Fail2ban monitors application logs and checks each incoming log entry against a list of patterns. You can then tell Fail2ban after how many pattern matches in a specific interval of time should it ban the remote source by adding a temporary firewall rule.
 
 When we break it down, the components are as such:
 
@@ -58,7 +58,7 @@ When we break it down, the components are as such:
 
 These components together represent a jail. For each service that we want to protect, we have to write a jail configuration.
 
-##### Fail2ban has some pre-written jail configurations for popular services, and there is a chance that the service you are trying to protect might be among them. You should read the default [jail.conf](https://github.com/fail2ban/fail2ban/blob/master/config/jail.conf) file for this and also to learn more about many other components you can configure (choosing how the application log is parsed, defining custom actions such as sending a mail when an attacker is identified, etc.) that we won't be visiting in this guide.
+##### Fail2ban has some pre-written jail configurations for popular services, and there is a chance that the service you are trying to protect might be among them. Read the default [jail.conf](https://github.com/fail2ban/fail2ban/blob/master/config/jail.conf) file to find your service and to also learn more about many other components you can configure (choosing how the application log is parsed, defining custom actions such as sending a mail when an attacker is identified, etc.) that we won't be visiting in this guide.
 
 <h2 id="example" class="internal-link">Creating a Fail2ban jail for an exposed service</h2>
 
@@ -66,15 +66,15 @@ Let's try to apply what we learnt with a real example. Assume we have a self-hos
 
 ##### Remember, this is an example and you are not limited to Caddy. This should work even if you are using Apache, lighttpd, nginx etc. In fact, it doesn't even have to be a web server. You should be able to follow this guide to protect any public facing service as long as you have the three components listed in the previous section of this guide.
 
-Make sure Fail2ban is installed. On Linux distributions, you should be able to install it using your default package manager.
+Make sure Fail2ban is installed. Check your preferred package manager for an install candidate.
 
 On Debian based distros (including Ubuntu), run `sudo apt install fail2ban`.
 
 On Arch based distros, run `sudo pacman -S fail2ban`.
 
-On other operating systems, you can follow the [installation steps on their repository](https://github.com/fail2ban/fail2ban#installation).
-
 Start and enable the systemd service that should now be available with `sudo systemctl start fail2ban` and `sudo systemctl enable fail2ban`.
+
+On other operating systems, you can follow the [installation steps on their repository](https://github.com/fail2ban/fail2ban#installation).
 
 The **first component** we need is our application log. For my setup, I can find that at `/var/log/caddy/access.log`. Let's take a look at it to discover items of interest. I'll highlight any lines that stand out to me.
 
@@ -162,7 +162,7 @@ Looks like our filter is accurately matching entries. You can use the `-l heavyd
 
 The **third component** involves deciding the thresholds around blocking an IP address. The Fail2ban documentation says that a host is banned for `bantime` seconds if it has generated `maxretry` during the last `findtime` seconds. These are numerical values that we have to set.
 
-Sending a request that results in a 404 status code isn't necessarily malicious. Dead links in your application, outdated search engine records and a user making a typo are examples of legitimate traffic that we don't want to block. We need to find a balance past which we can confidently say without a doubt that a source is sending bad requests excessively often. These values are going to be subjective and different people might find different thresholds that work for them, but here are the values that I have decided on:
+Sending a request that results in a 404 status code isn't necessarily malicious. Dead links in your application, outdated search engine records and a user making a typo are examples of legitimate traffic that we don't want to punish. We need to find a balance past which we can confidently say without a doubt that a source is sending bad requests excessively often. These values are going to be subjective and different people might find different thresholds that work for them, but here are the values that I have decided on:
 
 ```toml
 bantime  = 1440m
@@ -207,7 +207,7 @@ Once your jail starts to block IP addresses, you can see them as such:
 Status for the jail: caddy404
 |- Filter
 |  |- Currently failed: 0
-|  |- Total failed:     19
+|  |- Total failed:     219
 |  `- File list:        /var/log/caddy/access.log
 `- Actions
    |- Currently banned: 3
@@ -217,7 +217,7 @@ Status for the jail: caddy404
 
 That's it! Fail2ban will keep listening to incoming logs in the background and keep your system protected from being flooded by bad requests.
 
-While your use-case will likely be different, if you've followed this guide to the end, I hope that you can fit the same methodology to work for you. Let me know if you have any feedback and feel free to leave a comment and tell me about your experience with Fail2ban.
+While your use-case will likely be different, if you've followed this guide to the end, I hope that you were able to fit the same methodology to work for you. Let me know about your experience by leaving a comment below.
 
 [^1]: [1. Fail2ban - Wikipedia](https://en.wikipedia.org/wiki/Fail2ban)
 [^2]: [2. PyCon 2014 Lightning Session on Fail2ban - YouTube](http://www.youtube.com/watch?v=xcXheAWy7cU#t=190)

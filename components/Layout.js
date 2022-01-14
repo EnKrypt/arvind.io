@@ -7,6 +7,7 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
     <Head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="format-detection" content="telephone=no" />
       <meta
         name="title"
         content={`${seo.title || config.AUTHOR} | ${config.TITLE}`}

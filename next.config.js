@@ -13,7 +13,7 @@ const nextConfig = {
   trailingSlash: true,
   webpack: (config, { isServer }) => {
     config.module.rules.push({
-      test: /\.(webm)$/,
+      test: /\.(mp4)$/,
       type: 'asset/resource',
       generator: {
         filename:

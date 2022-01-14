@@ -126,13 +126,13 @@ const traverseTreeForMedia = (folder, tree, skipSrcSet) => {
       node.properties &&
       node.properties.src &&
       node.properties.src.startsWith('./') &&
-      (node.properties.src.endsWith('.webm') ||
-        node.properties.src.endsWith('.webm'))
+      (node.properties.src.endsWith('.mp4') ||
+        node.properties.src.endsWith('.mp4'))
     ) {
       const video = require(`../posts/${folder}/${node.properties.src.substring(
         2,
-        node.properties.src.length - 5
-      )}.webm`);
+        node.properties.src.length - 4
+      )}.mp4`);
       node.tagName = 'video';
       node.properties = { controls: true, class: 'embed media' };
       node.children = [
@@ -141,7 +141,7 @@ const traverseTreeForMedia = (folder, tree, skipSrcSet) => {
           tagName: 'source',
           properties: {
             src: `/_next/static/chunks/${video.match(/[^\/]+$/)[0]}`,
-            type: 'video/webm'
+            type: 'video/mp4'
           }
         },
         {
@@ -223,7 +223,7 @@ const getPostContentStyles = (html) => {
       }
 
       .content .index ul {
-        padding-right: 1em;
+        padding: 0 1em 0 2em;
       }
 
       .content .index a {
@@ -340,6 +340,20 @@ const getPostContentStyles = (html) => {
       }
     `);
   }
+  if (dom.window.document.querySelector('ol')) {
+    styles = styles.concat(css`
+      .content ol {
+        padding-left: 0.85em;
+      }
+    `);
+  }
+  if (dom.window.document.querySelector('ul')) {
+    styles = styles.concat(css`
+      .content ul {
+        padding-left: 0.85em;
+      }
+    `);
+  }
   if (dom.window.document.querySelector('.internal-link')) {
     styles = styles.concat(css`
       .content .internal-link {
@@ -372,6 +386,12 @@ const getPostContentStyles = (html) => {
       .light .content code {
         background-color: ${theme.colors.lightgray};
       }
+
+      .content code a {
+        text-decoration: none;
+        color: inherit;
+        pointer-events: none;
+      }
     `);
   }
   if (dom.window.document.querySelector('pre > code')) {
@@ -395,6 +415,7 @@ const getPostContentStyles = (html) => {
         padding: 0.25em 1em;
         border-left: solid 5px #404030;
         white-space: pre-wrap;
+        overflow-wrap: break-word;
         text-align: left;
       }
 

@@ -88,7 +88,7 @@ A lot of games today are still stuck appealing to those teenagers of yore, tryin
 
 Remember the [Assassin's Creed franchise](https://en.wikipedia.org/wiki/Assassin%27s_Creed)? The first few games were almost era defining. After its success, Ubisoft went on to create their own graphics engine for the series and they've been shoehorning long drawn out disconnected stories since. I tried to give some of their new games a shot, but imagine my surprise to discover a glitch infested mess instead :
 
-![](./acu.webm)
+![](./acu.mp4)
 
 The "impressive graphics engine" doesn't catch your attention anymore now, does it?
 
