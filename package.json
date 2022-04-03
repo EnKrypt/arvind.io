@@ -29,7 +29,7 @@
     "next-optimized-images": "^2.6.2",
     "next-plugin-preact": "^3.0.6",
     "next-remote-watch": "^1.0.0",
-    "node-fetch": "^2.6.6",
+    "node-fetch": "^2.6.7",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
     "preact-ssr-prepass": "^1.2.0",
