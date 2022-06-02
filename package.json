@@ -47,7 +47,7 @@
     "remark-rehype": "^10.1.0",
     "remark-smartypants": "^2.0.0",
     "responsive-loader": "^2.3.0",
-    "sharp": "^0.29.2",
+    "sharp": "^0.30.5",
     "styled-components": "^5.3.3",
     "unified": "^10.1.1",
     "yaml": "^1.10.2"
