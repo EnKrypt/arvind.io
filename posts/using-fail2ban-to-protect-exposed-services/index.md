@@ -182,7 +182,7 @@ port     = https
 filter   = caddy404
 logpath  = /var/log/caddy/access.log
 backend  = auto
-bantime  = 360m
+bantime  = 1440m
 maxretry = 50
 findtime = 30
 ```

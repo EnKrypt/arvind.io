@@ -48,7 +48,7 @@ const Hire = ({ config, fontFaces }) => (
       <DomainPara>
         <DomainTitle>Frontend</DomainTitle>: Websites that are fast, fluid,
         performant and responsive. Single Page Applications (SPA) and
-        Progressive Web Apps (PWA) with Gatsby or React, built for good SEO.
+        Progressive Web Apps (PWA) with React, including Next or Gatsby, built for good SEO.
       </DomainPara>
       <DomainPara>
         <DomainTitle>Mobile</DomainTitle>: Reach your audience better with
@@ -103,7 +103,7 @@ const Hire = ({ config, fontFaces }) => (
             data-sizes="(max-width: 768px) 220px, 300px"
           />
         </a>
-        <a href="https://zysk.in/" target="_blank" rel="nofollow noopener noreferrer">
+        <a href="https://zysk.tech/" target="_blank" rel="nofollow noopener noreferrer">
           <img
             alt="Zysk Technologies"
             className="lazy"
