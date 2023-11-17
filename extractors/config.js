@@ -24,8 +24,8 @@ const getConfig = async () => {
     EMAIL: env.email || process.env.EMAIL || noConfig('email'), // Required
     DESCRIPTION:
       env.description || process.env.DESCRIPTION || noConfig('description'), // Required
-    FATHOMSITEID:
-      env.fathomSiteID || process.env.FATHOMSITEID || noConfig('fathomSiteID'), // Required
+    UMAMISITEID:
+      env.umamiSiteID || process.env.UMAMISITEID || noConfig('umamiSiteID'), // Required
     DISQUSSHORTNAME:
       env.disqusShortname ||
       process.env.DISQUSSHORTNAME ||
