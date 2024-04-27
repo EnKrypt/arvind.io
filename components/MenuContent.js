@@ -80,7 +80,8 @@ const MenuContent = ({ sidebar }) => (
     <MenuItem>
       <a target="_blank" rel="nofollow noopener noreferrer" href="/atom.xml">
         Atom
-      </a>{' | '}
+      </a>
+      {' | '}
       <a target="_blank" rel="nofollow noopener noreferrer" href="/rss.xml">
         RSS
       </a>
@@ -93,6 +94,9 @@ const MenuContent = ({ sidebar }) => (
       >
         Source
       </a>
+    </MenuItem>
+    <MenuItem>
+      <a href="/legal">Legal</a>
     </MenuItem>
     <DonateButton
       sidebar={sidebar}
