@@ -72,7 +72,7 @@ I learnt this in college, and it might be among the few useful things I've taken
 On a very rough and simplified scale, you can think of it as : \
 UNIX : Linux :: Linux : Ubuntu.
 
-### _I don't really care about these arguments, Arvind. I clicked on this because of the penguin on the thumbnail_
+### _I don't really care about these arguments, Arvind. I clicked on this because of the penguin on the thumbnail._
 
 Well... I mean I guess that's fair.
 

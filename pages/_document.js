@@ -11,7 +11,7 @@ import { ServerStyleSheet } from 'styled-components';
  * but trust me, you won't be the first person to shoot yourself in the foot because you didn't take a
  * few extra minutes to think this problem through.
  *
- * If you want to inject resources for SSR, edit CriticalResources.js instead.
+ * If you want to inject resources for SSR, edit /client/app.js instead.
  */
 
 export default class MyDocument extends Document {

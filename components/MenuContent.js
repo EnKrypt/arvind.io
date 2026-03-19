@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import donateImage from '../public/images/donate.png?resize';
 import authorImage from '../public/images/dp.jpg?resize';
 import theme from '../theme';
 import GitHub from './icons/GitHub';
@@ -23,7 +22,7 @@ const MenuContent = ({ sidebar }) => (
     <StyledInfo>
       Hi, I&apos;m Arvind Kumar.
       <br />
-      I am a software developer, a musician and an amateur astronomer.
+      I am a software engineer, a musician and an amateur astronomer.
       <br />
       If you&apos;d like to get in touch,
       <br />
@@ -94,20 +93,6 @@ const MenuContent = ({ sidebar }) => (
         Source
       </a>
     </MenuItem>
-    <DonateButton
-      sidebar={sidebar}
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      href="https://www.buymeacoffee.com/EnKrypt"
-    >
-      <img
-        alt="Buy me a beer"
-        className="lazy"
-        src={donateImage.placeholder || donateImage.src}
-        data-srcset={donateImage.srcSet}
-        data-sizes="240px"
-      />
-    </DonateButton>
   </>
 );
 
@@ -189,16 +174,6 @@ const MenuItem = styled.div`
 const StyledGreenLink = styled.a`
   && {
     color: ${theme.colors.green};
-  }
-`;
-
-const DonateButton = styled.a`
-  display: block;
-  margin-top: 2em;
-
-  & img {
-    width: 240px;
-    height: 64.5px;
   }
 `;
 

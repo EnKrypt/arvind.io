@@ -18,13 +18,13 @@ It seems that most of us have long resigned to our data being taken away. The re
 
 ![](./wiretap.png)
 
-Data privacy is important for more reasons than just being edgy or making a stand. There is a lot of damage that can be done by leveraging information against an individual, and after a certain point, the lines get too blurred to tell the difference between right and wrong, innocent and guilty. Even completely correct information taken out of context can prove harmful.
+Data privacy is important because it underwrites many of our rights and freedoms. From a simple security perspective itself, there is a lot of damage that can be done by having an individual's personal information exposed, and this erosion of trust makes the lines blurry between right and wrong, innocent and guilty. Even completely correct information taken out of context can prove harmful.
 
-As a very primitive example, let's say you accidentally managed to get on the wrong side of someone in a position of power. They can frame you on completely fabricated charges by simply wrapping it up with the remaining _correct_ data they have on you. Your friends and family read about it and they think _'Oh yeah, he does tend to drink quite often. I guess it was only a matter of time until he was caught driving drunk.'_, and before you know it, you have no support from them because they bought the lie.
+As a very primitive example, let's say you accidentally managed to get on the wrong side of someone in a position of power. They can frame you on completely fabricated charges by simply wrapping it up with the remaining _correct_ data they have on you. Your friends and family read about it and they think _'Oh yeah, he does tend to drink during poker nights. I guess it was only a matter of time until he was caught driving drunk.'_, and before you know it, you have no support from them because they bought the lie.
 
-This is just one (poorly written) example. I'm all for catching terrorists and putting them behind bars, but snooping on our texts and calls is not the way to do it. Lack of data privacy opens up a pandora's box of nightmare scenarios where one has no idea which information is legit and which has been deliberately manipulated.
+We shouldn't pull punches when it comes to catching the bad guys and putting them behind bars, but snooping on texts and calls is not the way to do it. Lack of data privacy opens up a pandora's box of nightmare scenarios where one has no idea which information is legit and which has been deliberately manipulated.
 
-Now, before the conversation at our table derailed back to whether or not MacBooks are stupid, and how the partition of India didn't exactly happen like how we would've liked it, I realized a couple things based on our conversation :
+Now, before the conversation at our table derailed to boomer political takes, I realized a couple things based on our conversation:
 
 - You can't have perfect data privacy unless you go off the grid, which none of us wanted to do.
 - As a result someone somewhere has a profile on you, pieced together by your online fingerprint.
@@ -32,17 +32,17 @@ Now, before the conversation at our table derailed back to whether or not MacBoo
 
 _Ok, Arvind. What's next? Are you going to tell us that the moon landing was faked too?._
 
-Alright, I know what this sounds like if you've not yet done your homework. In fact, this is probably your mental image of me at this point, right?
+Alright, I know what this sounds like.
 
 ![](./conspiracy.png)
 
-The difference however, is that unlike a conspiracy, we have actual precedence to things like this happening all the time.
+I learnt quite recently that this meme is from Sunny. Anyway, the difference here is that unlike a conspiracy, we have actual precedence to things like this happening all the time.
 
 [The Great Hack](https://www.imdb.com/title/tt9358204/) is a Netflix documentary about the Cambridge Analytica scandal.
 
 [Citizenfour](https://www.imdb.com/title/tt4044364/) is a documentary about Snowden's revelations on the NSA.
 
-It's more than speculation. These things happen all the time and are also dominant themes in the entertainment industry. We only know about the ones that eventually got caught, keep that in mind as well.
+It's more than speculation. These things happen all the time and are also dominant themes in the recent zeitgeist. We only know about the ones that eventually got caught, keep that in mind as well.
 
 ##### If you're into video games, you should try [Orwell](<https://en.wikipedia.org/wiki/Orwell_(video_game)>). You play as a surveillance operator and the information you cherry-pick decides who gets the short end of the stick in the game.
 
@@ -52,7 +52,7 @@ A disclaimer if you didn't already know this about me: I used to be, and still a
 
 Now that's a lot of pain and I don't expect everyone to go to all those lengths for the sanity of owning their data, especially when I'm not consistent in following through most of it myself.
 
-But after years of painfully trying to do so, I can safely say that neither I, nor the companies collecting my data care about the fact that I hate pineapple on pizza, or that I like Maine Coons more than Bengals. Perfect privacy is not just painful to implement, but also gets you diminishing returns.
+But after years of painfully trying to do so, I can safely say that neither I, nor the companies collecting my data care about the fact that I hate pineapple on pizza, or that I like the white spotted cat downstairs more than the tabby. Perfect privacy is not just painful to implement, but also gets you diminishing returns.
 
 At any rate, I'd argue on the flip side that no privacy might still be preferable to bad attempts at privacy, such as installing something like say, [Flagger](https://github.com/rubbingalcoholic/flagger).
 
@@ -66,7 +66,7 @@ Luckily India is not part of the Five Eyes, Nine Eyes or Fourteen Eyes[^4], but 
 
 For example, the government can compel you to give up keys or passwords to access data that is encrypted or password protected for an investigation.[^5]
 
-An internet provider here has been actively hijacking DNS requests.[^6] Something I stumbled across myself, but I was too lazy to document and write about at the time.
+An internet provider here has been actively exploiting DNS requests.[^6] Something I stumbled across myself, but I didn't get around to writing about at the time.
 
 If we combine the fact that we don't need perfect privacy along with the fact that our governments' can barely handle their own elections without completely fucking it up, then all of a sudden, data privacy becomes a lot more doable.
 
@@ -82,7 +82,7 @@ Having said everything above, obtaining a reasonable amount of privacy is actual
 
 As a good first step, simply using [Firefox](https://www.mozilla.org/en-US/firefox/new/) instead of Chrome can do wonders. I won't go into detail about how Firefox has always been a part of the privacy battle, but you might even remember it as Netscape Navigator back when Internet Explorer had its monopoly.[^8] Today of course, Google Chrome has the majority, and it's quite sad that neither Microsoft nor Google had their users' best interests in mind.
 
-Having been a long-time Chrome user, I was personally surprised to find the transition pretty smooth. The dev tools are great, all the extensions I used on Chrome exist as Firefox add-ons, and the browser is just a lot more customizable. Firefox for Android even supports add-ons, meaning that you can run a full ad-blocker or download themes for your mobile browser. However, I decided to use Firefox Preview because of the smoother UX.
+Having been a long-time Chrome user, I was personally surprised to find the transition pretty smooth. The dev tools are great, all the extensions I used on Chrome exist as Firefox add-ons, and the browser is just a lot more customizable. Firefox for Android even supports add-ons, meaning that you can run a full ad-blocker or download themes for your mobile browser.
 
 [DuckDuckGo](https://duckduckgo.com/) has come a long way as a search engine. I found myself not having to do wordplay gymnastics whenever I wanted to look up something specific but niche, since Google would always fuck it up with personalized and popular results.
 
@@ -92,23 +92,17 @@ Having been a long-time Chrome user, I was personally surprised to find the tran
 
 ![](./ddg.png)
 
-A better browser + search engine is half the battle done. You could follow this up by thinking about your PC and your phone's OS, using a password manager, choosing messengers more carefully, and staying away from personal social media.
+A better browser + search engine is half the battle done. You could follow this up by thinking about your PC and your phone's OS, using a password manager, choosing messengers more carefully, and limiting what information you post on social media.
 
-##### Deleting Facebook, Instagram and Snapchat was the best thing I've done for my mental health and overall productivity.
+##### Deleting Facebook, Instagram and Snapchat while I was still in my early twenties was the best thing I did for my mental well being, aside from the added benefit of maintaining my privacy.
 
 [PrivacyTools](https://www.privacytools.io/) is a very good resource if you want to keep exploring.
 
-**I know I can't convince you to stop using Gmail or Google Maps**, but that's alright in my book. I use them too because the alternatives suck, I get it. This post was not meant to be a privacy guide or a top ten list of what you should or should not do.
+**I know I can't convince you to stop using Gmail or Google Maps**, but that's okay. I use them too because the alternatives suck at the moment. This post was not meant to be a privacy guide or a top ten list of what you should or should not do.
 
 The point was more to get you to think about privacy in the context of your online activity. There are enough data breaches happening all the time by malicious attackers, that we don't really need to give away our data willingly on top of it.
 
-Given the general apathy in this country toward good tech practices, I'm honestly impressed that we managed to tell Zuckerberg to fuck right off when he pitched Free Basics to us.[^9] Somehow that gives me hope that we might not be a lost cause just yet, and we can eventually stop all our Whatsapp forwarding uncles from telling some surveillance worker their bank balance along with how there was not enough chutney with their dosa everyday.
-
-&nbsp;
-
-##### Publicly writing about data privacy while making fun of our government does not have a very good track record. Time will tell how much trouble I might get into for this, but I will not take this post down willingly. If it does go down, let's say that you probably know exactly what happened. Feel free to take backups.
-
-&nbsp;
+Given the general apathy in this country toward good tech practices, I'm honestly impressed that we managed to tell Zuckerberg to fuck right off when he pitched Free Basics to us.[^9] Somehow that gives me hope that we might not be a lost cause just yet, and we can eventually stop all our Whatsapp forwarding uncles from telling some surveillance worker their bank OTP along with how there was not enough chutney with their dosa everyday.
 
 [^0]: [0. Palestinian wall art about Mark Zuckerberg and Facebook - Imgur](https://imgur.com/gallery/dqtkB)
 [^1]: [1. Edward Snowden and Jameel Jaffer Reddit AUA on Reddit /r/IAmA](https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2/)
