@@ -22,7 +22,6 @@ This project is not intended to be repurposed. \
 - `/posts/<title>` : Individual Blog Post
 - `/tags/<tag>` : Root of Blog Post Index/List having particular tag
 - `/tags/<tag>/page/<index>` : Blog Post Index/List having particular tag at page
-- `/hire` : Client landing page for contract work
 - `/menu` : Static page with Sidebar links (for when someone browses without Javascript)
 - `/_next/` : Assets required by frontend (JS chunks, minified images, etc)
 - `/manifest/` : PWA manifests, favicons

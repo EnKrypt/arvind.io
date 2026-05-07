@@ -69,14 +69,11 @@ const MenuContent = ({ sidebar }) => (
       <a href="/">Home</a>
     </MenuItem>
     <MenuItem>
-      <StyledGreenLink href="/hire">Hire me</StyledGreenLink>
-    </MenuItem>
-    <MenuItem className="alt">
       <a target="_blank" rel="nofollow noopener noreferrer" href="/resume.pdf">
         Resume
       </a>
     </MenuItem>
-    <MenuItem>
+    <MenuItem className="alt">
       <a target="_blank" rel="nofollow noopener noreferrer" href="/atom.xml">
         Atom
       </a>{' | '}
@@ -84,7 +81,7 @@ const MenuContent = ({ sidebar }) => (
         RSS
       </a>
     </MenuItem>
-    <MenuItem className="alt">
+    <MenuItem>
       <a
         target="_blank"
         rel="nofollow noopener noreferrer"
