@@ -98,7 +98,7 @@ const Layout = ({ config, fontFaces, seo = {}, children }) => (
     ></script>
     {process.env.ANALYTICS === 'true' ? (
       <script
-        src="https://umami.arvind.io/script.js"
+        src={config.UMAMIURL}
         data-website-id={config.UMAMISITEID}
         defer
       ></script>

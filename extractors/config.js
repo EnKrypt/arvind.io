@@ -26,6 +26,8 @@ const getConfig = async () => {
       env.description || process.env.DESCRIPTION || noConfig('description'), // Required
     UMAMISITEID:
       env.umamiSiteID || process.env.UMAMISITEID || noConfig('umamiSiteID'), // Required
+    UMAMIURL:
+      env.umamiURL || process.env.UMAMIURL || noConfig('umamiURL'), // Required
     DISQUSSHORTNAME:
       env.disqusShortname ||
       process.env.DISQUSSHORTNAME ||
